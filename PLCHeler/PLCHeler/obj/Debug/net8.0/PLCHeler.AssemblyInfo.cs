@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PLCHeler")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+403665c174befac54ec16acee74cb6cd7cca1e42")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+594e44102122f4f0891ebdf6f2bfb65f92b5e368")]
 [assembly: System.Reflection.AssemblyProductAttribute("PLCHeler")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PLCHeler")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

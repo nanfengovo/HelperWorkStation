@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1EB4EF73-520E-4DBD-A878-A1E322B7161F}|PLCHeler\\PLCHeler.csproj|e:\\code\\\u9879\u76EE--\u5B66\u4E60\\helperworkstation\\helperworkstation\\plcheler\\plcheler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EB4EF73-520E-4DBD-A878-A1E322B7161F}|PLCHeler\\PLCHeler.csproj|solutionrelative:plcheler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3129AB8B-F000-4F52-B6B6-5140F55CBB53}|Infrastructure\\Infrastructure.csproj|e:\\code\\\u9879\u76EE--\u5B66\u4E60\\helperworkstation\\helperworkstation\\plcheler\\infrastructure\\testdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3129AB8B-F000-4F52-B6B6-5140F55CBB53}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\testdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3129AB8B-F000-4F52-B6B6-5140F55CBB53}|Infrastructure\\Infrastructure.csproj|e:\\code\\\u9879\u76EE--\u5B66\u4E60\\helperworkstation\\helperworkstation\\plcheler\\infrastructure\\initalizationdb\\basedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3129AB8B-F000-4F52-B6B6-5140F55CBB53}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\initalizationdb\\basedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3129AB8B-F000-4F52-B6B6-5140F55CBB53}|Infrastructure\\Infrastructure.csproj|e:\\code\\\u9879\u76EE--\u5B66\u4E60\\helperworkstation\\helperworkstation\\plcheler\\infrastructure\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3129AB8B-F000-4F52-B6B6-5140F55CBB53}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3129AB8B-F000-4F52-B6B6-5140F55CBB53}|Infrastructure\\Infrastructure.csproj|e:\\code\\\u9879\u76EE--\u5B66\u4E60\\helperworkstation\\helperworkstation\\plcheler\\infrastructure\\migrations\\20241230120109_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3129AB8B-F000-4F52-B6B6-5140F55CBB53}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20241230120109_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3129AB8B-F000-4F52-B6B6-5140F55CBB53}|Infrastructure\\Infrastructure.csproj|e:\\code\\\u9879\u76EE--\u5B66\u4E60\\helperworkstation\\helperworkstation\\plcheler\\infrastructure\\migrations\\testdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3129AB8B-F000-4F52-B6B6-5140F55CBB53}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\testdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EB4EF73-520E-4DBD-A878-A1E322B7161F}|PLCHeler\\PLCHeler.csproj|e:\\code\\\u9879\u76EE--\u5B66\u4E60\\helperworkstation\\helperworkstation\\plcheler\\plcheler\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1EB4EF73-520E-4DBD-A878-A1E322B7161F}|PLCHeler\\PLCHeler.csproj|solutionrelative:plcheler\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EB4EF73-520E-4DBD-A878-A1E322B7161F}|PLCHeler\\PLCHeler.csproj|e:\\code\\\u9879\u76EE--\u5B66\u4E60\\helperworkstation\\helperworkstation\\plcheler\\plcheler\\plcheler.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1EB4EF73-520E-4DBD-A878-A1E322B7161F}|PLCHeler\\PLCHeler.csproj|solutionrelative:plcheler\\plcheler.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3129AB8B-F000-4F52-B6B6-5140F55CBB53}|Infrastructure\\Infrastructure.csproj|e:\\code\\\u9879\u76EE--\u5B66\u4E60\\helperworkstation\\helperworkstation\\plcheler\\infrastructure\\entityconfig\\userentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3129AB8B-F000-4F52-B6B6-5140F55CBB53}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\entityconfig\\userentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1EB4EF73-520E-4DBD-A878-A1E322B7161F}|PLCHeler\\PLCHeler.csproj|e:\\code\\\u9879\u76EE--\u5B66\u4E60\\helperworkstation\\helperworkstation\\plcheler\\plcheler\\controllers\\sys\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EB4EF73-520E-4DBD-A878-A1E322B7161F}|PLCHeler\\PLCHeler.csproj|solutionrelative:plcheler\\controllers\\sys\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EB4EF73-520E-4DBD-A878-A1E322B7161F}|PLCHeler\\PLCHeler.csproj|e:\\code\\\u9879\u76EE--\u5B66\u4E60\\helperworkstation\\helperworkstation\\plcheler\\plcheler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EB4EF73-520E-4DBD-A878-A1E322B7161F}|PLCHeler\\PLCHeler.csproj|solutionrelative:plcheler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3129AB8B-F000-4F52-B6B6-5140F55CBB53}|Infrastructure\\Infrastructure.csproj|e:\\code\\\u9879\u76EE--\u5B66\u4E60\\helperworkstation\\helperworkstation\\plcheler\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3129AB8B-F000-4F52-B6B6-5140F55CBB53}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,28 +74,145 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestDbContext.cs",
+              "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\Infrastructure\\TestDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\TestDbContext.cs",
+              "ToolTip": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\Infrastructure\\TestDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\TestDbContext.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA/wCUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T11:47:07.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\PLCHeler\\Program.cs",
+              "RelativeDocumentMoniker": "PLCHeler\\Program.cs",
+              "ToolTip": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\PLCHeler\\Program.cs",
+              "RelativeToolTip": "PLCHeler\\Program.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAADwvzQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T06:24:14.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseDB.cs",
+              "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\Infrastructure\\InitalizationDB\\BaseDB.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\InitalizationDB\\BaseDB.cs",
+              "ToolTip": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\Infrastructure\\InitalizationDB\\BaseDB.cs",
+              "RelativeToolTip": "Infrastructure\\InitalizationDB\\BaseDB.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T12:21:11.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20241230120109_InitialCreate.cs",
+              "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\Infrastructure\\Migrations\\20241230120109_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20241230120109_InitialCreate.cs",
+              "ToolTip": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\Infrastructure\\Migrations\\20241230120109_InitialCreate.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20241230120109_InitialCreate.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T12:01:09.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\Infrastructure\\Model\\User.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Model\\User.cs",
+              "ToolTip": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\Infrastructure\\Model\\User.cs",
+              "RelativeToolTip": "Infrastructure\\Model\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T11:23:20.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TestDbContextModelSnapshot.cs",
+              "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\Infrastructure\\Migrations\\TestDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\TestDbContextModelSnapshot.cs",
+              "ToolTip": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\Infrastructure\\Migrations\\TestDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\TestDbContextModelSnapshot.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T12:45:48.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PLCHeler",
+              "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\PLCHeler\\PLCHeler.csproj",
+              "RelativeDocumentMoniker": "PLCHeler\\PLCHeler.csproj",
+              "ToolTip": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\PLCHeler\\PLCHeler.csproj",
+              "RelativeToolTip": "PLCHeler\\PLCHeler.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-30T12:00:45.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserEntityConfig.cs",
+              "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\Infrastructure\\EntityConfig\\UserEntityConfig.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\EntityConfig\\UserEntityConfig.cs",
+              "ToolTip": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\Infrastructure\\EntityConfig\\UserEntityConfig.cs",
+              "RelativeToolTip": "Infrastructure\\EntityConfig\\UserEntityConfig.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwBsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T11:34:51.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\PLCHeler\\appsettings.json",
+              "RelativeDocumentMoniker": "PLCHeler\\appsettings.json",
+              "ToolTip": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\PLCHeler\\appsettings.json",
+              "RelativeToolTip": "PLCHeler\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-30T12:51:56.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "UserController.cs",
               "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\PLCHeler\\Controllers\\Sys\\UserController.cs",
               "RelativeDocumentMoniker": "PLCHeler\\Controllers\\Sys\\UserController.cs",
               "ToolTip": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\PLCHeler\\Controllers\\Sys\\UserController.cs",
               "RelativeToolTip": "PLCHeler\\Controllers\\Sys\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T02:59:43.475Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\PLCHeler\\Program.cs",
-              "RelativeDocumentMoniker": "PLCHeler\\Program.cs",
-              "ToolTip": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\PLCHeler\\Program.cs",
-              "RelativeToolTip": "PLCHeler\\Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T06:24:14.508Z",
+              "DocumentIndex": 10,
+              "Title": "Infrastructure",
+              "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\Infrastructure\\Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Infrastructure\\Infrastructure.csproj",
+              "ToolTip": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\HelperWorkStation\\PLCHeler\\Infrastructure\\Infrastructure.csproj",
+              "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-30T12:01:00.026Z",
               "EditorCaption": ""
             }
           ]

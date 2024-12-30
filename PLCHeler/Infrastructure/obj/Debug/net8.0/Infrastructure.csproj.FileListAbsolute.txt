@@ -1,0 +1,15 @@
+E:\Code\项目--学习\HelperWorkStation\HelperWorkStation\PLCHeler\Infrastructure\bin\Debug\net8.0\Infrastructure.deps.json
+E:\Code\项目--学习\HelperWorkStation\HelperWorkStation\PLCHeler\Infrastructure\bin\Debug\net8.0\Infrastructure.dll
+E:\Code\项目--学习\HelperWorkStation\HelperWorkStation\PLCHeler\Infrastructure\bin\Debug\net8.0\Infrastructure.pdb
+E:\Code\项目--学习\HelperWorkStation\HelperWorkStation\PLCHeler\Infrastructure\obj\Debug\net8.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Code\项目--学习\HelperWorkStation\HelperWorkStation\PLCHeler\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfoInputs.cache
+E:\Code\项目--学习\HelperWorkStation\HelperWorkStation\PLCHeler\Infrastructure\obj\Debug\net8.0\Infrastructure.AssemblyInfo.cs
+E:\Code\项目--学习\HelperWorkStation\HelperWorkStation\PLCHeler\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.CoreCompileInputs.cache
+E:\Code\项目--学习\HelperWorkStation\HelperWorkStation\PLCHeler\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json
+E:\Code\项目--学习\HelperWorkStation\HelperWorkStation\PLCHeler\Infrastructure\obj\Debug\net8.0\Infrastructure.dll
+E:\Code\项目--学习\HelperWorkStation\HelperWorkStation\PLCHeler\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
+E:\Code\项目--学习\HelperWorkStation\HelperWorkStation\PLCHeler\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
+E:\Code\项目--学习\HelperWorkStation\HelperWorkStation\PLCHeler\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+E:\Code\项目--学习\HelperWorkStation\HelperWorkStation\PLCHeler\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
+E:\Code\项目--学习\HelperWorkStation\HelperWorkStation\PLCHeler\Infrastructure\bin\Debug\net8.0\Infrastructure.runtimeconfig.json
+E:\Code\项目--学习\HelperWorkStation\HelperWorkStation\PLCHeler\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache

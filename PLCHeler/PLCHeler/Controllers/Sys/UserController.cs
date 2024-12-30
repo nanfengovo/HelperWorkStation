@@ -9,6 +9,7 @@ namespace PLCHeler.Controllers.Sys
     public class UserController : ControllerBase
     {
 
+
         [AllowAnonymous]
         [HttpPost]
         public string Login()
@@ -16,11 +17,7 @@ namespace PLCHeler.Controllers.Sys
             return "success";
         }
 
-        public string ReadDBAsync() 
-        {
-
-            return "1";
-        }
+ 
 
     }
 }
