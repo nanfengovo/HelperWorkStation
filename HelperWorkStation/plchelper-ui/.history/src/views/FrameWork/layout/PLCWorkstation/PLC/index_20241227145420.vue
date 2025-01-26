@@ -1,0 +1,28 @@
+<template>
+    <div class="S7Card">
+        <el-card class="card-top" shadow="hover">
+            <div>
+                <div>
+                    <div>
+                        <h2>PLC配置</h2>
+                    </div>
+                </div>
+            </div>
+        </el-card>
+        <el-card style="width: 100%" shadow="always">Hover</el-card>
+    </div>
+</template>
+<script setup lang = "ts">
+</script>
+
+<style scoped>
+.card-top {
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fbfbfb;
+    border-radius: 12px; 
+}
+
+</style>
