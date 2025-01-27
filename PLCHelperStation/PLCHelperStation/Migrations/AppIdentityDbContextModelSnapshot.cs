@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PLCHelperStation.DBConfig;
 
-
 #nullable disable
 
 namespace PLCHelperStation.Migrations

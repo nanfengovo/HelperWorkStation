@@ -13,6 +13,18 @@ namespace PLCHelperStation
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // 添加 CORS 服务
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigins",
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:8099") // 允许的前端应用程序的 URL
+                               .AllowAnyHeader()
+                               .AllowAnyMethod();
+                    });
+            });
+
             // Add services to the container.
 
             builder.Services.AddControllers();
@@ -43,6 +55,9 @@ namespace PLCHelperStation
             AddDefaultTokenProviders();
 
             var app = builder.Build();
+
+            // 使用 CORS 中间件
+            app.UseCors("AllowSpecificOrigins");
 
             // 配置 HTTP 请求管道
             if (app.Environment.IsDevelopment())
