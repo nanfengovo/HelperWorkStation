@@ -113,6 +113,92 @@
         }
       }
     },
+    "/api/ModbusConfig/AddModbusConfug": {
+      "post": {
+        "tags": [
+          "ModbusConfig"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModbusConfig"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModbusConfig"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModbusConfig"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ModbusConfig/GetModbusConfug": {
+      "get": {
+        "tags": [
+          "ModbusConfig"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ModbusConfig"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ModbusConfig"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ModbusConfig"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/PLCConfig/AddPLCConfig": {
       "post": {
         "tags": [
@@ -302,6 +388,49 @@
   },
   "components": {
     "schemas": {
+      "ModbusConfig": {
+        "required": [
+          "functionCode",
+          "id",
+          "modbusName",
+          "num",
+          "plcName",
+          "slaveId",
+          "startAddress"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "modbusName": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "plcName": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "slaveId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "functionCode": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "startAddress": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "num": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "PLCConfig": {
         "required": [
           "id",

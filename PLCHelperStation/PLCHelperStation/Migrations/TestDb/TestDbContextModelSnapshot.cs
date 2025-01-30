@@ -29,7 +29,25 @@ namespace PLCHelperStation.Migrations.TestDb
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Name")
+                    b.Property<string>("FunctionCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ModbusName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Num")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PLCName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SlaveId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("StartAddress")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

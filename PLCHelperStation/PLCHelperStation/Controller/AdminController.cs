@@ -24,7 +24,7 @@ namespace PLCHelperStation.Controller
         /// <returns></returns>
         [EnableCors("AllowSpecificOrigins")] // 应用 CORS 策略
         [HttpPost("Login")]
-        public Result Login([FromBody] User user)
+        public Result Login( User user)
         {
             using (var ctx = new TestDbContext())
             {
