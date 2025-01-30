@@ -2,7 +2,7 @@
   {
     "ContainingType": "PLCHelperStation.Controller.AdminController",
     "Method": "AddUser",
-    "RelativePath": "api/Admin",
+    "RelativePath": "api/Admin/AddUser",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -15,7 +15,69 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Boolean",
+        "Type": "PLCHelperStation.ResultObj.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PLCHelperStation.Controller.AdminController",
+    "Method": "Login",
+    "RelativePath": "api/Admin/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "PLCHelperStation.Modbel.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCHelperStation.ResultObj.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PLCHelperStation.Controller.ModbusConfigController",
+    "Method": "GetPLCConfig",
+    "RelativePath": "api/ModbusConfig/GetPLCConfig",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PLCHelperStation.Controller.PLCConfigController",
+    "Method": "AddPLCConfig",
+    "RelativePath": "api/PLCConfig/AddPLCConfig",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pLC",
+        "Type": "PLCHelperStation.Modbel.PLCConfig",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCHelperStation.ResultObj.Result",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -28,7 +90,7 @@
   {
     "ContainingType": "PLCHelperStation.Controller.PLCConfigController",
     "Method": "DeletePLCConfig",
-    "RelativePath": "api/PLCConfig",
+    "RelativePath": "api/PLCConfig/DeletePLCConfig",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -53,32 +115,6 @@
   },
   {
     "ContainingType": "PLCHelperStation.Controller.PLCConfigController",
-    "Method": "AddPLCConfig",
-    "RelativePath": "api/PLCConfig/AddPLCConfig",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "pLC",
-        "Type": "PLCHelperStation.Modbel.PLC",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "PLCHelperStation.ResultObj.Result",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "PLCHelperStation.Controller.PLCConfigController",
     "Method": "GetAllPLC",
     "RelativePath": "api/PLCConfig/GetAllPLC",
     "HttpMethod": "GET",
@@ -87,7 +123,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[PLCHelperStation.Modbel.PLC, PLCHelperStation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[PLCHelperStation.Modbel.PLCConfig, PLCHelperStation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -118,6 +154,11 @@
       {
         "Name": "port",
         "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],

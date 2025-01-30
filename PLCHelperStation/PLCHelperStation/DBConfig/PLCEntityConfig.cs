@@ -4,9 +4,9 @@ using PLCHelperStation.Modbel;
 
 namespace PLCHelperStation.DBConfig
 {
-    public class PLCEntityConfig :DbContext ,IEntityTypeConfiguration<PLC>
+    public class PLCEntityConfig :DbContext ,IEntityTypeConfiguration<PLCConfig>
     {
-        public void Configure(EntityTypeBuilder<PLC> builder)
+        public void Configure(EntityTypeBuilder<PLCConfig> builder)
         {
             builder.ToTable("T_PLCConfig");
         }

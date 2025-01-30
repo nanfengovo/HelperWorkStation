@@ -21,7 +21,24 @@ namespace PLCHelperStation.Migrations.TestDb
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("PLCHelperStation.Modbel.PLC", b =>
+            modelBuilder.Entity("PLCHelperStation.Modbel.ModbusConfig", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("T_ModbusConfig", (string)null);
+                });
+
+            modelBuilder.Entity("PLCHelperStation.Modbel.PLCConfig", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -33,12 +50,37 @@ namespace PLCHelperStation.Migrations.TestDb
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Port")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.ToTable("T_PLCConfig", (string)null);
+                });
+
+            modelBuilder.Entity("PLCHelperStation.Modbel.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("T_User", (string)null);
                 });
 #pragma warning restore 612, 618
         }

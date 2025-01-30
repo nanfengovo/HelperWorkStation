@@ -18,12 +18,12 @@ namespace PLCHelperStation.Controller
         /// <returns></returns>
         [HttpPost("AddPLCConfig")]
         [EnableCors("AllowSpecificOrigins")] // 应用 CORS 策略
-        public Result AddPLCConfig([FromBody] PLC pLC)
+        public Result AddPLCConfig([FromBody] PLCConfig pLC)
         {
             using (var ctx = new TestDbContext())
             {
                 #region 检查是否存在相同 IP 和端口的记录,如果相同就不保存到数据库
-                var exists = ctx.PLCs.Any(x => x.IP == pLC.IP && x.Port == pLC.Port);
+                var exists = ctx.PLCs.Any(x => x.IP == pLC.IP && x.Port == pLC.Port && x.Name ==pLC.Name);
                 if (!exists)
                 {
                     ctx.PLCs.Add(pLC);
@@ -36,7 +36,7 @@ namespace PLCHelperStation.Controller
 
             }
 
-            var reulterr = new Result { Code = 400, ResultType = false, Message = "已存在相同 IP 和端口的记录！" };
+            var reulterr = new Result { Code = 400, ResultType = false, Message = "想要保存的这个PLC配置已存在！" };
             return reulterr;
 
         }
@@ -47,7 +47,7 @@ namespace PLCHelperStation.Controller
         /// <returns></returns>
         [HttpGet("GetAllPLC")]
         [EnableCors("AllowSpecificOrigins")]
-        public ActionResult<List<PLC>> GetAllPLC()
+        public ActionResult<List<PLCConfig>> GetAllPLC()
         {
             using (var ctx = new TestDbContext())
             {
@@ -65,7 +65,7 @@ namespace PLCHelperStation.Controller
         /// <returns></returns>
         [HttpPut("UpdatePLCConfig")]
         [EnableCors("AllowSpecificOrigins")]
-        public Result UpdatePLCConfig(int id, string? ip, int port)
+        public Result UpdatePLCConfig(int id, string? ip, int port,string name)
         {
             try
             {
@@ -76,6 +76,7 @@ namespace PLCHelperStation.Controller
                     {
                         plc.IP = ip;
                         plc.Port = port;
+                        plc.Name = name;
                         ctx.SaveChanges();
                         var result = new Result { Code = 200, ResultType = true, Message = "修改成功！" };
                         return result;
