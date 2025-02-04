@@ -79,6 +79,32 @@
   },
   {
     "ContainingType": "PLCHelperStation.Controller.ModbusConfigController",
+    "Method": "DeleteModbusConfig",
+    "RelativePath": "api/ModbusConfig/DeleteModbusConfig",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCHelperStation.ResultObj.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PLCHelperStation.Controller.ModbusConfigController",
     "Method": "GetModbusConfug",
     "RelativePath": "api/ModbusConfig/GetModbusConfug",
     "HttpMethod": "GET",
@@ -106,6 +132,62 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PLCHelperStation.Controller.ModbusConfigController",
+    "Method": "UpdateModbusConfig",
+    "RelativePath": "api/ModbusConfig/UpdateModbusConfig",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PLCName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlaveId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Functioncode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartAddr",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Num",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ConfigName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCHelperStation.ResultObj.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "PLCHelperStation.Controller.PLCConfigController",

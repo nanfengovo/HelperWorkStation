@@ -56,6 +56,13 @@ namespace PLCHelperStation
 
             var app = builder.Build();
 
+            // 配置请求管道
+            //app.Use(async (context, next) =>
+            //{
+            //    context.Response.ContentType = "application/json; charset=utf-8";
+            //    await next();
+            //});
+
             // 使用 CORS 中间件
             app.UseCors("AllowSpecificOrigins");
 
@@ -69,12 +76,12 @@ namespace PLCHelperStation
                 });
             }
 
-         
 
-            app.UseHttpsRedirection();
-
-            app.UseAuthorization();
+            //禁用Https重定向
+            //app.UseHttpsRedirection();
             app.UseAuthentication();
+            app.UseAuthorization();
+            
            
 
             app.MapControllers();

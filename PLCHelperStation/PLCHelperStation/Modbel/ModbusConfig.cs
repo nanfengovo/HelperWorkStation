@@ -27,5 +27,8 @@ namespace PLCHelperStation.Modbel
 
         [Required]
         public int Num { get; set; }
+
+        [Required]
+        public bool IsOpen { get; set; }
     }
 }

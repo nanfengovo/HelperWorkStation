@@ -33,6 +33,9 @@ namespace PLCHelperStation.Migrations.TestDb
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsOpen")
+                        .HasColumnType("bit");
+
                     b.Property<string>("ModbusName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

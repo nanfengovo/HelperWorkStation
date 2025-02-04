@@ -97,7 +97,11 @@ namespace PLCHelperStation.Controller
 
         }
 
-
+        /// <summary>
+        /// 删除PLC配置
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("DeletePLCConfig")]
         [EnableCors("AllowSpecificOrigins")]
         public Result DeletePLCConfig(int id)

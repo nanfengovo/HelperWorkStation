@@ -151,3 +151,8 @@ E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\obj\D
 E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\obj\Debug\net8.0\PLCHelperStation.genruntimeconfig.cache
 E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\obj\Debug\net8.0\ref\PLCHelperStation.dll
 E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\obj\Debug\net8.0\PLCHelperStation.sourcelink.json
+E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\bin\Debug\net8.0\Newtonsoft.Json.dll
