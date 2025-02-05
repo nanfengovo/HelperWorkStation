@@ -15,6 +15,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.12",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.12",
           "NLog": "5.4.0",
+          "NLog.Database": "5.4.0",
+          "NLog.Extensions.Logging": "5.4.0",
           "NLog.Web.AspNetCore": "5.4.0",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
@@ -915,6 +917,17 @@
           }
         }
       },
+      "NLog.Database/5.4.0": {
+        "dependencies": {
+          "NLog": "5.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.Database.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.4.0.3182"
+          }
+        }
+      },
       "NLog.Extensions.Logging/5.4.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
@@ -1762,6 +1775,13 @@
       "sha512": "sha512-LwMcGSW3soF3/SL68rlJN3Eh3ktrAPycC3zZR/07OYBPraZUu0bygEC7kIN10lUQgMXT4s84Fi1chglGdGrQEg==",
       "path": "nlog/5.4.0",
       "hashPath": "nlog.5.4.0.nupkg.sha512"
+    },
+    "NLog.Database/5.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FuD6QwU+jxLMP0IPMBYtK5C+Euyd2JOa1sGYmQZC9AWdFk9nF7JuiO+j9a8lZW2hI9rgo1lyKAjE4Qp+dG0QUQ==",
+      "path": "nlog.database/5.4.0",
+      "hashPath": "nlog.database.5.4.0.nupkg.sha512"
     },
     "NLog.Extensions.Logging/5.4.0": {
       "type": "package",

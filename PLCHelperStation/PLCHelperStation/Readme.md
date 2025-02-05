@@ -21,8 +21,18 @@ PLC Helper Station（PLC助手工作站）是一个基于.NET8 使用Webapi+Vue3
 
        ![image-20250205212852749](C:\Users\nanfengqaq\AppData\Roaming\Typora\typora-user-images\image-20250205212852749.png)
 
-       * Modbus数据点配置：
+       *   Modbus数据点配置：
+           *   根据PLC名称来选择PLC拿到公有的一些属性；
 
-         *   根据PLC名称来选择PLC拿到公有的一些属性；
+   * 日志模块：
 
-         
+     * 操作日志：
+
+       > 2025-02-05 21:26:50.5293|INFO|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置
+       > 2025-02-05 21:32:17.6539|INFO|PLCHelperStation.Controller.PLCConfigController|获取一次PLC配置
+       > 2025-02-05 21:32:32.3332|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名 称！
+       > 2025-02-05 21:32:32.3366|INFO|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置
+
+       上面的是打印在控制台上的日志，为了防止控制台滚动太快不好查看还有一份一样的文件版在bin目录下的logs文件夹下
+
+       但是需要在前端将日志处理下展示出来；提取大概的关键字段：序号，时间，日志级别，日志来源，日志内容，操作人（需要支持用户角色权限管理）

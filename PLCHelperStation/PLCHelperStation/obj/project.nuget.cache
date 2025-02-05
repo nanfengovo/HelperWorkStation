@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "u8h/AWoQ4iw=",
+  "dgSpecHash": "ya4ZXMoaf2g=",
   "success": true,
   "projectFilePath": "E:\\Code\\项目--学习\\HelperWorkStation\\PLCHelperStation\\PLCHelperStation\\PLCHelperStation.csproj",
   "expectedPackageFiles": [
@@ -79,6 +79,7 @@
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\nlog\\5.4.0\\nlog.5.4.0.nupkg.sha512",
+    "C:\\Users\\nanfengqaq\\.nuget\\packages\\nlog.database\\5.4.0\\nlog.database.5.4.0.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\nlog.extensions.logging\\5.4.0\\nlog.extensions.logging.5.4.0.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\nlog.web.aspnetcore\\5.4.0\\nlog.web.aspnetcore.5.4.0.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",

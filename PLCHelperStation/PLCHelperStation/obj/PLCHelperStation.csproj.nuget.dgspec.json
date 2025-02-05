@@ -82,6 +82,14 @@
               "target": "Package",
               "version": "[5.4.0, )"
             },
+            "NLog.Database": {
+              "target": "Package",
+              "version": "[5.4.0, )"
+            },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.4.0, )"
+            },
             "NLog.Web.AspNetCore": {
               "target": "Package",
               "version": "[5.4.0, )"
