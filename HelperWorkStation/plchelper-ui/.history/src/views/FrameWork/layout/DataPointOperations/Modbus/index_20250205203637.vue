@@ -79,7 +79,7 @@
                     <template #default="scope">
                         <el-button type="success" @click="Enable(scope.$index, scope.row)">启用</el-button>
                         <el-button type="info" @click="WatchStatus(scope.$index, scope.row)">监控状态</el-button>
-                        <el-button type="warning" @click="Disable(scope.$index, scope.row)">停用</el-button>
+                        <el-button type="warning" @click="Stop(scope.$index, scope.row)">停用</el-button>
                         <el-button type="primary" @click="Edit(scope.$index, scope.row)">修改</el-button>
                         <el-button type="danger" plain @click="Delete(scope.$index, scope.row)">删除</el-button>
                     </template>
@@ -431,41 +431,7 @@ const Enable = async (index: number, row: { id: number }) => {
     }
 }
 
-
-//停用
-const Disable = async (index: number, row: { id: number }) => {
-    try {
-        const response = await axios.put(`http://127.0.0.1:5264/api/ModbusConfig/DisableModbusConfig?id=${row.id}`);
-        if (response.data.code == 200) {
-            // 显示成功消息
-            ElMessage({
-                message: response.data.message, // 使用服务器返回的成功消息
-                type: 'success',
-            });
-            // 重新获取数据以更新表格
-            GetModbusData();
-        } else if (response.data.code == 401) {
-            // 显示失败消息
-            ElMessage({
-                message: response.data.message, // 使用服务器返回的失败消息
-                type: 'warning',
-            });
-        }
-        else {
-            // 显示失败消息
-            ElMessage({
-                message: response.data.message, // 使用服务器返回的失败消息
-                type: 'error',
-            });
-        }
-    } catch (error: any) {
-        ElMessage({
-            message: error.message,
-            type: 'error',
-        });
-    }
-}
-
+//禁用
 </script>
 
 <style >

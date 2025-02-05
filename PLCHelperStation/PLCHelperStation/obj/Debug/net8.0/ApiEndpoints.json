@@ -105,6 +105,58 @@
   },
   {
     "ContainingType": "PLCHelperStation.Controller.ModbusConfigController",
+    "Method": "DisableModbusConfig",
+    "RelativePath": "api/ModbusConfig/DisableModbusConfig",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCHelperStation.ResultObj.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PLCHelperStation.Controller.ModbusConfigController",
+    "Method": "EnableModbusConfig",
+    "RelativePath": "api/ModbusConfig/EnableModbusConfig",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCHelperStation.ResultObj.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PLCHelperStation.Controller.ModbusConfigController",
     "Method": "GetModbusConfug",
     "RelativePath": "api/ModbusConfig/GetModbusConfug",
     "HttpMethod": "GET",

@@ -186,5 +186,112 @@ namespace PLCHelperStation.Controller
                 return resulterr;
             }
         }
+
+
+        /// <summary>
+        /// 启用Modbus配置
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
+        [HttpPut("EnableModbusConfig")]
+        [EnableCors("AllowSpecificOrigins")] // 应用 CORS 策略
+        public Result EnableModbusConfig(int Id)
+        {
+            try
+            {
+                using (var ctx = new TestDbContext())
+                {
+                    var modbus = ctx.ModbusConfigs.FirstOrDefault(x => x.Id == Id);
+                    if(modbus == null)
+                    {
+                        var resulterr = new Result { Code = 404 ,ResultType = false , Message = "不存在这个配置！"};
+                        _logger.LogWarning($"启用Modbus配置，id为：{Id}的配置不存在！");
+                        return resulterr;
+                    }
+                    else
+                    {
+                        var statue = modbus.IsOpen;
+                        if(statue)
+                        {
+                            var resultwarn = new Result { Code = 401, ResultType = false, Message = "现在的状态就是启用！" };
+                            _logger.LogWarning($"启用Modbus配置，启用id为：{Id} 的配置时发现本来就是启用的状态！");
+                            return resultwarn ;
+                        }
+                        else
+                        {
+                            modbus.IsOpen = true;
+                            ctx.SaveChanges();
+                            var result = new Result { Code = 200, ResultType = true, Message = "启用成功！" };
+                            _logger.LogInformation($"启用Modbus配置，id为：{Id} 的配置启用成功！");
+                            return result;
+                        }
+                       
+                    }
+
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+                _logger.LogError($"启用Modbus配置,在启用id为：{Id}的过程中程序发生错误！！！错误信息为："+ex.Message);
+                var resulterr = new Result {Code = 400 , ResultType = false , Message = ex.Message};
+                return resulterr;
+            }
+        }
+
+
+
+        /// <summary>
+        /// 停用Modbus配置
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
+        [HttpPut("DisableModbusConfig")]
+        [EnableCors("AllowSpecificOrigins")] // 应用 CORS 策略
+        public Result DisableModbusConfig(int Id)
+        {
+            try
+            {
+                using (var ctx = new TestDbContext())
+                {
+                    var modbus = ctx.ModbusConfigs.FirstOrDefault(x => x.Id == Id);
+                    if (modbus == null)
+                    {
+                        var resulterr = new Result { Code = 404, ResultType = false, Message = "不存在这个配置！" };
+                        _logger.LogWarning($"停用Modbus配置，id为：{Id}的配置不存在！");
+                        return resulterr;
+                    }
+                    else
+                    {
+                        var statue = modbus.IsOpen;
+                        if (!statue)
+                        {
+                            var resultwarn = new Result { Code = 401, ResultType = false, Message = "现在的状态就是停用！" };
+                            _logger.LogWarning($"停用Modbus配置，启用id为：{Id} 的配置时发现本来就是停用的状态！");
+                            return resultwarn;
+                        }
+                        else
+                        {
+                            modbus.IsOpen = false;
+                            ctx.SaveChanges();
+                            var result = new Result { Code = 200, ResultType = true, Message = "停用成功！" };
+                            _logger.LogInformation($"停用Modbus配置，id为：{Id} 的配置停用成功！");
+                            return result;
+                        }
+
+                    }
+
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+                _logger.LogError($"停用Modbus配置,在停用id为：{Id}的过程中程序发生错误！！！错误信息为：" + ex.Message);
+                var resulterr = new Result { Code = 400, ResultType = false, Message = ex.Message };
+                return resulterr;
+            }
+        }
     }
 }
