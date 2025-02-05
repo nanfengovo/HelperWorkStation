@@ -1,7 +1,10 @@
 
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using NLog;
+using NLog.Web;
 using PLCHelperStation.DBConfig;
 using PLCHelperStation.Modbel;
 
@@ -12,6 +15,11 @@ namespace PLCHelperStation
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            // NLog: Setup NLog for Dependency injection
+            builder.Logging.ClearProviders();
+            builder.Host.UseNLog();
+
 
             // Ìí¼Ó CORS ·þÎñ
             builder.Services.AddCors(options =>
@@ -81,8 +89,8 @@ namespace PLCHelperStation
             //app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();
-            
-           
+
+
 
             app.MapControllers();
 

@@ -1,0 +1,7 @@
+2025-02-05 13:20:57.6275|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5264 
+2025-02-05 13:20:57.6554|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-05 13:20:57.6554|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-05 13:20:57.6554|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 
+2025-02-05 13:22:15.4549|INFO|PLCHelperStation.Controller.ModbusConfigController|GetModbusConfig 
+2025-02-05 13:22:17.9112|INFO|PLCHelperStation.Controller.ModbusConfigController|GetModbusConfig 
+2025-02-05 13:23:51.6346|WARN|PLCHelperStation.Controller.ModbusConfigController|GetPLCConfig 

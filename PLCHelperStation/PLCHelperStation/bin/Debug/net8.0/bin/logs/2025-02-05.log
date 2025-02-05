@@ -1,0 +1,158 @@
+2025-02-05 13:29:17.7351INFOMicrosoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager User profile is available. Using 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-05 13:29:17.8650INFOMicrosoft.Hosting.Lifetime Now listening on: http://localhost:5264
+2025-02-05 13:29:17.9040INFOMicrosoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-02-05 13:29:17.9040INFOMicrosoft.Hosting.Lifetime Hosting environment: Development
+2025-02-05 13:29:17.9040INFOMicrosoft.Hosting.Lifetime Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation
+2025-02-05 13:29:19.5431INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - - -
+2025-02-05 13:29:19.7873INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - 200 - text/html;charset=utf-8 249.7449ms
+2025-02-05 13:29:19.8267INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - -
+2025-02-05 13:29:19.8267INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript;+charset=utf-8 2.0336ms
+2025-02-05 13:29:19.8267INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - -
+2025-02-05 13:29:19.8596INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 30.4145ms
+2025-02-05 13:29:19.8999INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - -
+2025-02-05 13:29:19.9128INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 13.3065ms
+2025-02-05 13:31:54.7552DEBUGMicrosoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-02-05 13:31:54.8008DEBUGMicrosoft.Extensions.Hosting.Internal.Host Hosting starting
+2025-02-05 13:31:54.8212INFOMicrosoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager User profile is available. Using 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-05 13:31:54.8212DEBUGMicrosoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository Reading data from file 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys\key-17d2cc49-08c3-4bef-bef4-f62bc0ef4be9.xml'.
+2025-02-05 13:31:54.8212DEBUGMicrosoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository Reading data from file 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys\key-5aa1c110-fdf8-45ba-8a3f-eec70823bb74.xml'.
+2025-02-05 13:31:54.8212DEBUGMicrosoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository Reading data from file 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys\key-e18ce29c-5f69-4a4b-8829-3f1fb327403d.xml'.
+2025-02-05 13:31:54.8212DEBUGMicrosoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager Found key {17d2cc49-08c3-4bef-bef4-f62bc0ef4be9}.
+2025-02-05 13:31:54.8212DEBUGMicrosoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager Found key {5aa1c110-fdf8-45ba-8a3f-eec70823bb74}.
+2025-02-05 13:31:54.8212DEBUGMicrosoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager Found key {e18ce29c-5f69-4a4b-8829-3f1fb327403d}.
+2025-02-05 13:31:54.8366DEBUGMicrosoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver Considering key {e18ce29c-5f69-4a4b-8829-3f1fb327403d} with expiration date 2025-04-21 05:25:37Z as default key.
+2025-02-05 13:31:54.8366DEBUGMicrosoft.AspNetCore.DataProtection.TypeForwardingActivator Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-02-05 13:31:54.8366DEBUGMicrosoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor Decrypting secret element using Windows DPAPI.
+2025-02-05 13:31:54.8366DEBUGMicrosoft.AspNetCore.DataProtection.TypeForwardingActivator Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-02-05 13:31:54.8366DEBUGMicrosoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2025-02-05 13:31:54.8366DEBUGMicrosoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2025-02-05 13:31:54.8366DEBUGMicrosoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider Using key {e18ce29c-5f69-4a4b-8829-3f1fb327403d} as the default key.
+2025-02-05 13:31:54.8366DEBUGMicrosoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService Key ring with default key {e18ce29c-5f69-4a4b-8829-3f1fb327403d} was loaded during application startup.
+2025-02-05 13:31:54.9420INFOMicrosoft.Hosting.Lifetime Now listening on: http://localhost:5264
+2025-02-05 13:31:54.9420DEBUGMicrosoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly PLCHelperStation
+2025-02-05 13:31:54.9420DEBUGMicrosoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-02-05 13:31:54.9420DEBUGMicrosoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-02-05 13:31:54.9420DEBUGMicrosoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-02-05 13:31:54.9711INFOMicrosoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-02-05 13:31:54.9711INFOMicrosoft.Hosting.Lifetime Hosting environment: Development
+2025-02-05 13:31:54.9711INFOMicrosoft.Hosting.Lifetime Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation
+2025-02-05 13:31:54.9711DEBUGMicrosoft.Extensions.Hosting.Internal.Host Hosting started
+2025-02-05 13:31:55.3554DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A3" accepted.
+2025-02-05 13:31:55.3554DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A4" accepted.
+2025-02-05 13:31:55.3554DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A3" started.
+2025-02-05 13:31:55.3554DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A4" started.
+2025-02-05 13:31:55.3671DEBUGMicrosoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HNA5KPJI12A4" received FIN.
+2025-02-05 13:31:55.3671DEBUGMicrosoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HNA5KPJI12A3" received FIN.
+2025-02-05 13:31:55.3671DEBUGMicrosoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HNA5KPJI12A3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-05 13:31:55.3671DEBUGMicrosoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HNA5KPJI12A4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-05 13:31:55.3671DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A3" disconnecting.
+2025-02-05 13:31:55.3671DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A4" disconnecting.
+2025-02-05 13:31:55.3671DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A3" stopped.
+2025-02-05 13:31:55.3671DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A4" stopped.
+2025-02-05 13:31:56.3212DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A5" accepted.
+2025-02-05 13:31:56.3212DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A5" started.
+2025-02-05 13:31:56.3212DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A6" accepted.
+2025-02-05 13:31:56.3212DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A6" started.
+2025-02-05 13:31:56.3481INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - - -
+2025-02-05 13:31:56.4423DEBUGMicrosoft.AspNetCore.HostFiltering.HostFilteringMiddleware Wildcard detected, all requests with hosts will be allowed.
+2025-02-05 13:31:56.4528DEBUGMicrosoft.AspNetCore.Routing.Matching.DfaMatcher No candidates found for the request path '/swagger/index.html'
+2025-02-05 13:31:56.4528DEBUGMicrosoft.AspNetCore.Routing.EndpointRoutingMiddleware Request did not match any endpoints
+2025-02-05 13:31:56.4837DEBUGMicrosoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware Response markup is scheduled to include Browser Link script injection.
+2025-02-05 13:31:56.4837DEBUGMicrosoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware Response markup is scheduled to include browser refresh script injection.
+2025-02-05 13:31:56.4964DEBUGMicrosoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware Response markup was updated to include Browser Link script injection.
+2025-02-05 13:31:56.4964DEBUGMicrosoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware Response markup was updated to include browser refresh script injection.
+2025-02-05 13:31:56.4964DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A5" completed keep alive response.
+2025-02-05 13:31:56.4964INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - 200 - text/html;charset=utf-8 153.4627ms
+2025-02-05 13:31:56.5169INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - -
+2025-02-05 13:31:56.5169DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A5" completed keep alive response.
+2025-02-05 13:31:56.5169INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - -
+2025-02-05 13:31:56.5169INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript;+charset=utf-8 1.5160ms
+2025-02-05 13:31:56.5444DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A6" completed keep alive response.
+2025-02-05 13:31:56.5444INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 26.1573ms
+2025-02-05 13:31:56.5751INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - -
+2025-02-05 13:31:56.5751DEBUGMicrosoft.AspNetCore.Routing.Matching.DfaMatcher No candidates found for the request path '/swagger/v1/swagger.json'
+2025-02-05 13:31:56.5751DEBUGMicrosoft.AspNetCore.Routing.EndpointRoutingMiddleware Request did not match any endpoints
+2025-02-05 13:31:56.5858DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A6" completed keep alive response.
+2025-02-05 13:31:56.5858INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 10.8700ms
+2025-02-05 13:31:59.4342DEBUGMicrosoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HNA5KPJI12A6" received FIN.
+2025-02-05 13:31:59.4342DEBUGMicrosoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HNA5KPJI12A5" received FIN.
+2025-02-05 13:31:59.4342DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A6" disconnecting.
+2025-02-05 13:31:59.4342DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A5" disconnecting.
+2025-02-05 13:31:59.4342DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A6" stopped.
+2025-02-05 13:31:59.4342DEBUGMicrosoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNA5KPJI12A5" stopped.
+2025-02-05 13:31:59.4342DEBUGMicrosoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HNA5KPJI12A6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-05 13:31:59.4342DEBUGMicrosoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HNA5KPJI12A5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-02-05 13:33:51.6731WARNPLCHelperStation.Controller.ModbusConfigController GetPLCConfig
+2025-02-05 13:35:33.5329INFOMicrosoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager User profile is available. Using 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-05 13:35:33.6485INFOMicrosoft.Hosting.Lifetime Now listening on: http://localhost:5264
+2025-02-05 13:35:33.6784INFOMicrosoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-02-05 13:35:33.6784INFOMicrosoft.Hosting.Lifetime Hosting environment: Development
+2025-02-05 13:35:33.6784INFOMicrosoft.Hosting.Lifetime Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation
+2025-02-05 13:35:34.8435INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - - -
+2025-02-05 13:35:34.9905INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - 200 - text/html;charset=utf-8 150.7164ms
+2025-02-05 13:35:35.0205INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - -
+2025-02-05 13:35:35.0205INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript;+charset=utf-8 1.4285ms
+2025-02-05 13:35:35.0224INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - -
+2025-02-05 13:35:35.0533INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 31.3604ms
+2025-02-05 13:35:35.0827INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - -
+2025-02-05 13:35:35.0939INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 11.2439ms
+2025-02-05 13:35:55.8767INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/api/ModbusConfig/GetPLCConfig - - -
+2025-02-05 13:35:55.8915INFOMicrosoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'PLCHelperStation.Controller.ModbusConfigController.GetPLCConfig (PLCHelperStation)'
+2025-02-05 13:35:55.9144INFOMicrosoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Route matched with {action = "GetPLCConfig", controller = "ModbusConfig"}. Executing controller action with signature System.Object GetPLCConfig() on controller PLCHelperStation.Controller.ModbusConfigController (PLCHelperStation).
+2025-02-05 13:35:57.4277WARNPLCHelperStation.Controller.ModbusConfigController GetPLCConfig
+2025-02-05 13:35:57.4355INFOMicrosoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-05 13:35:57.4493INFOMicrosoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed action PLCHelperStation.Controller.ModbusConfigController.GetPLCConfig (PLCHelperStation) in 1525.7527ms
+2025-02-05 13:35:57.4493INFOMicrosoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'PLCHelperStation.Controller.ModbusConfigController.GetPLCConfig (PLCHelperStation)'
+2025-02-05 13:35:57.4493INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/api/ModbusConfig/GetPLCConfig - 200 - application/json;+charset=utf-8 1573.0764ms
+2025-02-05 13:37:15.4884INFOMicrosoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager User profile is available. Using 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-05 13:37:15.6137INFOMicrosoft.Hosting.Lifetime Now listening on: http://localhost:5264
+2025-02-05 13:37:15.6443INFOMicrosoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-02-05 13:37:15.6443INFOMicrosoft.Hosting.Lifetime Hosting environment: Development
+2025-02-05 13:37:15.6443INFOMicrosoft.Hosting.Lifetime Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation
+2025-02-05 13:37:16.7191INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - - -
+2025-02-05 13:37:16.8799INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - 200 - text/html;charset=utf-8 164.1654ms
+2025-02-05 13:37:16.8987INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - -
+2025-02-05 13:37:16.8987INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript;+charset=utf-8 1.5492ms
+2025-02-05 13:37:16.8987INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - -
+2025-02-05 13:37:16.9207INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 20.2389ms
+2025-02-05 13:37:16.9578INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - -
+2025-02-05 13:37:16.9675INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 9.7639ms
+2025-02-05 13:37:30.9441INFOMicrosoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager User profile is available. Using 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-05 13:37:31.0883INFOMicrosoft.Hosting.Lifetime Now listening on: http://localhost:5264
+2025-02-05 13:37:31.1185INFOMicrosoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-02-05 13:37:31.1185INFOMicrosoft.Hosting.Lifetime Hosting environment: Development
+2025-02-05 13:37:31.1185INFOMicrosoft.Hosting.Lifetime Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation
+2025-02-05 13:37:32.3147INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - - -
+2025-02-05 13:37:32.4583INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - 200 - text/html;charset=utf-8 146.8667ms
+2025-02-05 13:37:32.4780INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - -
+2025-02-05 13:37:32.4780INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - -
+2025-02-05 13:37:32.4780INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript;+charset=utf-8 1.9183ms
+2025-02-05 13:37:32.5038INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 25.6817ms
+2025-02-05 13:37:32.5379INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - -
+2025-02-05 13:37:32.5379INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 12.9801ms
+2025-02-05 13:39:33.4206INFOMicrosoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager User profile is available. Using 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-05 13:39:33.5451INFOMicrosoft.Hosting.Lifetime Now listening on: http://localhost:5264
+2025-02-05 13:39:33.5743INFOMicrosoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-02-05 13:39:33.5743INFOMicrosoft.Hosting.Lifetime Hosting environment: Development
+2025-02-05 13:39:33.5743INFOMicrosoft.Hosting.Lifetime Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation
+2025-02-05 13:39:35.0089INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - - -
+2025-02-05 13:39:35.1541INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - 200 - text/html;charset=utf-8 150.0461ms
+2025-02-05 13:39:35.1724INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - -
+2025-02-05 13:39:35.1724INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - -
+2025-02-05 13:39:35.1724INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript;+charset=utf-8 1.7648ms
+2025-02-05 13:39:35.1946INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 20.6485ms
+2025-02-05 13:39:35.2298INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - -
+2025-02-05 13:39:35.2298INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 10.2880ms
+2025-02-05 13:39:50.9844INFOMicrosoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager User profile is available. Using 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-05 13:39:51.1739INFOMicrosoft.Hosting.Lifetime Now listening on: http://localhost:5264
+2025-02-05 13:39:51.2059INFOMicrosoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-02-05 13:39:51.2059INFOMicrosoft.Hosting.Lifetime Hosting environment: Development
+2025-02-05 13:39:51.2059INFOMicrosoft.Hosting.Lifetime Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation
+2025-02-05 13:39:52.5452INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - - -
+2025-02-05 13:39:52.6938INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - 200 - text/html;charset=utf-8 151.4376ms
+2025-02-05 13:39:52.7119INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - -
+2025-02-05 13:39:52.7119INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - -
+2025-02-05 13:39:52.7119INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript;+charset=utf-8 1.8273ms
+2025-02-05 13:39:52.7411INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 27.5793ms
+2025-02-05 13:39:52.7708INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - -
+2025-02-05 13:39:52.7821INFOMicrosoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 11.3056ms

@@ -156,3 +156,7 @@ E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\bin\D
 E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
 E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
 E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\bin\Debug\net8.0\nlog.config
+E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\bin\Debug\net8.0\NLog.dll
+E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\bin\Debug\net8.0\NLog.Extensions.Logging.dll
+E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\bin\Debug\net8.0\NLog.Web.AspNetCore.dll

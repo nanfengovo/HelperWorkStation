@@ -11,10 +11,17 @@ namespace PLCHelperStation.Controller
     [Route("api/[controller]/")]
     public class AdminController : ControllerBase
     {
-        private UserManager<AppUser> _userManager;
-        public AdminController(UserManager<AppUser> userManager)
+        //private UserManager<AppUser> _userManager;
+        //public AdminController(UserManager<AppUser> userManager)
+        //{
+        //    _userManager = userManager;
+        //}
+
+        protected readonly ILogger<AdminController> _logger;
+
+        public AdminController(ILogger<AdminController> logger)
         {
-            _userManager = userManager;
+            _logger = logger;
         }
 
         /// <summary>
@@ -32,9 +39,11 @@ namespace PLCHelperStation.Controller
                 if(userinfo)
                 {
                     var resultOk = new Result { Code = 200, ResultType = true, Message = "登录成功！" };
+                    _logger.LogInformation("用户登录操作，登录成功！");
                     return resultOk;
                 }
                 var resultNg = new Result { Code = 400, ResultType = false, Message = "登录失败！用户名或密码错误！！" };
+                _logger.LogWarning("用户登录操作，登录失败！用户名或密码错误！！！");
                 return resultNg;
             }
         }
@@ -69,9 +78,11 @@ namespace PLCHelperStation.Controller
                     ctx.Users.Add(user);
                     ctx.SaveChanges();
                     var resultOk = new Result { Code = 200, ResultType = true, Message = "添加用户成功！" };
+                    _logger.LogInformation("添加用户操作，添加用户成功！");
                     return resultOk;
                 }
                 var resultNg = new Result { Code = 400, ResultType = false, Message = "要添加的用户已存在！" };
+                _logger.LogWarning("添加用户操作，要添加的用户已存在！！");
                 return resultNg;
             }
 

@@ -1,0 +1,423 @@
+2025-02-05 13:20:57.3685|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-02-05 13:20:57.4523|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2025-02-05 13:20:57.4774|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-02-05 13:20:57.4774|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys\key-17d2cc49-08c3-4bef-bef4-f62bc0ef4be9.xml'. 
+2025-02-05 13:20:57.4774|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys\key-5aa1c110-fdf8-45ba-8a3f-eec70823bb74.xml'. 
+2025-02-05 13:20:57.4774|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys\key-e18ce29c-5f69-4a4b-8829-3f1fb327403d.xml'. 
+2025-02-05 13:20:57.4774|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {17d2cc49-08c3-4bef-bef4-f62bc0ef4be9}. 
+2025-02-05 13:20:57.4774|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {5aa1c110-fdf8-45ba-8a3f-eec70823bb74}. 
+2025-02-05 13:20:57.4774|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {e18ce29c-5f69-4a4b-8829-3f1fb327403d}. 
+2025-02-05 13:20:57.4952|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {e18ce29c-5f69-4a4b-8829-3f1fb327403d} with expiration date 2025-04-21 05:25:37Z as default key. 
+2025-02-05 13:20:57.4952|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2025-02-05 13:20:57.4952|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2025-02-05 13:20:57.4952|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2025-02-05 13:20:57.4952|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2025-02-05 13:20:57.4952|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2025-02-05 13:20:57.4952|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {e18ce29c-5f69-4a4b-8829-3f1fb327403d} as the default key. 
+2025-02-05 13:20:57.4952|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {e18ce29c-5f69-4a4b-8829-3f1fb327403d} was loaded during application startup. 
+2025-02-05 13:20:57.6275|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5264 
+2025-02-05 13:20:57.6275|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly PLCHelperStation 
+2025-02-05 13:20:57.6275|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery 
+2025-02-05 13:20:57.6275|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-02-05 13:20:57.6275|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-02-05 13:20:57.6554|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-05 13:20:57.6554|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-05 13:20:57.6554|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 
+2025-02-05 13:20:57.6554|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2025-02-05 13:20:58.1308|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDC" accepted. 
+2025-02-05 13:20:58.1308|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDD" accepted. 
+2025-02-05 13:20:58.1335|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDC" started. 
+2025-02-05 13:20:58.1335|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDD" started. 
+2025-02-05 13:20:58.1479|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJFM7VDC" received FIN. 
+2025-02-05 13:20:58.1479|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJFM7VDD" received FIN. 
+2025-02-05 13:20:58.1479|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJFM7VDC" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-02-05 13:20:58.1479|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJFM7VDD" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-02-05 13:20:58.1479|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDD" disconnecting. 
+2025-02-05 13:20:58.1479|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDC" disconnecting. 
+2025-02-05 13:20:58.1638|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDD" stopped. 
+2025-02-05 13:20:58.1638|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDC" stopped. 
+2025-02-05 13:21:00.2893|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDE" accepted. 
+2025-02-05 13:21:00.2893|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDE" started. 
+2025-02-05 13:21:00.2893|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDF" accepted. 
+2025-02-05 13:21:00.2893|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDF" started. 
+2025-02-05 13:21:00.3181|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 
+2025-02-05 13:21:00.4444|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2025-02-05 13:21:00.4444|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2025-02-05 13:21:00.4444|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html' 
+2025-02-05 13:21:00.4444|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-02-05 13:21:00.4901|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup is scheduled to include Browser Link script injection. 
+2025-02-05 13:21:00.4909|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2025-02-05 13:21:00.4909|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup was updated to include Browser Link script injection. 
+2025-02-05 13:21:00.4909|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2025-02-05 13:21:00.5066|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDE" completed keep alive response. 
+2025-02-05 13:21:00.5066|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - 200 - text/html;charset=utf-8 193.6687ms 
+2025-02-05 13:21:00.5343|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 
+2025-02-05 13:21:00.5343|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDE" completed keep alive response. 
+2025-02-05 13:21:00.5343|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript;+charset=utf-8 1.9790ms 
+2025-02-05 13:21:00.5343|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 
+2025-02-05 13:21:00.5767|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDF" completed keep alive response. 
+2025-02-05 13:21:00.5767|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 40.2912ms 
+2025-02-05 13:21:00.7213|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 
+2025-02-05 13:21:00.7213|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2025-02-05 13:21:00.7213|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json' 
+2025-02-05 13:21:00.7213|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-02-05 13:21:00.7334|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDF" completed keep alive response. 
+2025-02-05 13:21:00.7334|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 12.3800ms 
+2025-02-05 13:21:03.2868|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJFM7VDF" received FIN. 
+2025-02-05 13:21:03.2868|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJFM7VDE" received FIN. 
+2025-02-05 13:21:03.2868|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJFM7VDE" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-02-05 13:21:03.2868|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJFM7VDF" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-02-05 13:21:03.2868|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDE" disconnecting. 
+2025-02-05 13:21:03.2868|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDF" disconnecting. 
+2025-02-05 13:21:03.2889|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDF" stopped. 
+2025-02-05 13:21:03.2889|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJFM7VDE" stopped. 
+2025-02-05 13:21:31.2804|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-02-05 13:21:31.3345|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2025-02-05 13:21:31.3566|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-02-05 13:21:31.3566|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys\key-17d2cc49-08c3-4bef-bef4-f62bc0ef4be9.xml'. 
+2025-02-05 13:21:31.3566|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys\key-5aa1c110-fdf8-45ba-8a3f-eec70823bb74.xml'. 
+2025-02-05 13:21:31.3566|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys\key-e18ce29c-5f69-4a4b-8829-3f1fb327403d.xml'. 
+2025-02-05 13:21:31.3664|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {17d2cc49-08c3-4bef-bef4-f62bc0ef4be9}. 
+2025-02-05 13:21:31.3664|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {5aa1c110-fdf8-45ba-8a3f-eec70823bb74}. 
+2025-02-05 13:21:31.3664|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {e18ce29c-5f69-4a4b-8829-3f1fb327403d}. 
+2025-02-05 13:21:31.3664|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {e18ce29c-5f69-4a4b-8829-3f1fb327403d} with expiration date 2025-04-21 05:25:37Z as default key. 
+2025-02-05 13:21:31.3664|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2025-02-05 13:21:31.3664|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2025-02-05 13:21:31.3664|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2025-02-05 13:21:31.3664|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2025-02-05 13:21:31.3664|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2025-02-05 13:21:31.3664|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {e18ce29c-5f69-4a4b-8829-3f1fb327403d} as the default key. 
+2025-02-05 13:21:31.3664|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {e18ce29c-5f69-4a4b-8829-3f1fb327403d} was loaded during application startup. 
+2025-02-05 13:21:31.4868|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5264 
+2025-02-05 13:21:31.4868|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly PLCHelperStation 
+2025-02-05 13:21:31.4868|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery 
+2025-02-05 13:21:31.4868|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-02-05 13:21:31.4868|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-02-05 13:21:31.5115|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12E" accepted. 
+2025-02-05 13:21:31.5115|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12E" started. 
+2025-02-05 13:21:31.5115|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-05 13:21:31.5115|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-05 13:21:31.5115|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 
+2025-02-05 13:21:31.5115|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2025-02-05 13:21:31.5240|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12F" accepted. 
+2025-02-05 13:21:31.5240|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12F" started. 
+2025-02-05 13:21:31.5240|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJPKJ12E" received FIN. 
+2025-02-05 13:21:31.5240|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJPKJ12F" received FIN. 
+2025-02-05 13:21:31.5240|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJPKJ12E" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-02-05 13:21:31.5240|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJPKJ12F" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-02-05 13:21:31.5240|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12E" disconnecting. 
+2025-02-05 13:21:31.5240|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12F" disconnecting. 
+2025-02-05 13:21:31.5396|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12E" stopped. 
+2025-02-05 13:21:31.5396|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12F" stopped. 
+2025-02-05 13:21:32.5204|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12G" accepted. 
+2025-02-05 13:21:32.5204|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12G" started. 
+2025-02-05 13:21:32.5494|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12H" accepted. 
+2025-02-05 13:21:32.5494|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12H" started. 
+2025-02-05 13:21:32.5725|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 
+2025-02-05 13:21:32.6934|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2025-02-05 13:21:32.6934|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2025-02-05 13:21:32.7041|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html' 
+2025-02-05 13:21:32.7041|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-02-05 13:21:32.7345|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup is scheduled to include Browser Link script injection. 
+2025-02-05 13:21:32.7345|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2025-02-05 13:21:32.7448|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup was updated to include Browser Link script injection. 
+2025-02-05 13:21:32.7448|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2025-02-05 13:21:32.7448|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12G" completed keep alive response. 
+2025-02-05 13:21:32.7448|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - 200 - text/html;charset=utf-8 179.8245ms 
+2025-02-05 13:21:32.7691|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 
+2025-02-05 13:21:32.7691|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 
+2025-02-05 13:21:32.7691|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12G" completed keep alive response. 
+2025-02-05 13:21:32.7691|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript;+charset=utf-8 2.3571ms 
+2025-02-05 13:21:32.7930|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12H" completed keep alive response. 
+2025-02-05 13:21:32.7930|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 23.1452ms 
+2025-02-05 13:21:32.9119|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 
+2025-02-05 13:21:32.9119|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2025-02-05 13:21:32.9119|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json' 
+2025-02-05 13:21:32.9119|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-02-05 13:21:32.9229|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12H" completed keep alive response. 
+2025-02-05 13:21:32.9229|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 11.2230ms 
+2025-02-05 13:21:35.6202|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJPKJ12G" received FIN. 
+2025-02-05 13:21:35.6202|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJPKJ12H" received FIN. 
+2025-02-05 13:21:35.6202|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJPKJ12H" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-02-05 13:21:35.6202|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJPKJ12G" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-02-05 13:21:35.6202|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12H" disconnecting. 
+2025-02-05 13:21:35.6202|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12G" disconnecting. 
+2025-02-05 13:21:35.6202|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12H" stopped. 
+2025-02-05 13:21:35.6202|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJPKJ12G" stopped. 
+2025-02-05 13:21:45.0512|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-02-05 13:21:45.1146|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2025-02-05 13:21:45.1370|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2025-02-05 13:21:45.1370|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys\key-17d2cc49-08c3-4bef-bef4-f62bc0ef4be9.xml'. 
+2025-02-05 13:21:45.1370|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys\key-5aa1c110-fdf8-45ba-8a3f-eec70823bb74.xml'. 
+2025-02-05 13:21:45.1370|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\nanfengqaq\AppData\Local\ASP.NET\DataProtection-Keys\key-e18ce29c-5f69-4a4b-8829-3f1fb327403d.xml'. 
+2025-02-05 13:21:45.1370|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {17d2cc49-08c3-4bef-bef4-f62bc0ef4be9}. 
+2025-02-05 13:21:45.1477|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {5aa1c110-fdf8-45ba-8a3f-eec70823bb74}. 
+2025-02-05 13:21:45.1477|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {e18ce29c-5f69-4a4b-8829-3f1fb327403d}. 
+2025-02-05 13:21:45.1477|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {e18ce29c-5f69-4a4b-8829-3f1fb327403d} with expiration date 2025-04-21 05:25:37Z as default key. 
+2025-02-05 13:21:45.1477|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2025-02-05 13:21:45.1477|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2025-02-05 13:21:45.1477|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2025-02-05 13:21:45.1477|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2025-02-05 13:21:45.1477|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2025-02-05 13:21:45.1477|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {e18ce29c-5f69-4a4b-8829-3f1fb327403d} as the default key. 
+2025-02-05 13:21:45.1477|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {e18ce29c-5f69-4a4b-8829-3f1fb327403d} was loaded during application startup. 
+2025-02-05 13:21:45.2600|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5264 
+2025-02-05 13:21:45.2600|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly PLCHelperStation 
+2025-02-05 13:21:45.2600|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery 
+2025-02-05 13:21:45.2600|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-02-05 13:21:45.2600|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-02-05 13:21:45.2879|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-05 13:21:45.2879|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-05 13:21:45.2879|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 
+2025-02-05 13:21:45.2879|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2025-02-05 13:21:45.3523|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJM" accepted. 
+2025-02-05 13:21:45.3523|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJN" accepted. 
+2025-02-05 13:21:45.3523|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJM" started. 
+2025-02-05 13:21:45.3523|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJN" started. 
+2025-02-05 13:21:45.3523|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJTOITJM" received FIN. 
+2025-02-05 13:21:45.3523|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJTOITJN" received FIN. 
+2025-02-05 13:21:45.3704|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJTOITJN" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-02-05 13:21:45.3704|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJTOITJM" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-02-05 13:21:45.3704|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJM" disconnecting. 
+2025-02-05 13:21:45.3704|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJN" disconnecting. 
+2025-02-05 13:21:45.3704|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJN" stopped. 
+2025-02-05 13:21:45.3704|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJM" stopped. 
+2025-02-05 13:21:46.3419|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJO" accepted. 
+2025-02-05 13:21:46.3419|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJO" started. 
+2025-02-05 13:21:46.3419|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJP" accepted. 
+2025-02-05 13:21:46.3419|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJP" started. 
+2025-02-05 13:21:46.3700|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 
+2025-02-05 13:21:46.4664|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2025-02-05 13:21:46.4664|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2025-02-05 13:21:46.4781|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html' 
+2025-02-05 13:21:46.4781|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-02-05 13:21:46.5133|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup is scheduled to include Browser Link script injection. 
+2025-02-05 13:21:46.5133|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2025-02-05 13:21:46.5266|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup was updated to include Browser Link script injection. 
+2025-02-05 13:21:46.5266|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2025-02-05 13:21:46.5266|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJO" completed keep alive response. 
+2025-02-05 13:21:46.5266|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - 200 - text/html;charset=utf-8 164.4054ms 
+2025-02-05 13:21:46.5600|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 
+2025-02-05 13:21:46.5600|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 
+2025-02-05 13:21:46.5600|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJO" completed keep alive response. 
+2025-02-05 13:21:46.5600|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript;+charset=utf-8 2.5947ms 
+2025-02-05 13:21:46.6008|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJP" completed keep alive response. 
+2025-02-05 13:21:46.6008|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 39.7644ms 
+2025-02-05 13:21:46.6594|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 
+2025-02-05 13:21:46.6594|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2025-02-05 13:21:46.6594|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json' 
+2025-02-05 13:21:46.6594|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-02-05 13:21:46.6734|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJP" completed keep alive response. 
+2025-02-05 13:21:46.6734|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 14.2800ms 
+2025-02-05 13:21:49.5012|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJTOITJP" received FIN. 
+2025-02-05 13:21:49.5012|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJTOITJP" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-02-05 13:21:49.5012|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJTOITJO" received FIN. 
+2025-02-05 13:21:49.5012|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJP" disconnecting. 
+2025-02-05 13:21:49.5012|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HNA5KJTOITJO" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-02-05 13:21:49.5012|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJO" disconnecting. 
+2025-02-05 13:21:49.5012|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJP" stopped. 
+2025-02-05 13:21:49.5095|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJO" stopped. 
+2025-02-05 13:21:55.1826|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJQ" accepted. 
+2025-02-05 13:21:55.1826|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJQ" started. 
+2025-02-05 13:21:55.1826|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/api/PLCConfig/GetAllPLC - - - 
+2025-02-05 13:21:55.1826|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2025-02-05 13:21:55.1826|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/PLCConfig/GetAllPLC' 
+2025-02-05 13:21:55.1826|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'PLCHelperStation.Controller.PLCConfigController.GetAllPLC (PLCHelperStation)' with route pattern 'api/PLCConfig/GetAllPLC' is valid for the request path '/api/PLCConfig/GetAllPLC' 
+2025-02-05 13:21:55.1826|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'PLCHelperStation.Controller.PLCConfigController.GetAllPLC (PLCHelperStation)' 
+2025-02-05 13:21:55.1826|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2025-02-05 13:21:55.1826|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2025-02-05 13:21:55.1948|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was not authenticated. 
+2025-02-05 13:21:55.1948|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'PLCHelperStation.Controller.PLCConfigController.GetAllPLC (PLCHelperStation)' 
+2025-02-05 13:21:55.1948|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllPLC", controller = "PLCConfig"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PLCHelperStation.Modbel.PLCConfig]] GetAllPLC() on controller PLCHelperStation.Controller.PLCConfigController (PLCHelperStation). 
+2025-02-05 13:21:55.1948|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-02-05 13:21:55.1948|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-02-05 13:21:55.1948|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-02-05 13:21:55.1948|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-02-05 13:21:55.1948|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-02-05 13:21:55.1948|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller PLCHelperStation.Controller.PLCConfigController (PLCHelperStation) 
+2025-02-05 13:21:55.1948|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller PLCHelperStation.Controller.PLCConfigController (PLCHelperStation) 
+2025-02-05 13:21:55.1948|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 13:21:55.1948|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 13:21:55.1948|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 13:21:55.1948|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 13:21:55.1948|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method PLCHelperStation.Controller.PLCConfigController.GetAllPLC (PLCHelperStation) - Validation state: Valid 
+2025-02-05 13:21:56.0475|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method PLCHelperStation.Controller.PLCConfigController.GetAllPLC (PLCHelperStation), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 836.7041ms. 
+2025-02-05 13:21:56.0475|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 13:21:56.0475|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 13:21:56.0475|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 13:21:56.0475|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 13:21:56.0475|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 13:21:56.0475|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 13:21:56.0475|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2025-02-05 13:21:56.0475|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-02-05 13:21:56.0475|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-02-05 13:21:56.0475|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-02-05 13:21:56.0475|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-02-05 13:21:56.0475|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-02-05 13:21:56.0475|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-02-05 13:21:56.0475|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PLCHelperStation.Modbel.PLCConfig, PLCHelperStation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-05 13:21:56.0554|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2025-02-05 13:21:56.0554|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 13:21:56.0554|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 13:21:56.0554|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action PLCHelperStation.Controller.PLCConfigController.GetAllPLC (PLCHelperStation) in 851.8304ms 
+2025-02-05 13:21:56.0554|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'PLCHelperStation.Controller.PLCConfigController.GetAllPLC (PLCHelperStation)' 
+2025-02-05 13:21:56.0554|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJQ" completed keep alive response. 
+2025-02-05 13:21:56.0554|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/api/PLCConfig/GetAllPLC - 200 - application/json;+charset=utf-8 874.5836ms 
+2025-02-05 13:22:15.4218|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/api/ModbusConfig/GetModbusConfug - - - 
+2025-02-05 13:22:15.4218|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2025-02-05 13:22:15.4218|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/ModbusConfig/GetModbusConfug' 
+2025-02-05 13:22:15.4218|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'PLCHelperStation.Controller.ModbusConfigController.GetModbusConfug (PLCHelperStation)' with route pattern 'api/ModbusConfig/GetModbusConfug' is valid for the request path '/api/ModbusConfig/GetModbusConfug' 
+2025-02-05 13:22:15.4218|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'PLCHelperStation.Controller.ModbusConfigController.GetModbusConfug (PLCHelperStation)' 
+2025-02-05 13:22:15.4218|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2025-02-05 13:22:15.4218|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2025-02-05 13:22:15.4218|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was not authenticated. 
+2025-02-05 13:22:15.4218|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'PLCHelperStation.Controller.ModbusConfigController.GetModbusConfug (PLCHelperStation)' 
+2025-02-05 13:22:15.4218|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetModbusConfug", controller = "ModbusConfig"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PLCHelperStation.Modbel.ModbusConfig]] GetModbusConfug() on controller PLCHelperStation.Controller.ModbusConfigController (PLCHelperStation). 
+2025-02-05 13:22:15.4218|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-02-05 13:22:15.4218|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-02-05 13:22:15.4218|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-02-05 13:22:15.4218|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-02-05 13:22:15.4218|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-02-05 13:22:15.4218|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller PLCHelperStation.Controller.ModbusConfigController (PLCHelperStation) 
+2025-02-05 13:22:15.4218|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller PLCHelperStation.Controller.ModbusConfigController (PLCHelperStation) 
+2025-02-05 13:22:15.4218|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 13:22:15.4218|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 13:22:15.4218|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 13:22:15.4218|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 13:22:15.4218|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method PLCHelperStation.Controller.ModbusConfigController.GetModbusConfug (PLCHelperStation) - Validation state: Valid 
+2025-02-05 13:22:15.4549|INFO|PLCHelperStation.Controller.ModbusConfigController|GetModbusConfig 
+2025-02-05 13:22:15.4549|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method PLCHelperStation.Controller.ModbusConfigController.GetModbusConfug (PLCHelperStation), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 30.4019ms. 
+2025-02-05 13:22:15.4549|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 13:22:15.4549|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 13:22:15.4549|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 13:22:15.4549|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 13:22:15.4549|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 13:22:15.4549|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 13:22:15.4549|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2025-02-05 13:22:15.4549|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-02-05 13:22:15.4549|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-02-05 13:22:15.4549|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-02-05 13:22:15.4549|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-02-05 13:22:15.4549|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-02-05 13:22:15.4549|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-02-05 13:22:15.4549|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PLCHelperStation.Modbel.ModbusConfig, PLCHelperStation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-05 13:22:15.4549|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2025-02-05 13:22:15.4549|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 13:22:15.4549|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 13:22:15.4549|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action PLCHelperStation.Controller.ModbusConfigController.GetModbusConfug (PLCHelperStation) in 32.3665ms 
+2025-02-05 13:22:15.4549|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'PLCHelperStation.Controller.ModbusConfigController.GetModbusConfug (PLCHelperStation)' 
+2025-02-05 13:22:15.4549|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJQ" completed keep alive response. 
+2025-02-05 13:22:15.4549|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/api/ModbusConfig/GetModbusConfug - 200 - application/json;+charset=utf-8 35.7812ms 
+2025-02-05 13:22:17.8789|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/api/ModbusConfig/GetModbusConfug - - - 
+2025-02-05 13:22:17.8789|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2025-02-05 13:22:17.8789|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/ModbusConfig/GetModbusConfug' 
+2025-02-05 13:22:17.8789|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'PLCHelperStation.Controller.ModbusConfigController.GetModbusConfug (PLCHelperStation)' with route pattern 'api/ModbusConfig/GetModbusConfug' is valid for the request path '/api/ModbusConfig/GetModbusConfug' 
+2025-02-05 13:22:17.8789|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'PLCHelperStation.Controller.ModbusConfigController.GetModbusConfug (PLCHelperStation)' 
+2025-02-05 13:22:17.8789|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2025-02-05 13:22:17.8789|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2025-02-05 13:22:17.8819|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was not authenticated. 
+2025-02-05 13:22:17.8819|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'PLCHelperStation.Controller.ModbusConfigController.GetModbusConfug (PLCHelperStation)' 
+2025-02-05 13:22:17.8819|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetModbusConfug", controller = "ModbusConfig"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[PLCHelperStation.Modbel.ModbusConfig]] GetModbusConfug() on controller PLCHelperStation.Controller.ModbusConfigController (PLCHelperStation). 
+2025-02-05 13:22:17.8819|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-02-05 13:22:17.8819|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-02-05 13:22:17.8819|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-02-05 13:22:17.8819|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-02-05 13:22:17.8819|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-02-05 13:22:17.8819|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller PLCHelperStation.Controller.ModbusConfigController (PLCHelperStation) 
+2025-02-05 13:22:17.8819|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller PLCHelperStation.Controller.ModbusConfigController (PLCHelperStation) 
+2025-02-05 13:22:17.8819|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 13:22:17.8819|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 13:22:17.8819|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 13:22:17.8819|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 13:22:17.8819|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method PLCHelperStation.Controller.ModbusConfigController.GetModbusConfug (PLCHelperStation) - Validation state: Valid 
+2025-02-05 13:22:17.9112|INFO|PLCHelperStation.Controller.ModbusConfigController|GetModbusConfig 
+2025-02-05 13:22:17.9112|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method PLCHelperStation.Controller.ModbusConfigController.GetModbusConfug (PLCHelperStation), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 29.1275ms. 
+2025-02-05 13:22:17.9112|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 13:22:17.9112|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 13:22:17.9112|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 13:22:17.9112|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 13:22:17.9112|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 13:22:17.9112|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 13:22:17.9112|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2025-02-05 13:22:17.9112|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-02-05 13:22:17.9112|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-02-05 13:22:17.9112|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-02-05 13:22:17.9112|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-02-05 13:22:17.9112|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-02-05 13:22:17.9112|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-02-05 13:22:17.9112|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PLCHelperStation.Modbel.ModbusConfig, PLCHelperStation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-02-05 13:22:17.9112|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2025-02-05 13:22:17.9112|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 13:22:17.9112|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 13:22:17.9112|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action PLCHelperStation.Controller.ModbusConfigController.GetModbusConfug (PLCHelperStation) in 29.8048ms 
+2025-02-05 13:22:17.9112|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'PLCHelperStation.Controller.ModbusConfigController.GetModbusConfug (PLCHelperStation)' 
+2025-02-05 13:22:17.9112|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJQ" completed keep alive response. 
+2025-02-05 13:22:17.9112|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/api/ModbusConfig/GetModbusConfug - 200 - application/json;+charset=utf-8 33.2194ms 
+2025-02-05 13:23:42.2789|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJR" accepted. 
+2025-02-05 13:23:42.2789|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/swagger/index.html - - - 
+2025-02-05 13:23:42.2789|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJR" started. 
+2025-02-05 13:23:42.2938|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2025-02-05 13:23:42.2938|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html' 
+2025-02-05 13:23:42.2938|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-02-05 13:23:42.2938|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup is scheduled to include Browser Link script injection. 
+2025-02-05 13:23:42.2938|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2025-02-05 13:23:42.2938|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup was updated to include Browser Link script injection. 
+2025-02-05 13:23:42.2938|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2025-02-05 13:23:42.2938|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJQ" completed keep alive response. 
+2025-02-05 13:23:42.2938|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/swagger/index.html - 200 - text/html;charset=utf-8 15.4787ms 
+2025-02-05 13:23:42.3059|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - - - 
+2025-02-05 13:23:42.3059|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJQ" completed keep alive response. 
+2025-02-05 13:23:42.3059|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript;+charset=utf-8 0.2461ms 
+2025-02-05 13:23:42.3059|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/_vs/browserLink - - - 
+2025-02-05 13:23:42.3059|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJR" completed keep alive response. 
+2025-02-05 13:23:42.3059|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 8.8859ms 
+2025-02-05 13:23:42.4076|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - - - 
+2025-02-05 13:23:42.4076|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2025-02-05 13:23:42.4076|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json' 
+2025-02-05 13:23:42.4076|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2025-02-05 13:23:42.4128|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJR" completed keep alive response. 
+2025-02-05 13:23:42.4128|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 5.3491ms 
+2025-02-05 13:23:51.6019|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET http://localhost:5264/api/ModbusConfig/GetPLCConfig - - - 
+2025-02-05 13:23:51.6019|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2025-02-05 13:23:51.6019|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/ModbusConfig/GetPLCConfig' 
+2025-02-05 13:23:51.6019|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'PLCHelperStation.Controller.ModbusConfigController.GetPLCConfig (PLCHelperStation)' with route pattern 'api/ModbusConfig/GetPLCConfig' is valid for the request path '/api/ModbusConfig/GetPLCConfig' 
+2025-02-05 13:23:51.6019|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'PLCHelperStation.Controller.ModbusConfigController.GetPLCConfig (PLCHelperStation)' 
+2025-02-05 13:23:51.6019|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2025-02-05 13:23:51.6019|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2025-02-05 13:23:51.6019|DEBUG|Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler|AuthenticationScheme: Identity.Application was not authenticated. 
+2025-02-05 13:23:51.6019|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'PLCHelperStation.Controller.ModbusConfigController.GetPLCConfig (PLCHelperStation)' 
+2025-02-05 13:23:51.6019|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetPLCConfig", controller = "ModbusConfig"}. Executing controller action with signature System.Object GetPLCConfig() on controller PLCHelperStation.Controller.ModbusConfigController (PLCHelperStation). 
+2025-02-05 13:23:51.6019|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2025-02-05 13:23:51.6019|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2025-02-05 13:23:51.6019|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-02-05 13:23:51.6019|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2025-02-05 13:23:51.6019|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-02-05 13:23:51.6019|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller PLCHelperStation.Controller.ModbusConfigController (PLCHelperStation) 
+2025-02-05 13:23:51.6019|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller PLCHelperStation.Controller.ModbusConfigController (PLCHelperStation) 
+2025-02-05 13:23:51.6019|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 13:23:51.6019|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 13:23:51.6019|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 13:23:51.6019|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 13:23:51.6019|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method PLCHelperStation.Controller.ModbusConfigController.GetPLCConfig (PLCHelperStation) - Validation state: Valid 
+2025-02-05 13:23:51.6346|WARN|PLCHelperStation.Controller.ModbusConfigController|GetPLCConfig 
+2025-02-05 13:23:51.6346|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method PLCHelperStation.Controller.ModbusConfigController.GetPLCConfig (PLCHelperStation), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 31.3704ms. 
+2025-02-05 13:23:51.6346|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 13:23:51.6346|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 13:23:51.6346|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 13:23:51.6346|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 13:23:51.6346|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 13:23:51.6346|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 13:23:51.6346|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2025-02-05 13:23:51.6346|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-02-05 13:23:51.6346|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2025-02-05 13:23:51.6346|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-02-05 13:23:51.6346|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-02-05 13:23:51.6346|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-02-05 13:23:51.6346|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-02-05 13:23:51.6346|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2025-02-05 13:23:51.6346|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 13:23:51.6346|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 13:23:51.6346|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action PLCHelperStation.Controller.ModbusConfigController.GetPLCConfig (PLCHelperStation) in 32.3503ms 
+2025-02-05 13:23:51.6346|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'PLCHelperStation.Controller.ModbusConfigController.GetPLCConfig (PLCHelperStation)' 
+2025-02-05 13:23:51.6346|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HNA5KJTOITJR" completed keep alive response. 
+2025-02-05 13:23:51.6346|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET http://localhost:5264/api/ModbusConfig/GetPLCConfig - 200 - application/json;+charset=utf-8 34.4308ms 

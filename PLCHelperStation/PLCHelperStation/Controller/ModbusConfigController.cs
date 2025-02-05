@@ -11,6 +11,15 @@ namespace PLCHelperStation.Controller
     [ApiController]
     public class ModbusConfigController : ControllerBase
     {
+
+        protected readonly ILogger<ModbusConfigController> _logger;
+
+        public ModbusConfigController(ILogger<ModbusConfigController> logger)
+        {
+            _logger = logger;
+        }
+
+
         /// <summary>
         /// 拿到所有的PLC名称给下拉列表用
         /// </summary>
@@ -22,6 +31,7 @@ namespace PLCHelperStation.Controller
             using (var ctx = new TestDbContext())
             {
                 var plcList = ctx.PLCs.Select(plc => plc.Name).ToList();
+                _logger.LogWarning("获取一次所有PLC的名称！");
                 return Ok(plcList);
             }
         }
@@ -44,11 +54,13 @@ namespace PLCHelperStation.Controller
                 if(existconfigname)
                 {
                     var resultNg = new Result { Code = 400, ResultType = false, Message = "该配置名已存在，配置名称不能重复！" };
+                    _logger.LogWarning("添加Modbus配置，该配置名已存在，配置名称不能重复！");
                     return resultNg;
                 }
                 else if(exist)
                 {
                     var resultNg = new Result { Code = 400, ResultType = false, Message = "该配置已存在，配置不能重复！" };
+                    _logger.LogWarning("添加Modbus配置，该配置已存在，配置不能重复！");
                     return resultNg;
                 }
                 else 
@@ -56,6 +68,7 @@ namespace PLCHelperStation.Controller
                     ctx.ModbusConfigs.Add(modbus);
                     ctx.SaveChanges();
                     var resultOk = new Result { Code = 200, ResultType = true, Message = "已将新配置保存到数据库！" };
+                    _logger.LogInformation("已将新配置保存到数据库！");
                     return resultOk;
                 }
                 
@@ -74,6 +87,7 @@ namespace PLCHelperStation.Controller
             using (var ctx = new TestDbContext())
             {
                 var modbusList = ctx.ModbusConfigs.ToList();
+                _logger.LogInformation("获取一次所有Modbus配置");
                 return Ok(modbusList);
             }
         }
@@ -95,10 +109,12 @@ namespace PLCHelperStation.Controller
                     ctx.ModbusConfigs.Remove(plc);
                     ctx.SaveChanges();
                     var result = new Result { Code = 200, ResultType = true, Message = "删除成功！" };
+                    _logger.LogInformation("执行删除Modbus配置操作，删除成功！");
                     return result;
                 }
                 else
                 {
+                    _logger.LogWarning("执行删除Modbus配置操作，不存在该对象！");
                     return new Result { Code = 404, ResultType = false, Message = "不存在该对象！" };
                 }
             }
@@ -124,6 +140,7 @@ namespace PLCHelperStation.Controller
                 using (var ctx = new TestDbContext())
                 {
                     var modbus = ctx.ModbusConfigs.Find(Id);
+                    _logger.LogInformation($"修改Modbus配置操作,修改前数据为PLC名称为：{modbus.PLCName},设备ID为：{modbus.SlaveId},功能码为：{modbus.FunctionCode},开始地址为：{modbus.StartAddress},数量为：{modbus.Num},Modbus名称为：{modbus.ModbusName}");
                     //不能保存配置名称相同的配置
                     var existconfigname = ctx.ModbusConfigs.Any(x => x.ModbusName == modbus.ModbusName);
                     //plcname、slaveid、Functioncode、StartAddress不能同时相同
@@ -131,11 +148,13 @@ namespace PLCHelperStation.Controller
                     if (existconfigname)
                     {
                         var resultNg = new Result { Code = 400, ResultType = false, Message = "该配置名已存在，配置名称不能重复！" };
+                        _logger.LogWarning("修改Modbus配置操作，该配置名已存在，配置名称不能重复！");
                         return resultNg;
                     }
                     else if (exist)
                     {
                         var resultNg = new Result { Code = 400, ResultType = false, Message = "该配置已存在，配置不能重复！" };
+                        _logger.LogWarning("修改Modbus配置操作，该配置已存在，配置不能重复！");
                         return resultNg;
                     }
                     else if (modbus != null& !existconfigname & !exist)
@@ -148,11 +167,13 @@ namespace PLCHelperStation.Controller
                         modbus.ModbusName = ConfigName;
                         ctx.SaveChanges();
                         var result = new Result { Code = 200, ResultType = true, Message = "修改成功！" };
+                        _logger.LogInformation($"修改Modbus配置操作，修改成功！修改后的数据为PLC名称为：{PLCName},设备ID为：{SlaveId},功能码为：{Functioncode},开始地址为：{StartAddr},数量为：{Num},Modbus名称为：{ConfigName}");
                         return result;
                     }
                     else
                     {
                         var resultwarn = new Result { Code = 400, ResultType = false, Message = "要修改的对象不存在" };
+                        _logger.LogWarning("修改Modbus配置操作,修改失败：要修改的对象不存在");
                         return resultwarn;
                     }
                 }
@@ -161,6 +182,7 @@ namespace PLCHelperStation.Controller
             {
 
                 var resulterr = new Result { Message = ex.Message };
+                _logger.LogError("修改Modbus配置操作,出现异常：" + ex.Message);
                 return resulterr;
             }
         }
