@@ -28,3 +28,9 @@
 2025-02-05 20:41:51.9601 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
 2025-02-05 20:41:51.9601 Info Validating config: TargetNames=logfile, console, ConfigItems=28, FilePath=E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\nlog.config
 2025-02-05 20:41:51.9815 Info Configuration initialized.
+2025-02-05 20:47:31.0642 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-02-05 20:47:31.0726 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-02-05 20:47:31.0726 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-02-05 20:47:31.0726 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-02-05 20:47:31.0850 Info Validating config: TargetNames=logfile, console, ConfigItems=28, FilePath=E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\nlog.config
+2025-02-05 20:47:31.0850 Info Configuration initialized.

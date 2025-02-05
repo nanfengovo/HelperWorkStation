@@ -56,3 +56,14 @@
 2025-02-05 20:43:11.1401|INFO|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置 
 2025-02-05 20:43:11.3371|WARN|PLCHelperStation.Controller.ModbusConfigController|启用Modbus配置，启用id为：5 的配置时发现本来就是启用的状态！ 
 2025-02-05 20:43:11.4480|WARN|PLCHelperStation.Controller.ModbusConfigController|启用Modbus配置，启用id为：5 的配置时发现本来就是启用的状态！ 
+2025-02-05 20:47:31.4655|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5264 
+2025-02-05 20:47:31.5246|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-05 20:47:31.5246|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-05 20:47:31.5246|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 
+2025-02-05 20:49:48.2281|INFO|PLCHelperStation.Controller.PLCConfigController|获取一次PLC配置 
+2025-02-05 20:49:50.8012|INFO|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置 
+2025-02-05 20:49:50.8390|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-05 20:50:00.1741|INFO|PLCHelperStation.Controller.PLCConfigController|获取一次PLC配置 
+2025-02-05 20:50:01.7070|INFO|PLCHelperStation.Controller.PLCConfigController|获取一次PLC配置 
+2025-02-05 21:26:50.5293|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-05 21:26:50.5293|INFO|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置 
