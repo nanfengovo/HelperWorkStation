@@ -20,12 +20,14 @@
                     </el-form-item>
                     <el-form-item label="操作时间">
                         <el-date-picker
-                        v-model="queryForm.date"
-                        type="datetimerange"
-                        range-separator="至"
-                        start-placeholder="开始日期"
-                        end-placeholder="结束日期"
-                        />
+                            v-model="queryForm.date"
+                            type="daterange"
+                            range-separator="至"
+                            start-placeholder="开始日期"
+                            end-placeholder="结束日期"
+                            value-format="yyyy-MM-dd"
+                            align="right">
+                        </el-date-picker>
                     </el-form-item>
                     <el-form-item class="Query-conditions-card-content-button">
                         <el-button type="primary" @click="query">查询</el-button>
@@ -72,6 +74,6 @@ const reset = () => {
     margin-top: 10px;
 }
 .Query-conditions-card-content-button{
-    margin-left: 1020px;
+    margin-right: 20px;
 }
 </style>

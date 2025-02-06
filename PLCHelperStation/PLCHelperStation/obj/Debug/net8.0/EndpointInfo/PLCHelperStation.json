@@ -399,6 +399,18 @@
         }
       }
     },
+    "/api/OperationLogs/GetAllLogs": {
+      "get": {
+        "tags": [
+          "OperationLogs"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/PLCConfig/AddPLCConfig": {
       "post": {
         "tags": [

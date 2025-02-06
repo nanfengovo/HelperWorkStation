@@ -51,19 +51,19 @@ namespace PLCHelperStation.Controller
                 var existconfigname = ctx.ModbusConfigs.Any(x => x.ModbusName == modbus.ModbusName);
                 //plcname、slaveid、Functioncode、StartAddress不能同时相同
                 var exist = ctx.ModbusConfigs.Any(x => x.PLCName == modbus.PLCName && x.SlaveId == modbus.SlaveId && x.FunctionCode == modbus.FunctionCode && x.StartAddress == modbus.StartAddress);
-                if(existconfigname)
+                if (existconfigname)
                 {
                     var resultNg = new Result { Code = 400, ResultType = false, Message = "该配置名已存在，配置名称不能重复！" };
                     _logger.LogWarning("添加Modbus配置，该配置名已存在，配置名称不能重复！");
                     return resultNg;
                 }
-                else if(exist)
+                else if (exist)
                 {
                     var resultNg = new Result { Code = 400, ResultType = false, Message = "该配置已存在，配置不能重复！" };
                     _logger.LogWarning("添加Modbus配置，该配置已存在，配置不能重复！");
                     return resultNg;
                 }
-                else 
+                else
                 {
                     ctx.ModbusConfigs.Add(modbus);
                     ctx.SaveChanges();
@@ -71,8 +71,8 @@ namespace PLCHelperStation.Controller
                     _logger.LogInformation("已将新配置保存到数据库！");
                     return resultOk;
                 }
-                
-               
+
+
             }
         }
 
@@ -133,7 +133,7 @@ namespace PLCHelperStation.Controller
         /// <returns></returns>
         [HttpPut("UpdateModbusConfig")]
         [EnableCors("AllowSpecificOrigins")] // 应用 CORS 策略
-        public Result UpdateModbusConfig(int Id, string PLCName, int SlaveId, string Functioncode,string StartAddr, int Num, string ConfigName )
+        public Result UpdateModbusConfig(int Id, string PLCName, int SlaveId, string Functioncode, string StartAddr, int Num, string ConfigName)
         {
             try
             {
@@ -157,7 +157,7 @@ namespace PLCHelperStation.Controller
                         _logger.LogWarning("修改Modbus配置操作，该配置已存在，配置不能重复！");
                         return resultNg;
                     }
-                    else if (modbus != null& !existconfigname & !exist)
+                    else if (modbus != null & !existconfigname & !exist)
                     {
                         modbus.PLCName = PLCName;
                         modbus.SlaveId = SlaveId;
@@ -202,20 +202,20 @@ namespace PLCHelperStation.Controller
                 using (var ctx = new TestDbContext())
                 {
                     var modbus = ctx.ModbusConfigs.FirstOrDefault(x => x.Id == Id);
-                    if(modbus == null)
+                    if (modbus == null)
                     {
-                        var resulterr = new Result { Code = 404 ,ResultType = false , Message = "不存在这个配置！"};
+                        var resulterr = new Result { Code = 404, ResultType = false, Message = "不存在这个配置！" };
                         _logger.LogWarning($"启用Modbus配置，id为：{Id}的配置不存在！");
                         return resulterr;
                     }
                     else
                     {
                         var statue = modbus.IsOpen;
-                        if(statue)
+                        if (statue)
                         {
                             var resultwarn = new Result { Code = 401, ResultType = false, Message = "现在的状态就是启用！" };
                             _logger.LogWarning($"启用Modbus配置，启用id为：{Id} 的配置时发现本来就是启用的状态！");
-                            return resultwarn ;
+                            return resultwarn;
                         }
                         else
                         {
@@ -225,7 +225,7 @@ namespace PLCHelperStation.Controller
                             _logger.LogInformation($"启用Modbus配置，id为：{Id} 的配置启用成功！");
                             return result;
                         }
-                       
+
                     }
 
 
@@ -234,8 +234,8 @@ namespace PLCHelperStation.Controller
             catch (Exception ex)
             {
 
-                _logger.LogError($"启用Modbus配置,在启用id为：{Id}的过程中程序发生错误！！！错误信息为："+ex.Message);
-                var resulterr = new Result {Code = 400 , ResultType = false , Message = ex.Message};
+                _logger.LogError($"启用Modbus配置,在启用id为：{Id}的过程中程序发生错误！！！错误信息为：" + ex.Message);
+                var resulterr = new Result { Code = 400, ResultType = false, Message = ex.Message };
                 return resulterr;
             }
         }

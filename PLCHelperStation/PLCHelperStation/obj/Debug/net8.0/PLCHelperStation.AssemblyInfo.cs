@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PLCHelperStation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+475ef7eebf40845cf89fb2692be5e0a246074765")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78facbb69b6ff152515a8f62e4e8d34732ced1ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("PLCHelperStation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PLCHelperStation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

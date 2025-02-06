@@ -31,12 +31,12 @@ namespace PLCHelperStation.Controller
         /// <returns></returns>
         [EnableCors("AllowSpecificOrigins")] // 应用 CORS 策略
         [HttpPost("Login")]
-        public Result Login( User user)
+        public Result Login(User user)
         {
             using (var ctx = new TestDbContext())
             {
                 var userinfo = ctx.Users.Any(x => x.Name == user.Name && x.Password == user.Password);
-                if(userinfo)
+                if (userinfo)
                 {
                     var resultOk = new Result { Code = 200, ResultType = true, Message = "登录成功！" };
                     _logger.LogInformation("用户登录操作，登录成功！");

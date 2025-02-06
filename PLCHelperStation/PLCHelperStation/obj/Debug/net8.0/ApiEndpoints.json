@@ -242,6 +242,16 @@
     ]
   },
   {
+    "ContainingType": "PLCHelperStation.Controller.Log.OperationLogsController",
+    "Method": "GetAllLogs",
+    "RelativePath": "api/OperationLogs/GetAllLogs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "PLCHelperStation.Controller.PLCConfigController",
     "Method": "AddPLCConfig",
     "RelativePath": "api/PLCConfig/AddPLCConfig",

@@ -20,3 +20,17 @@
 2025-02-06 19:38:47.2936|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
 2025-02-06 19:38:47.2993|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
 2025-02-06 19:38:47.2993|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 
+2025-02-06 19:42:11.4325|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5264 
+2025-02-06 19:42:11.9862|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-06 19:42:11.9862|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-06 19:42:11.9862|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 
+2025-02-06 19:42:16.5013|INFO|PLCHelperStation.Controller.AdminController|用户登录操作，登录成功！ 
+2025-02-06 20:42:00.7701|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5264 
+2025-02-06 20:42:01.2624|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-06 20:42:01.2677|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-06 20:42:01.2677|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 
+2025-02-06 20:42:13.3904|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-06 20:42:47.6164|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5264 
+2025-02-06 20:42:48.0918|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-06 20:42:48.0918|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-06 20:42:48.1274|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 

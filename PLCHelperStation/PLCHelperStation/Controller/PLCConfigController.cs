@@ -32,7 +32,7 @@ namespace PLCHelperStation.Controller
             using (var ctx = new TestDbContext())
             {
                 #region 检查是否存在相同 IP 和端口的记录,如果相同就不保存到数据库
-                var exists = ctx.PLCs.Any(x => x.IP == pLC.IP && x.Port == pLC.Port && x.Name ==pLC.Name);
+                var exists = ctx.PLCs.Any(x => x.IP == pLC.IP && x.Port == pLC.Port && x.Name == pLC.Name);
                 if (!exists)
                 {
                     ctx.PLCs.Add(pLC);
@@ -77,7 +77,7 @@ namespace PLCHelperStation.Controller
         /// <returns></returns>
         [HttpPut("UpdatePLCConfig")]
         [EnableCors("AllowSpecificOrigins")]
-        public Result UpdatePLCConfig(int id, string? ip, int port,string name)
+        public Result UpdatePLCConfig(int id, string? ip, int port, string name)
         {
             try
             {
@@ -135,8 +135,8 @@ namespace PLCHelperStation.Controller
                 else
                 {
                     _logger.LogWarning("删除PLC操作，不存在该对象");
-                    return new Result { Code = 404, ResultType = false, Message = "不存在该对象！"};
-                    
+                    return new Result { Code = 404, ResultType = false, Message = "不存在该对象！" };
+
                 }
             }
 

@@ -6,10 +6,10 @@
             </div>
             <div class="Query conditions-card-content">
                 <el-form :inline="true" :model="queryForm" class="demo-form-inline">
-                    <el-form-item label="日志内容关键字查询:">
-                        <el-input  v-model="queryForm.operator" placeholder="请输入查询的关键字(支持模糊查询)" style="width: 250px;"></el-input>
+                    <el-form-item label="日志内容关键字查询">
+                        <el-input v-model="queryForm.operator" placeholder="请输入查询的关键字(支持模糊查询)"></el-input>
                     </el-form-item>
-                    <el-form-item label="日志级别:">
+                    <el-form-item label="日志级别">
                         <el-select v-model="queryForm.level" placeholder="请选择日志级别" style="width: 180px;" clearable>
                             <el-option label="Trace" value="Trace"></el-option>
                             <el-option label="Info" value="Info"></el-option>
@@ -20,14 +20,16 @@
                     </el-form-item>
                     <el-form-item label="操作时间">
                         <el-date-picker
-                        v-model="queryForm.date"
-                        type="datetimerange"
-                        range-separator="至"
-                        start-placeholder="开始日期"
-                        end-placeholder="结束日期"
-                        />
+                            v-model="queryForm.date"
+                            type="daterange"
+                            range-separator="至"
+                            start-placeholder="开始日期"
+                            end-placeholder="结束日期"
+                            value-format="yyyy-MM-dd"
+                            align="right">
+                        </el-date-picker>
                     </el-form-item>
-                    <el-form-item class="Query-conditions-card-content-button">
+                    <el-form-item>
                         <el-button type="primary" @click="query">查询</el-button>
                         <el-button @click="reset">重置</el-button>
                     </el-form-item>
@@ -41,7 +43,7 @@
 <script setup lang = "ts">
 import { ref } from 'vue';
 
-// 查询条件 表单
+
 const queryForm = ref<{
     operator: string;
     level: string;
@@ -52,26 +54,17 @@ const queryForm = ref<{
     date: "",
 });
 
-//重置
-const reset = () => {
-    queryForm.value.operator = "";
-    queryForm.value.level = "";
-    queryForm.value.date = "";
-};
 
 </script>
 <style>
 .Query-conditions-card{
     background-color: #F0FFF0;
+    height: 150px;
     border-radius: 20px;
-    display: flex;
 }
 .Query-conditions-card-title h4{
     text-align: center;
     font-weight: bold;
     margin-top: 10px;
-}
-.Query-conditions-card-content-button{
-    margin-left: 1020px;
 }
 </style>
