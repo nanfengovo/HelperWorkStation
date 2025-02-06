@@ -1,0 +1,22 @@
+2025-02-06 12:32:26.0339|INFO|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置 
+2025-02-06 12:32:26.1560|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-06 12:40:09.1706|INFO|PLCHelperStation.Controller.PLCConfigController|获取一次PLC配置 
+2025-02-06 12:47:06.0750|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5264 
+2025-02-06 12:47:06.1360|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-06 12:47:06.1403|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-06 12:47:06.1403|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 
+2025-02-06 12:47:25.0002|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-06 12:50:02.9552|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-06 12:52:12.2022|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-06 12:53:38.6406|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-06 12:54:31.0203|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-06 12:55:52.7490|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-06 13:04:01.9044|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-06 13:06:10.9678|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-06 13:07:13.2676|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-06 13:07:34.6715|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-06 13:13:13.1046|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-06 19:38:46.7411|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5264 
+2025-02-06 19:38:47.2936|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-06 19:38:47.2993|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-06 19:38:47.2993|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 
