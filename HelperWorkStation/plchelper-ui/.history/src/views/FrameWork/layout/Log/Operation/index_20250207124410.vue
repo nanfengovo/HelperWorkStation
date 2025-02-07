@@ -7,8 +7,7 @@
             <div class="Query conditions-card-content">
                 <el-form :inline="true" :model="queryForm" class="demo-form-inline">
                     <el-form-item label="日志内容关键字查询:">
-                        <el-input v-model="queryForm.operator" placeholder="请输入查询的关键字(支持模糊查询)"
-                            style="width: 250px;"></el-input>
+                        <el-input  v-model="queryForm.operator" placeholder="请输入查询的关键字(支持模糊查询)" style="width: 250px;"></el-input>
                     </el-form-item>
                     <el-form-item label="日志级别:">
                         <el-select v-model="queryForm.level" placeholder="请选择日志级别" style="width: 180px;" clearable>
@@ -20,8 +19,13 @@
                         </el-select>
                     </el-form-item>
                     <el-form-item label="操作时间">
-                        <el-date-picker v-model="queryForm.date" type="datetimerange" range-separator="至"
-                            start-placeholder="开始日期" end-placeholder="结束日期" />
+                        <el-date-picker
+                        v-model="queryForm.date"
+                        type="datetimerange"
+                        range-separator="至"
+                        start-placeholder="开始日期"
+                        end-placeholder="结束日期"
+                        />
                     </el-form-item>
                     <el-form-item class="Query-conditions-card-content-button">
                         <el-button type="primary" @click="query">查询</el-button>
@@ -33,32 +37,18 @@
     </div>
 
 
-    <el-card style="width: 100%" shadow="always" class="Logs-card">
-        <el-table :data="LogsData.slice((page-1)* limit, page * limit)" stripe style="width: 100%" height="450">
-            <el-scrollbar max-height="400px">
-                <p v-for="item in LogsData" :key="item.id" class="scrollbar-demo-item">
-                {{ item }}
-                </p>
-            </el-scrollbar>
-            <el-table-column prop="id" label="序号" width="180" />
-            <el-table-column prop="level" label="日志级别" width="120" />
-            <el-table-column prop="logger" label="日志源" width="180" />
-            <el-table-column prop="data" label="记录时间" />
-            <el-table-column prop="message" label="日志内容" />
-        </el-table>
-        <!-- 分页控件 -->
-         <!-- arr.slice((当前页数-1)*每页条数，当前页数 *当前条数)-->
-        <el-pagination
-            :current-page="page"
-            :page-size="limit"
-            :page-sizes="[10, 20, 30, 40,50]"
-            background
-            layout="total, sizes, prev, pager, next, jumper"
-            :total="total"
-            @size-change="handleSizechange"
-            @current-change="handleCurrentChange"
-            />
-    </el-card>
+        <el-card style="width: 100%" shadow="always" class="Logs-card" >
+            <el-table :data="LogsData.slice((page-1)* limit, page * limit)" stripe style="width: 100%" >
+                <el-table-column prop="id" label="序号" width="180" />
+                <el-table-column prop="level" label="日志级别" width="120" />
+                <el-table-column prop="logger" label="日志源" width="180" />
+                <el-table-column prop="data" label="记录时间" />
+                <el-table-column prop="message" label="日志内容" />
+            </el-table>
+            <!-- 分页控件 -->
+            <el-pagination background layout="prev, pager, next" :total="total" :currentpage="page" :page-size = "limit" :page-sizes="[10, 20, 30, 40, 50]" @size-change="handleSizechange"
+@current-change="handleCurrentChange" />
+        </el-card>
 </template>
 <script setup lang = "ts">
 import axios from 'axios';
@@ -118,7 +108,6 @@ const GetAllLogs = async () => {
     },
     });
     LogsData.value = res.data;
-    total.value = res.data.length;
     
 } catch (error: any) {
         ElMessage({

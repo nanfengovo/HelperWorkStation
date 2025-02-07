@@ -34,12 +34,7 @@
 
 
     <el-card style="width: 100%" shadow="always" class="Logs-card">
-        <el-table :data="LogsData.slice((page-1)* limit, page * limit)" stripe style="width: 100%" height="450">
-            <el-scrollbar max-height="400px">
-                <p v-for="item in LogsData" :key="item.id" class="scrollbar-demo-item">
-                {{ item }}
-                </p>
-            </el-scrollbar>
+        <el-table :data="LogsData.slice((page-1)* limit, page * limit)" stripe style="width: 100%">
             <el-table-column prop="id" label="序号" width="180" />
             <el-table-column prop="level" label="日志级别" width="120" />
             <el-table-column prop="logger" label="日志源" width="180" />
@@ -47,7 +42,6 @@
             <el-table-column prop="message" label="日志内容" />
         </el-table>
         <!-- 分页控件 -->
-         <!-- arr.slice((当前页数-1)*每页条数，当前页数 *当前条数)-->
         <el-pagination
             :current-page="page"
             :page-size="limit"

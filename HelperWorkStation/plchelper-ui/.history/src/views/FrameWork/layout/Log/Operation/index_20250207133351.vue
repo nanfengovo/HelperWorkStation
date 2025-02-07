@@ -34,7 +34,7 @@
 
 
     <el-card style="width: 100%" shadow="always" class="Logs-card">
-        <el-table :data="LogsData.slice((page-1)* limit, page * limit)" stripe style="width: 100%" height="450">
+        <el-table :data="LogsData.slice((page-1)* limit, page * limit)" stripe style="width: 100%" height="400">
             <el-scrollbar max-height="400px">
                 <p v-for="item in LogsData" :key="item.id" class="scrollbar-demo-item">
                 {{ item }}

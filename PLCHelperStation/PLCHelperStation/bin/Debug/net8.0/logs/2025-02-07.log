@@ -1,0 +1,26 @@
+2025-02-07 12:44:36.0115|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5264 
+2025-02-07 12:44:36.5531|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-07 12:44:36.5531|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-07 12:44:36.5611|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 
+2025-02-07 12:44:45.3816|INFO|PLCHelperStation.Controller.AdminController|用户登录操作，登录成功！ 
+2025-02-07 12:44:51.9480|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-07 12:51:20.0433|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-07 12:51:21.6218|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-07 12:57:57.8985|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-07 12:59:20.6521|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5264 
+2025-02-07 12:59:21.2774|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-07 12:59:21.2857|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-07 12:59:21.2857|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 
+2025-02-07 12:59:29.1296|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-07 12:59:29.1844|INFO|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置 
+2025-02-07 12:59:30.1344|INFO|PLCHelperStation.Controller.PLCConfigController|获取一次PLC配置 
+2025-02-07 12:59:31.6552|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-07 13:00:37.7263|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-07 13:27:38.1926|INFO|PLCHelperStation.Controller.PLCConfigController|获取一次PLC配置 
+2025-02-07 13:27:40.2182|INFO|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置 
+2025-02-07 13:27:40.2182|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-07 13:27:49.2506|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-07 13:36:10.6668|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-07 13:36:46.2396|INFO|PLCHelperStation.Controller.PLCConfigController|获取一次PLC配置 
+2025-02-07 13:36:48.6499|INFO|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置 
+2025-02-07 13:36:48.6658|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
