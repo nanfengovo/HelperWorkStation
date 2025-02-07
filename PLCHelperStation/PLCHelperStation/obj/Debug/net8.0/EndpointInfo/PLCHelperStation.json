@@ -411,6 +411,48 @@
         }
       }
     },
+    "/api/OperationLogs/GetLogsByKeyWord": {
+      "get": {
+        "tags": [
+          "OperationLogs"
+        ],
+        "parameters": [
+          {
+            "name": "KeyWord",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/OperationLogs/GetLogsByLevel": {
+      "get": {
+        "tags": [
+          "OperationLogs"
+        ],
+        "parameters": [
+          {
+            "name": "level",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/PLCConfig/AddPLCConfig": {
       "post": {
         "tags": [

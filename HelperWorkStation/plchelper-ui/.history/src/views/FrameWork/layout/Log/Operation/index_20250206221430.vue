@@ -33,26 +33,24 @@
                     </el-form-item>
                 </el-form>
             </div>
-        </el-card>
-    </div>
 
 
-        <el-card style="width: 100%" shadow="always" class="Logs-card" >
+            <el-card style="width: 100%" shadow="always" class="Logs-card" >
             <el-table :data="LogsData" stripe style="width: 100%" >
                 <el-table-column prop="id" label="序号" width="180" />
                 <el-table-column prop="level" label="日志级别" width="120" />
                 <el-table-column prop="logger" label="日志源" width="180" />
                 <el-table-column prop="data" label="记录时间" />
                 <el-table-column prop="message" label="日志内容" />
+                
             </el-table>
-            <!-- 分页控件 -->
-            <el-pagination background layout="prev, pager, next" :total="100" />
         </el-card>
+
+        </el-card>
+    </div>
 </template>
 <script setup lang = "ts">
-import axios from 'axios';
-import { ElMessage } from 'element-plus';
-import { computed, onMounted, ref } from 'vue';
+import { ref } from 'vue';
 
 // 查询条件 表单
 const queryForm = ref<{
@@ -68,43 +66,12 @@ const queryForm = ref<{
 //表格数据
 const LogsData = ref<Array<{id: number; level: string; logger: string; data: string; message: string }>>([]);
 
-
-// 重置
+//重置
 const reset = () => {
     queryForm.value.operator = "";
     queryForm.value.level = "";
     queryForm.value.date = "";
-    GetAllLogs();
 };
-
-// 获取日志数据
-const GetAllLogs = async () => {
-    try {
-        const res = await axios.get('http://127.0.0.1:5264/api/OperationLogs/GetAllLogs', {
-        params: {
-        ...queryForm.value,
-        startDate: queryForm.value.date ? queryForm.value.date[0] : null,
-        endDate: queryForm.value.date ? queryForm.value.date[1] : null,
-    },
-    });
-    LogsData.value = res.data;
-    
-} catch (error: any) {
-        ElMessage({
-        message: error.message,
-        type: 'warning',
-        });
-    }
-};
-
-
-
-//初始化
-onMounted(() => {
-    GetAllLogs();
-});
-
-
 
 </script>
 <style>
@@ -120,8 +87,5 @@ onMounted(() => {
 }
 .Query-conditions-card-content-button{
     margin-left: 1020px;
-}
-.Logs-card{
-    margin-top: 20px;
 }
 </style>

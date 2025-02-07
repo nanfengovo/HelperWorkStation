@@ -34,3 +34,61 @@
 2025-02-06 20:42:48.0918|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
 2025-02-06 20:42:48.0918|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
 2025-02-06 20:42:48.1274|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 
+2025-02-06 21:51:33.3373|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5264 
+2025-02-06 21:51:33.8265|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-06 21:51:33.8411|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-06 21:51:33.8411|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 
+2025-02-06 21:51:53.8635|INFO|PLCHelperStation.Controller.Log.OperationLogsController|用户查询了一次关键字为：Modbus的日志 
+2025-02-06 21:51:53.9669|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'TestDbContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ChangeTracker()
+   at Microsoft.EntityFrameworkCore.Query.CompiledQueryCacheKeyGenerator.GenerateCacheKeyCore(Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.RelationalCompiledQueryCacheKeyGenerator.GenerateCacheKeyCore(Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerCompiledQueryCacheKeyGenerator.GenerateCacheKey(Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Converters.IAsyncEnumerableOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TAsyncEnumerable value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-06 21:52:14.4041|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-06 21:56:39.1672|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5264 
+2025-02-06 21:56:39.7504|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-06 21:56:39.7504|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-06 21:56:39.7640|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 
+2025-02-06 21:56:54.0265|INFO|PLCHelperStation.Controller.Log.OperationLogsController|用户查询了一次关键字为：Modbus的日志 
+2025-02-06 21:57:10.4403|INFO|PLCHelperStation.Controller.Log.OperationLogsController|用户查询了一次关键字为：modbus的日志 
+2025-02-06 22:05:10.9823|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5264 
+2025-02-06 22:05:11.6337|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-06 22:05:11.6426|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-06 22:05:11.6426|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 
+2025-02-06 22:06:24.3147|INFO|PLCHelperStation.Controller.Log.OperationLogsController|根据日志级别为：Warn查询，查询成功 
+2025-02-06 22:19:32.8751|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-06 22:21:05.7882|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-06 22:30:55.8461|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-06 22:31:10.1224|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-06 22:31:12.1298|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-06 22:31:14.7404|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-06 22:42:34.6705|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-06 22:43:34.1715|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 

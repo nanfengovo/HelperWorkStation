@@ -46,7 +46,14 @@
                 <el-table-column prop="message" label="日志内容" />
             </el-table>
             <!-- 分页控件 -->
-            <el-pagination background layout="prev, pager, next" :total="100" />
+            <el-pagination
+                @size-change="handleSizeChange"
+                @current-change="handleCurrentChange"
+                :current-page="currentPage"
+                :page-size="pageSize"
+                :total="totalLogs"
+                layout="prev, pager, next"
+            />
         </el-card>
 </template>
 <script setup lang = "ts">
@@ -88,7 +95,7 @@ const GetAllLogs = async () => {
     },
     });
     LogsData.value = res.data;
-    
+    currentPage.value = 1; // 重置当前页为第一页
 } catch (error: any) {
         ElMessage({
         message: error.message,
@@ -97,7 +104,19 @@ const GetAllLogs = async () => {
     }
 };
 
+// 分页相关
+const currentPage = ref(1);
+const pageSize = ref(10);
+const totalLogs = computed(() => LogsData.value.length);
 
+const pagedData = computed(() => {
+    const start = (currentPage.value - 1) * pageSize.value;
+    return LogsData.value.slice(start, start + pageSize.value);
+});
+// 分页事件处理
+const handleSizeChange = (newSize: number) => {
+    pageSize.value = newSize;
+};
 
 //初始化
 onMounted(() => {

@@ -252,6 +252,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "PLCHelperStation.Controller.Log.OperationLogsController",
+    "Method": "GetLogsByKeyWord",
+    "RelativePath": "api/OperationLogs/GetLogsByKeyWord",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "KeyWord",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PLCHelperStation.Controller.Log.OperationLogsController",
+    "Method": "GetLogsByLevel",
+    "RelativePath": "api/OperationLogs/GetLogsByLevel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "level",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "PLCHelperStation.Controller.PLCConfigController",
     "Method": "AddPLCConfig",
     "RelativePath": "api/PLCConfig/AddPLCConfig",

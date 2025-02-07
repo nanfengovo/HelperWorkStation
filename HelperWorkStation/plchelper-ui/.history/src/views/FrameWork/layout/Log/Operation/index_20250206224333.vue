@@ -46,7 +46,7 @@
                 <el-table-column prop="message" label="日志内容" />
             </el-table>
             <!-- 分页控件 -->
-            <el-pagination background layout="prev, pager, next" :total="100" />
+            <el-pagination background layout="prev, pager, next" :total="1000" />
         </el-card>
 </template>
 <script setup lang = "ts">

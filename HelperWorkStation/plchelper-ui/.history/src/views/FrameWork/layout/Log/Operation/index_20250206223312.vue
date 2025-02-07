@@ -46,13 +46,22 @@
                 <el-table-column prop="message" label="日志内容" />
             </el-table>
             <!-- 分页控件 -->
-            <el-pagination background layout="prev, pager, next" :total="100" />
+            <!-- <el-pagination
+                @size-change="handleSizeChange"
+                @current-change="handleCurrentChange"
+                :current-page="currentPage"
+                :page-sizes="[10, 20, 50, 100]"
+                :page-size="pageSize"
+                layout="total, sizes, prev, pager, next, jumper"
+                :total="totalLogs">
+            </el-pagination> -->
+            <el-pagination background layout="prev, pager, next" :total="1000" />
         </el-card>
 </template>
 <script setup lang = "ts">
 import axios from 'axios';
 import { ElMessage } from 'element-plus';
-import { computed, onMounted, ref } from 'vue';
+import { onMounted, ref } from 'vue';
 
 // 查询条件 表单
 const queryForm = ref<{
@@ -68,35 +77,39 @@ const queryForm = ref<{
 //表格数据
 const LogsData = ref<Array<{id: number; level: string; logger: string; data: string; message: string }>>([]);
 
-
-// 重置
+const currentPage = ref(1);
+const pageSize = ref(10);
+const totalLogs = ref(0);
+//重置
 const reset = () => {
     queryForm.value.operator = "";
     queryForm.value.level = "";
     queryForm.value.date = "";
-    GetAllLogs();
 };
 
-// 获取日志数据
-const GetAllLogs = async () => {
-    try {
-        const res = await axios.get('http://127.0.0.1:5264/api/OperationLogs/GetAllLogs', {
-        params: {
-        ...queryForm.value,
-        startDate: queryForm.value.date ? queryForm.value.date[0] : null,
-        endDate: queryForm.value.date ? queryForm.value.date[1] : null,
-    },
-    });
-    LogsData.value = res.data;
-    
-} catch (error: any) {
+//获取日志数据
+const GetAllLogs = async() => {
+    try     {
+        const res = await axios.get('http://127.0.0.1:5264/api/OperationLogs/GetAllLogs');
+        LogsData.value = res.data;
+    } catch (error:any) {
         ElMessage({
-        message: error.message,
-        type: 'warning',
+            message: error.message, 
+            type: 'warning',
         });
     }
 };
 
+const handleSizeChange = (newSize:any) => {
+    pageSize.value = newSize;
+    currentPage.value = 1; // 当页大小改变时，通常重置到第一页
+    GetAllLogs();
+};
+
+const handleCurrentChange = (newPage:any) => {
+    currentPage.value = newPage;
+    GetAllLogs();
+};
 
 
 //初始化
