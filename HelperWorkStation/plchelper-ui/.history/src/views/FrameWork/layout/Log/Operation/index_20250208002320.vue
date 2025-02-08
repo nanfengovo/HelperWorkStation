@@ -135,12 +135,6 @@ else if(queryForm.value.operator == "" && queryForm.value.date == ""){
             }));
             total.value = res.data.length;
         }
-        else{
-            ElMessage({
-                message: '这个级别的数据不存在',
-                type: 'warning',
-            });
-        }
 
 };
 }

@@ -35,11 +35,7 @@
 
     <el-card style="width: 100%" shadow="always" class="Logs-card">
         <el-table :data="LogsData.slice((page-1)* limit, page * limit)" stripe style="width: 100%" height="450">
-            <el-scrollbar max-height="400px">
-                <p v-for="item in LogsData" :key="item.id" class="scrollbar-demo-item">
-                {{ item }}
-                </p>
-            </el-scrollbar>
+           
             <el-table-column prop="id" label="序号" width="180" />
             <el-table-column prop="level" label="日志级别" width="120" />
             <el-table-column prop="logger" label="日志源" width="180" />
@@ -95,55 +91,10 @@ const handleCurrentChange = (val: number) => {
 };
 
 // 查询
-const query = async () => {
-//单条件查询
-
-//日志内容关键字查询
-if( queryForm.value.level == "" && queryForm.value.date == ""){
-    const res = await axios.get(`http://127.0.0.1:5264/api/OperationLogs/GetLogsByKeyWord?KeyWord=${queryForm.value.operator}`);
-    if (res.data && res.data.length > 0) {
-        ElMessage({
-                message: '查询成功,共有' + res.data.length + '条数据',
-                type: 'success',
-            });
-            // 将后端返回的数据转换为 LogsData 所需的格式
-            LogsData.value = res.data.map((log: { id: number; level: string; logger: string; date: string; message: string }) => ({
-                id: log.id,
-                level: log.level,
-                logger: log.logger,
-                data: new Date(log.date).toLocaleString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' }), // 将字符串转换为格式化的日期字符串
-                message: log.message
-            }));
-            total.value = res.data.length;
-        }
-}
-//日志级别查询
-else if(queryForm.value.operator == "" && queryForm.value.date == ""){
-    const res = await axios.get(`http://127.0.0.1:5264/api/OperationLogs/GetLogsByLevel?level=${queryForm.value.level}`);
-    if (res.data && res.data.length > 0) {
-            ElMessage({
-                message: '查询成功,共有' + res.data.length + '条数据',
-                type: 'success',
-            });
-            // 将后端返回的数据转换为 LogsData 所需的格式
-            LogsData.value = res.data.map((log: { id: number; level: string; logger: string; date: string; message: string }) => ({
-                id: log.id,
-                level: log.level,
-                logger: log.logger,
-                data: new Date(log.date).toLocaleString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' }), // 将字符串转换为格式化的日期字符串
-                message: log.message
-            }));
-            total.value = res.data.length;
-        }
-        else{
-            ElMessage({
-                message: '这个级别的数据不存在',
-                type: 'warning',
-            });
-        }
-
+const query = () => {
+    GetAllLogs();
 };
-}
+
 // 重置
 const reset = () => {
     queryForm.value.operator = "";
@@ -181,6 +132,12 @@ async function GetAllLogs() {
     }
 }
 
+//单条件查询
+
+//日志内容关键字查询
+if(level.value == "" && date.value == ""){
+    const res = await axios.get("http://localhost:5264/api/OperationLogs/GetLogsByKeyWord?KeyWord=");
+}
 
 
 

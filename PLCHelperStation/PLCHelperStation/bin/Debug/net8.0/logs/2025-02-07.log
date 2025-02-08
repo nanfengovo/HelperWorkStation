@@ -24,3 +24,18 @@
 2025-02-07 13:36:46.2396|INFO|PLCHelperStation.Controller.PLCConfigController|获取一次PLC配置 
 2025-02-07 13:36:48.6499|INFO|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置 
 2025-02-07 13:36:48.6658|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-07 23:36:26.8266|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5264 
+2025-02-07 23:36:27.3171|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-07 23:36:27.3228|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-07 23:36:27.3228|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 
+2025-02-07 23:36:40.5754|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-07 23:42:47.3882|INFO|PLCHelperStation.Controller.AdminController|用户登录操作，登录成功！ 
+2025-02-07 23:42:51.6444|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-07 23:45:38.5965|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-07 23:45:45.7109|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-07 23:48:37.1448|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-07 23:48:44.1544|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-07 23:53:21.5591|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-07 23:55:21.8145|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-07 23:57:35.9687|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-07 23:59:35.6443|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 

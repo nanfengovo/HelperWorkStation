@@ -69,15 +69,15 @@ import { computed, onMounted, ref } from 'vue';
 const queryForm = ref<{
     operator: string;
     level: string;
-    date: string;
+    date: Date[];
 }>({
     operator: "",
     level: "",
-    date: "",
+    date: [],
 });
 
 //表格数据
-const LogsData = ref<Array<{id: number; level: string; logger: string; data: Date; message: string }>>([]);
+const LogsData = ref<Array<{id: number; level: string; logger: string; data: string; message: string }>>([]);
 
 
 //分页
@@ -95,55 +95,10 @@ const handleCurrentChange = (val: number) => {
 };
 
 // 查询
-const query = async () => {
-//单条件查询
-
-//日志内容关键字查询
-if( queryForm.value.level == "" && queryForm.value.date == ""){
-    const res = await axios.get(`http://127.0.0.1:5264/api/OperationLogs/GetLogsByKeyWord?KeyWord=${queryForm.value.operator}`);
-    if (res.data && res.data.length > 0) {
-        ElMessage({
-                message: '查询成功,共有' + res.data.length + '条数据',
-                type: 'success',
-            });
-            // 将后端返回的数据转换为 LogsData 所需的格式
-            LogsData.value = res.data.map((log: { id: number; level: string; logger: string; date: string; message: string }) => ({
-                id: log.id,
-                level: log.level,
-                logger: log.logger,
-                data: new Date(log.date).toLocaleString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' }), // 将字符串转换为格式化的日期字符串
-                message: log.message
-            }));
-            total.value = res.data.length;
-        }
-}
-//日志级别查询
-else if(queryForm.value.operator == "" && queryForm.value.date == ""){
-    const res = await axios.get(`http://127.0.0.1:5264/api/OperationLogs/GetLogsByLevel?level=${queryForm.value.level}`);
-    if (res.data && res.data.length > 0) {
-            ElMessage({
-                message: '查询成功,共有' + res.data.length + '条数据',
-                type: 'success',
-            });
-            // 将后端返回的数据转换为 LogsData 所需的格式
-            LogsData.value = res.data.map((log: { id: number; level: string; logger: string; date: string; message: string }) => ({
-                id: log.id,
-                level: log.level,
-                logger: log.logger,
-                data: new Date(log.date).toLocaleString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' }), // 将字符串转换为格式化的日期字符串
-                message: log.message
-            }));
-            total.value = res.data.length;
-        }
-        else{
-            ElMessage({
-                message: '这个级别的数据不存在',
-                type: 'warning',
-            });
-        }
-
+const query = () => {
+    GetAllLogs();
 };
-}
+
 // 重置
 const reset = () => {
     queryForm.value.operator = "";
@@ -151,36 +106,27 @@ const reset = () => {
     queryForm.value.date = "";
     GetAllLogs();
 };
+
 // 获取日志数据
-async function GetAllLogs() {
+const GetAllLogs = async () => {
     try {
         const res = await axios.get('http://127.0.0.1:5264/api/OperationLogs/GetAllLogs', {
-            params: {
-                ...queryForm.value,
-                startDate: queryForm.value.date ? queryForm.value.date[0] : null,
-                endDate: queryForm.value.date ? queryForm.value.date[1] : null,
-            },
-        });
-
-        if (res.data && res.data.length > 0) {
-            // 将后端返回的数据转换为 LogsData 所需的格式
-            LogsData.value = res.data.map((log: { id: number; level: string; logger: string; date: string; message: string }) => ({
-                id: log.id,
-                level: log.level,
-                logger: log.logger,
-                data: new Date(log.date).toLocaleString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' }), // 将字符串转换为格式化的日期字符串
-                message: log.message
-            }));
-            total.value = res.data.length;
-        }
-    } catch (error: any) {
+        params: {
+        ...queryForm.value,
+        startDate: queryForm.value.date ? queryForm.value.date[0] : null,
+        endDate: queryForm.value.date ? queryForm.value.date[1] : null,
+    },
+    });
+    LogsData.value = res.data;
+    total.value = res.data.length;
+    
+} catch (error: any) {
         ElMessage({
-            message: error.message,
-            type: 'warning',
+        message: error.message,
+        type: 'warning',
         });
     }
-}
-
+};
 
 
 
