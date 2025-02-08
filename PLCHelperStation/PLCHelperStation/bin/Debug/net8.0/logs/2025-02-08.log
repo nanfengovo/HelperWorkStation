@@ -41,3 +41,8 @@
 2025-02-08 12:05:37.4295|INFO|PLCHelperStation.Controller.PLCConfigController|获取一次PLC配置 
 2025-02-08 12:05:59.8307|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
 2025-02-08 12:05:59.8307|INFO|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置 
+2025-02-08 13:49:44.3253|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5264 
+2025-02-08 13:49:44.8535|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-08 13:49:44.8535|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-08 13:49:44.8676|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 
+2025-02-08 13:51:32.4302|WARN|PLCHelperStation.Controller.S7ConfigController|添加S7配置,添加成功！ 

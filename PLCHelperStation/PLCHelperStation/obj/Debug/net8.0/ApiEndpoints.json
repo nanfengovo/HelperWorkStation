@@ -395,5 +395,31 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "PLCHelperStation.Controller.S7ConfigController",
+    "Method": "AddS7Confug",
+    "RelativePath": "api/S7Config/AddS7Confug",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "s7Config",
+        "Type": "PLCHelperStation.Modbel.S7Config",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCHelperStation.ResultObj.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

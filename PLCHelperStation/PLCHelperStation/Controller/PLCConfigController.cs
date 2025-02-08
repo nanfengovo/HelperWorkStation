@@ -38,7 +38,7 @@ namespace PLCHelperStation.Controller
                     ctx.PLCs.Add(pLC);
                     ctx.SaveChanges();
                     var reult = new Result { Code = 200, ResultType = true, Message = "新的 PLC 配置已成功保存到数据库！" };
-                    _logger.LogInformation("添加PLC配置操作,新的 PLC 配置已成功保存到数据库！");
+                    _logger.LogWarning("添加PLC配置操作,新的 PLC 配置已成功保存到数据库！");
                     return reult;
                 }
                 #endregion
@@ -47,7 +47,7 @@ namespace PLCHelperStation.Controller
             }
 
             var reulterr = new Result { Code = 400, ResultType = false, Message = "想要保存的这个PLC配置已存在！" };
-            _logger.LogWarning("添加PLC配置操作,想要保存的这个PLC配置已存在！");
+            _logger.LogError("添加PLC配置操作,想要保存的这个PLC配置已存在！");
             return reulterr;
 
         }
@@ -63,7 +63,7 @@ namespace PLCHelperStation.Controller
             using (var ctx = new TestDbContext())
             {
                 var plcList = ctx.PLCs.ToList();
-                _logger.LogInformation("获取一次PLC配置");
+                _logger.LogWarning("获取一次PLC配置");
                 return Ok(plcList);
             }
         }
@@ -91,13 +91,13 @@ namespace PLCHelperStation.Controller
                         plc.Name = name;
                         ctx.SaveChanges();
                         var result = new Result { Code = 200, ResultType = true, Message = "修改成功！" };
-                        _logger.LogInformation("修改PLC配置操作，修改成功！");
+                        _logger.LogWarning("修改PLC配置操作，修改成功！");
                         return result;
                     }
                     else
                     {
                         var resultwarn = new Result { Code = 400, ResultType = false, Message = "要修改的对象不存在" };
-                        _logger.LogWarning("修改PLC配置操作，要修改的对象不存在");
+                        _logger.LogError("修改PLC配置操作，要修改的对象不存在");
                         return resultwarn;
                     }
                 }
@@ -129,12 +129,12 @@ namespace PLCHelperStation.Controller
                     ctx.PLCs.Remove(plc);
                     ctx.SaveChanges();
                     var result = new Result { Code = 200, ResultType = true, Message = "删除成功！" };
-                    _logger.LogInformation($"删除PLC操作，删除的PLC为{plc.Name}");
+                    _logger.LogWarning($"删除PLC操作，删除的PLC为{plc.Name}");
                     return result;
                 }
                 else
                 {
-                    _logger.LogWarning("删除PLC操作，不存在该对象");
+                    _logger.LogError("删除PLC操作，不存在该对象");
                     return new Result { Code = 404, ResultType = false, Message = "不存在该对象！" };
 
                 }

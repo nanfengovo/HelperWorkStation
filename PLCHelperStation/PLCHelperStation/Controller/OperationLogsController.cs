@@ -31,7 +31,7 @@ namespace PLCHelperStation.Controller.Log
                 using (var ctx = new TestDbContext())
                 {
                     var LogsList = ctx.logs.OrderByDescending(log => log.date).ToList();;
-                    _logger.LogInformation("获取一次所有日志");
+                    _logger.LogWarning("获取一次所有日志");
                     return Ok(LogsList);
                 }
             }
@@ -57,7 +57,7 @@ namespace PLCHelperStation.Controller.Log
                 using (var ctx = new TestDbContext())
                 {
                     var LogList = ctx.logs.Where(x => x.message.Contains(KeyWord)).ToList();
-                    _logger.LogInformation($"用户查询了一次关键字为：{KeyWord}的日志");
+                    _logger.LogWarning($"用户查询了一次关键字为：{KeyWord}的日志");
                     return LogList;
                 }
             }
@@ -82,14 +82,14 @@ namespace PLCHelperStation.Controller.Log
                 using (var ctx = new TestDbContext())
                 {
                     var loglist = ctx.logs.Where(x => x.level == level).ToList();
-                    _logger.LogInformation($"根据日志级别为：{level}查询，查询成功");
+                    _logger.LogWarning($"根据日志级别为：{level}查询，查询成功");
                     return loglist;
                 }
             }
             catch (Exception ex)
             {
 
-                _logger.LogInformation($"根据日志级别为：{level}查询，查询失败，详细信息为：{ex.Message}");
+                _logger.LogWarning($"根据日志级别为：{level}查询，查询失败，详细信息为：{ex.Message}");
                 return new Result { Code = 400, ResultType = false, Message = ex.Message };
             }
         }
