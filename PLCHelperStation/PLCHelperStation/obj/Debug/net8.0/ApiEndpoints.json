@@ -398,8 +398,8 @@
   },
   {
     "ContainingType": "PLCHelperStation.Controller.S7ConfigController",
-    "Method": "AddS7Confug",
-    "RelativePath": "api/S7Config/AddS7Confug",
+    "Method": "AddS7Config",
+    "RelativePath": "api/S7Config/AddS7Config",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -408,6 +408,108 @@
         "Name": "s7Config",
         "Type": "PLCHelperStation.Modbel.S7Config",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCHelperStation.ResultObj.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PLCHelperStation.Controller.S7ConfigController",
+    "Method": "DeleteS7Config",
+    "RelativePath": "api/S7Config/DeleteS7Config",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCHelperStation.ResultObj.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PLCHelperStation.Controller.S7ConfigController",
+    "Method": "GetS7Confug",
+    "RelativePath": "api/S7Config/GetS7Confug",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PLCHelperStation.Modbel.S7Config, PLCHelperStation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PLCHelperStation.Controller.S7ConfigController",
+    "Method": "UpdateS7Config",
+    "RelativePath": "api/S7Config/UpdateS7Config",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "S7Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IP",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Port",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "CPUType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Rack",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Slot",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
