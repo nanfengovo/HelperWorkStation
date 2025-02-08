@@ -36,3 +36,8 @@
 2025-02-08 00:26:55.0582|INFO|PLCHelperStation.Controller.PLCConfigController|获取一次PLC配置 
 2025-02-08 00:27:02.5386|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
 2025-02-08 08:00:54.2720|INFO|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-08 12:05:18.0284|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-08 12:05:18.0436|INFO|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置 
+2025-02-08 12:05:37.4295|INFO|PLCHelperStation.Controller.PLCConfigController|获取一次PLC配置 
+2025-02-08 12:05:59.8307|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-08 12:05:59.8307|INFO|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置 

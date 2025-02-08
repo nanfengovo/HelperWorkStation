@@ -30,7 +30,7 @@ namespace PLCHelperStation.Controller.Log
             {
                 using (var ctx = new TestDbContext())
                 {
-                    var LogsList = ctx.logs.ToList();
+                    var LogsList = ctx.logs.OrderByDescending(log => log.date).ToList();;
                     _logger.LogInformation("获取一次所有日志");
                     return Ok(LogsList);
                 }

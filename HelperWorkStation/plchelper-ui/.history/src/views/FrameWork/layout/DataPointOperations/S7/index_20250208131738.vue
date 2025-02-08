@@ -54,9 +54,9 @@ const inputRack = ref('');
 .S7Card {
     width: 100%;
 }
-.S7config-card {
+.card-top {
     width: 100%;
-    height: 280px;
+    height: 200px;
     margin-top: 20px;
     margin-bottom: 40px;
     background-color: #F0FFF0;
@@ -64,7 +64,6 @@ const inputRack = ref('');
 }
 .S7Config-form .el-form-item {
     margin-bottom: 20px;
-    margin-left: 20px;
 }
 .card-top-demo {
     display: flex;

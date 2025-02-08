@@ -14,6 +14,8 @@ namespace PLCHelperStation.DB
         public DbSet<ModbusConfig> ModbusConfigs { get; set; }
 
         public DbSet<Log> logs { get; set; }
+
+        public DbSet<S7Config> S7Configs { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string conStr = "Server = . ;Database = PLCHelperDB ;User=sa ;Password=aaaa2624434145 ;Encrypt=True;Trusted_Connection=True;TrustServerCertificate=True";

@@ -56,7 +56,7 @@ const inputRack = ref('');
 }
 .S7config-card {
     width: 100%;
-    height: 280px;
+    height: 250px;
     margin-top: 20px;
     margin-bottom: 40px;
     background-color: #F0FFF0;

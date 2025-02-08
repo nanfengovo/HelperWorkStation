@@ -17,7 +17,7 @@
                             <el-input v-model="port" placeholder="请输入端口号" />
                         </el-form-item>
                         <el-form-item label = "PLC类型:">
-                            <el-select  v-model="selectCpu" placeholder="请选择CPU型号" style="width: 240px" clearable>
+                            <el-select v-model="PLCType" placeholder="请选择PLC类型">
                                 <el-option label="S7-1200" value="S7-1200" />
                                 <el-option label="S7-1500" value="S7-1500" />
                             </el-select>
@@ -54,17 +54,13 @@ const inputRack = ref('');
 .S7Card {
     width: 100%;
 }
-.S7config-card {
+.card-top {
     width: 100%;
-    height: 280px;
+    height: 200px;
     margin-top: 20px;
     margin-bottom: 40px;
     background-color: #F0FFF0;
     border-radius: 12px; 
-}
-.S7Config-form .el-form-item {
-    margin-bottom: 20px;
-    margin-left: 20px;
 }
 .card-top-demo {
     display: flex;
