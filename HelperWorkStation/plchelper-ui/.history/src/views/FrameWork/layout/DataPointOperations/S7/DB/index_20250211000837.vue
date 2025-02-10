@@ -443,40 +443,6 @@ const Enable = async (index: number, row: { id: number }) => {
     }
 }
 
-//停用
-const Disable = async (index: number, row: { id: number }) => {
-    try {
-        const response = await axios.put(`http://127.0.0.1:5264/api/DBPointConfig/DisableDBPointConfig?id=${row.id}`);
-        if (response.data.code == 200) {
-            // 显示成功消息
-            ElMessage({
-                message: response.data.message, // 使用服务器返回的成功消息
-                type: 'success',
-            });
-            // 重新获取数据以更新表格
-            GetDBPointConfig();;;
-        } else if (response.data.code == 401) {
-            // 显示失败消息
-            ElMessage({
-                message: response.data.message, // 使用服务器返回的失败消息
-                type: 'warning',
-            });
-        }
-        else {
-            // 显示失败消息
-            ElMessage({
-                message: response.data.message, // 使用服务器返回的失败消息
-                type: 'error',
-            });
-        }
-    } catch (error: any) {
-        ElMessage({
-            message: error.message,
-            type: 'error',
-        });
-    }
-}
-
 </script>
 <style>
 .DBPoint-config-card{

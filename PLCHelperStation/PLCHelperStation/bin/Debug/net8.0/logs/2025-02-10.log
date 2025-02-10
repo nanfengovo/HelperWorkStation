@@ -186,3 +186,9 @@ Object name: 'TestDbContext'.
 2025-02-10 23:51:41.0296|WARN|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
 2025-02-10 23:51:48.0642|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次S7配置 
 2025-02-10 23:51:48.0642|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次数据点配置 
+2025-02-10 23:54:54.9741|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次S7配置 
+2025-02-10 23:54:54.9741|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次数据点配置 
+2025-02-10 23:54:55.9906|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-10 23:55:00.9151|WARN|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-10 23:55:22.2195|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次S7配置 
+2025-02-10 23:55:22.2195|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次数据点配置 

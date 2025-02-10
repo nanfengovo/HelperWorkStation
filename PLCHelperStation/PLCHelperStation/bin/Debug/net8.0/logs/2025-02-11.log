@@ -1,0 +1,36 @@
+2025-02-11 00:03:01.8855|WARN|PLCHelperStation.Controller.PLCConfigController|获取一次PLC配置 
+2025-02-11 00:03:08.2367|WARN|PLCHelperStation.Controller.Log.OperationLogsController|获取一次所有日志 
+2025-02-11 00:03:28.9617|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置 
+2025-02-11 00:03:28.9617|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-11 00:03:32.6994|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 00:03:33.7576|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次S7配置 
+2025-02-11 00:03:33.7758|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次数据点配置 
+2025-02-11 00:03:34.8762|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 00:03:35.8932|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次S7配置 
+2025-02-11 00:03:35.8932|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次数据点配置 
+2025-02-11 00:03:37.0568|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 00:03:37.5386|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置 
+2025-02-11 00:03:37.5386|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-11 00:06:55.3604|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 00:06:55.9170|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次S7配置 
+2025-02-11 00:06:55.9170|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次数据点配置 
+2025-02-11 00:07:55.2564|WARN|PLCHelperStation.Controller.DBPointConfigController|启用数据点配置操作，启用id为：1 的配置时发现本来就是启用的状态！ 
+2025-02-11 00:08:38.1479|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次S7配置 
+2025-02-11 00:08:38.1479|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次数据点配置 
+2025-02-11 00:08:40.3771|WARN|PLCHelperStation.Controller.DBPointConfigController|启用数据点配置操作，启用id为：1 的配置时发现本来就是启用的状态！ 
+2025-02-11 00:08:41.7828|WARN|PLCHelperStation.Controller.DBPointConfigController|启用数据点配置操作，启用id为：3 的配置时发现本来就是启用的状态！ 
+2025-02-11 00:10:01.7812|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次数据点配置 
+2025-02-11 00:10:01.7858|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次S7配置 
+2025-02-11 00:10:05.8147|WARN|PLCHelperStation.Controller.DBPointConfigController|停用数据点配置操作，停用成功！ 
+2025-02-11 00:10:05.8469|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次数据点配置 
+2025-02-11 00:10:08.4046|WARN|PLCHelperStation.Controller.DBPointConfigController|启用数据点配置操作，启用成功！ 
+2025-02-11 00:10:08.4180|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次数据点配置 
+2025-02-11 00:10:09.2471|WARN|PLCHelperStation.Controller.DBPointConfigController|停用数据点配置操作，停用成功！ 
+2025-02-11 00:10:09.2564|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次数据点配置 
+2025-02-11 00:10:09.7013|WARN|PLCHelperStation.Controller.DBPointConfigController|停用数据点配置操作，启用id为：1 的配置时发现本来就是停用的状态！ 
+2025-02-11 00:10:11.5220|WARN|PLCHelperStation.Controller.DBPointConfigController|启用数据点配置操作，启用成功！ 
+2025-02-11 00:10:11.5220|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次数据点配置 
+2025-02-11 00:10:13.5914|WARN|PLCHelperStation.Controller.DBPointConfigController|启用数据点配置操作，启用id为：3 的配置时发现本来就是启用的状态！ 
+2025-02-11 00:10:14.1135|WARN|PLCHelperStation.Controller.DBPointConfigController|停用数据点配置操作，停用成功！ 
+2025-02-11 00:10:14.1354|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次数据点配置 
+2025-02-11 00:10:15.2245|WARN|PLCHelperStation.Controller.DBPointConfigController|停用数据点配置操作，启用id为：3 的配置时发现本来就是停用的状态！ 
