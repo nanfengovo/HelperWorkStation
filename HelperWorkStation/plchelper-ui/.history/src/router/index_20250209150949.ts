@@ -4,11 +4,6 @@ import Login from '../views/Login/index.vue';
 import panel from '../views/FrameWork/layout/panel/index.vue';
 
 // const routes: RouteRecordRaw[] = [];
-
-
-
-
-
 const routes: Array<RouteRecordRaw> = [
     {
         path: '/',
@@ -35,6 +30,11 @@ const routes: Array<RouteRecordRaw> = [
                 component: () => import('../views/FrameWork/layout/PLCWorkstation/Modbus/index.vue'),
             },
             {
+                path: '/frameWork/PLCWorkstation/PLC',
+                name: 'PLC工作站-PLC配置',
+                component: () => import('../views/FrameWork/layout/PLCWorkstation/PLC/index.vue'),
+            },
+            {
                 path: '/frameWork/PLCWorkstation/S7',
                 name: 'PLC工作站-S7',
                 component: () => import('../views/FrameWork/layout/PLCWorkstation/S7/index.vue'),
@@ -58,6 +58,11 @@ const routes: Array<RouteRecordRaw> = [
                 path: '/frameWork/DataPointOperations/S7',
                 name: '数据点运维-S7',
                 component: () => import('../views/FrameWork/layout/DataPointOperations/S7/index.vue'),
+            },
+            {
+            path: '/frameWork/DataPointOperations/S7/DB',
+                        name: '数据点运维-S7-DB',
+                        component: () => import('../views/FrameWork/layout/DataPointOperations/S7/DB/index.vue'),
             },
             {
                 path: '/frameWork/DataPointOperations/Opc',

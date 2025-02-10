@@ -40,11 +40,11 @@
 
         <el-card style="width: 100%" shadow="always" class="S7configData-card"> 
             <el-table :data="S7ConfigData" stripe style="width: 100%" >
-                <el-table-column prop="id" label="序号" width="60" />
+                <el-table-column prop="id" label="序号" width="40" />
                 <el-table-column prop="s7Name" label="S7配置名称" width="180" />
                 <el-table-column prop="ip" label="IP地址" width="180" />
                 <el-table-column prop="port" label="端口" width="100" />
-                <el-table-column prop="cpuType" label="CPU类型" width="180" />
+                <el-table-column prop="cpuType" label="PLC类型" width="180" />
                 <el-table-column prop="rack" label="Rack" width="80" />
                 <el-table-column prop="slot" label="Slot" width="80" />
                 <el-table-column label="操作" width="300">

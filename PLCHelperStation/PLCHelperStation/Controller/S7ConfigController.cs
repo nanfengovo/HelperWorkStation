@@ -147,16 +147,18 @@ namespace PLCHelperStation.Controller
                     var s7Config = ctx.S7Configs.Find(id);
                     if (s7Config == null)
                     {
-                        return new Result { Code = 404, ResultType = false, Message = "要修改的配置不存在" };
+                        _logger.LogError($"在修改配置名为：{S7Name}的配置时，出现错误要修改的配置不存在");
+                        return new Result { Code = 404, ResultType = false, Message =$"在修改配置名为：{S7Name}的配置时，出现错误要修改的配置不存在" };
                     }
 
                     // 检查配置名称是否冲突
                     var existingConfigName = ctx.S7Configs.Any(x => x.S7Name == S7Name);
                     // 检查配置是否存在
-                    var existConfig = ctx.S7Configs.Any(x => x.IP == s7Config.IP && x.Port == s7Config.Port && x.CPUType == s7Config.CPUType && x.Slot == s7Config.Slot && x.Rack == s7Config.Rack);
+                    var existConfig = ctx.S7Configs.Any(x => x.IP == IP && x.Port == Port && x.CPUType == CPUType && x.Slot == Slot && x.Rack == Rack);
                     if (existingConfigName)
                     {
-                        return new Result { Code = 400, ResultType = false, Message = "要修改的配置名已存在，不允许使用该名称" };
+                        _logger.LogError($"在修改的配置名为{S7Name}的配置时，修改的目标配置已存在，请检查是否修改的必要性！");
+                        return new Result { Code = 400, ResultType = false, Message = $"在修改的配置名为{S7Name}的配置时，修改的目标配置已存在，请检查是否修改的必要性！" };
                     }
                     else if (existConfig)
                     {
@@ -164,17 +166,21 @@ namespace PLCHelperStation.Controller
                         _logger.LogError("添加S7配置，该配置已存在，不能重复！");
                         return resultNg;
                     }
+                    else
+                    {
 
-                    // 更新配置信息
-                    s7Config.S7Name = S7Name;
-                    s7Config.IP = IP;
-                    s7Config.Port = Port;
-                    s7Config.CPUType = CPUType;
-                    s7Config.Rack = Rack;
-                    s7Config.Slot = Slot;
-                    ctx.SaveChanges();
-                    _logger.LogWarning("修改S7配置信息成功！");
-                    return new Result { Code = 200, ResultType = true, Message = "修改成功" };
+                        // 更新配置信息
+                        s7Config.S7Name = S7Name;
+                        s7Config.IP = IP;
+                        s7Config.Port = Port;
+                        s7Config.CPUType = CPUType;
+                        s7Config.Rack = Rack;
+                        s7Config.Slot = Slot;
+                        ctx.SaveChanges();
+                        _logger.LogWarning("修改S7配置信息成功！");
+                        return new Result { Code = 200, ResultType = true, Message = "修改成功" };
+                    }
+
                 }
             }
             catch (Exception ex)

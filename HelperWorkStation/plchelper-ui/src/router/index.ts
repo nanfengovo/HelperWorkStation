@@ -60,6 +60,11 @@ const routes: Array<RouteRecordRaw> = [
                 component: () => import('../views/FrameWork/layout/DataPointOperations/S7/index.vue'),
             },
             {
+            path: '/frameWork/DataPointOperations/S7/DB',
+                        name: '数据点运维-S7-DB',
+                        component: () => import('../views/FrameWork/layout/DataPointOperations/S7/DB/index.vue'),
+            },
+            {
                 path: '/frameWork/DataPointOperations/Opc',
                 name: '数据点运维-Opc',
                 component: () => import('../views/FrameWork/layout/DataPointOperations/OPC/index.vue'),
