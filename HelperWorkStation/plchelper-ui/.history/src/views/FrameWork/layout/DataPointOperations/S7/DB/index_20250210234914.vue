@@ -383,7 +383,6 @@ const update = async () => {
             message: "修改成功!",
             type: 'success',
         });
-        clearForm(); //清空数据
         GetDBPointConfig(); //刷新数据
         editFormVisible.value = false; //关闭编辑表单
     }
@@ -393,16 +392,6 @@ const update = async () => {
             type: 'error',
         });
     }
-}
-
-const clearForm = () => {
-    form.value.dbName = '';
-    form.value.s7Name = '';
-    form.value.dbType = '';
-    form.value.dbAddress = '';
-    form.value.dbOffset = '';
-    form.value.remark = '';
-    form.value.isOpen = true;
 }
 </script>
 <style>

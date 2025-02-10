@@ -40,7 +40,7 @@
                             <el-input v-model="dbOffset" placeholder="请输入偏移量" clearable />
                         </el-form-item>
                         <el-form-item label = "备注:">
-                            <el-input v-model="remark" placeholder="请输入备注"  clearable />
+                            <el-input v-model="remark" placeholder="请输入备注" clearable />
                         </el-form-item>
                         <el-form-item label = "是否启用:">
                             <el-switch
@@ -62,12 +62,12 @@
         <el-card style="width: 100%" shadow="always" class="DBPointconfigData-card"> 
             <el-table :data="DBPointConfigData" stripe style="width: 100%" >
                 <el-table-column prop="id" label="序号" width="60" />
-                <el-table-column prop="dbName" label="数据点名称" width="180" />
+                <el-table-column prop="dbName" label="S7数据点名称" width="180" />
                 <el-table-column prop="s7Name" label="S7配置名称" width="180" />
                 <el-table-column prop="dbType" label="数据类型" width="100" />
-                <el-table-column prop="dbAddress" label="DB块地址" width="100" />
+                <el-table-column prop="dbAddress" label="DB块地址" width="180" />
                 <el-table-column prop="dbOffset" label="偏移量" width="80" />
-                <el-table-column prop="remark" label="备注" width="180" />
+                <el-table-column prop="remark" label="备注" width="80" />
 
                 <el-table-column prop="isOpen" label="是否启用" width="80">
                     <template #default="scope">
@@ -90,49 +90,28 @@
         </el-card>
 
         <!-- 插槽-编辑对话框 -->
-        <el-dialog v-model="editFormVisible" title="修改DB块配置" width="500" draggable >
+        <!-- <el-dialog v-model="editFormVisible" title="修改S7配置" width="500" draggable >
         <el-form :model="form">
-                        <el-form-item label = "数据点名称:">
-                            <el-input v-model="form.dbName" placeholder="请输入数据点名称" clearable  />
+                        <el-form-item label = "配置名称:">
+                            <el-input v-model="form.S7Name" placeholder="请输入配置名称" clearable  />
                         </el-form-item>
-                        <el-form-item label = "S7配置名称:">
-                            <el-select 
-                            v-model="form.s7Name" 
-                            placeholder="请选择S7配置" 
-                            style="width: 240px"
-                            :loading="isLoading"
-                            Clearable
-                            >
-                            <!-- 加载中显示提示 -->
-                            <el-option v-if="isLoading" disabled label="加载中..." value="" />
-
-                            <!-- 数据加载完成后的选项 -->
-                            <el-option
-                                v-for="item in selectedS7ConfigList"
-                                :key="item.value"
-                                :label="item.label"
-                                :value="item.value"
-                            />
+                        <el-form-item label="IP地址:" >
+                            <el-input v-model="form.IP" placeholder="请输入IP地址" clearable />
+                        </el-form-item>
+                        <el-form-item label = "端口:">
+                            <el-input v-model="form.Port" placeholder="请输入端口号" clearable />
+                        </el-form-item>
+                        <el-form-item label = "CPU类型:">
+                            <el-select  v-model="form.CPUType" placeholder="请选择CPU型号" style="width: 240px" clearable>
+                                <el-option label="S7-1200" value="S7-1200" />
+                                <el-option label="S7-1500" value="S7-1500" />
                             </el-select>
                         </el-form-item>
-                        <el-form-item label = "数据类型:">
-                            <el-input v-model="form.dbType" placeholder="数据类型" clearable />
+                        <el-form-item label = "Rack:">
+                            <el-input v-model="form.Rack" placeholder="请输入Rack" clearable />
                         </el-form-item>
-                        <el-form-item label = "DB块地址:">
-                            <el-input  v-model="form.dbAddress" placeholder="请输入DB块地址"  clearable/>
-                        </el-form-item>
-                        <el-form-item label = "偏移量:">
-                            <el-input v-model="form.dbOffset" placeholder="请输入偏移量" clearable />
-                        </el-form-item>
-                        <el-form-item label = "备注:">
-                            <el-input v-model="form.remark" placeholder="请输入备注"  clearable />
-                        </el-form-item>
-                        <el-form-item label = "是否启用:">
-                            <el-switch
-                            v-model="form.isOpen"
-                            class="ml-2"
-                            style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949"
-                        />
+                        <el-form-item label = "Slot:">
+                            <el-input v-model="form.Slot" placeholder="请输入Slot" clearable />
                         </el-form-item>
         </el-form>
         <template #footer>
@@ -141,7 +120,7 @@
             <el-button type="primary" @click="update">确认</el-button>
             </div>
         </template>
-        </el-dialog>
+        </el-dialog> -->
     </div>
 </template>
 <script setup lang = "ts">
@@ -168,21 +147,6 @@ const remark = ref(''); //备注
 const isOpen = ref(true); //是否启用
 
 const selectedS7ConfigList = ref([]); //S7配置列表
-
-
-//编辑对话框是否显示
-const editFormVisible = ref(false); 
-
-const form = ref({
-    id: 0,
-    dbName: '',
-    s7Name: '',
-    dbType: '',
-    dbAddress: '',
-    dbOffset: '',
-    remark: '',
-    isOpen: true
-}); //编辑表单数据
 
 //s7配置名称下拉框数据
 async function GetAllS7Config() {
@@ -282,7 +246,7 @@ const AddDBPointConfig = () => {
         })
         .then((res) => {
             console.log(res.data);
-            if (res.data.code == 200) {
+            if (res.data == 200) {
                 ElMessage({
                     message: "添加成功!",
                     type: 'success',
@@ -321,89 +285,6 @@ onMounted(() => {
     //加载DB配置数据
     GetDBPointConfig();
 });
-
-//DeleteDBPointConfig按钮点击事件
-const Delete = async (index: number, row: { id: number })  => {
-    ElMessageBox.confirm(
-    '确定要删除此配置?',
-    '警告',
-    {
-        confirmButtonText: '确定',
-        cancelButtonText: '取消',
-        type: 'warning',
-    }
-    )
-    .then(() => {
-        //发送请求
-        axios.delete(`http://localhost:5264/api/DBPointConfig/DeleteDBPointConfig?id=${row.id}`)
-        .then((res) => {
-            console.log(res.data);
-            if (res.data.code == 200) {
-                ElMessage({
-                    message: "删除成功!",
-                    type: 'success',
-                });
-                GetDBPointConfig(); //刷新数据
-            } 
-            else {
-                ElMessage({
-                    message: res.data,
-                    type: 'error',
-                });
-            }
-        })
-        .catch((error) => {
-            ElMessage({
-                message: "删除失败,请检查数据是否正确!",
-                type: 'error',
-            });
-        })
-    })
-    .catch(() => {
-        ElMessage({
-            type: 'info',
-            message: '取消删除',
-        })
-    })
-}
-
-//Edit
-const Edit = (index: number, row: { id: number }) => {
-    editFormVisible.value = true; //显示编辑表单
-    form.value.id = row.id; //赋值
-    update
-}
-
-const update = async () => {
-    const res =await axios.put(`http://localhost:5264/api/DBPointConfig/UpdateDBPointConfig?Id=${form.value.id}&S7Name=${form.value.s7Name}&DBName=${form.value.dbName}&DBType=${form.value.dbType}&DBAddress=${form.value.dbAddress}&DBOffset=${form.value.dbOffset}&Remark=${form.value.remark}&isOpen=${form.value.isOpen}`,{
-            headers: { 'Content-Type': 'application/json' },
-        });
-    if(res.data.code == 200){
-        ElMessage({
-            message: "修改成功!",
-            type: 'success',
-        });
-        clearForm(); //清空数据
-        GetDBPointConfig(); //刷新数据
-        editFormVisible.value = false; //关闭编辑表单
-    }
-    else{
-        ElMessage({
-            message: res.data,
-            type: 'error',
-        });
-    }
-}
-
-const clearForm = () => {
-    form.value.dbName = '';
-    form.value.s7Name = '';
-    form.value.dbType = '';
-    form.value.dbAddress = '';
-    form.value.dbOffset = '';
-    form.value.remark = '';
-    form.value.isOpen = true;
-}
 </script>
 <style>
 .DBPoint-config-card{
