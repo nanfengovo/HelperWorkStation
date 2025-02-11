@@ -432,6 +432,11 @@
         "Name": "ConfigName",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "IsOpen",
+        "Type": "System.Boolean",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [

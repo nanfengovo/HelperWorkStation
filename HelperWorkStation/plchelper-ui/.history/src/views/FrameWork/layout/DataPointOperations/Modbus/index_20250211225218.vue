@@ -75,7 +75,7 @@
 
         <el-card style="width: 100%" shadow="always" class="Modbus-card" >
             <el-table :data="ModbusData" stripe style="width: 100%" >
-                <el-table-column prop="id" label="序号" width="80" />
+                <el-table-column prop="id" label="序号" width="180" />
                 <el-table-column prop="modbusName" label="Modbus配置的名称" width="180" />
                 <el-table-column prop="plcName" label="PLC名称" width="120" />
                 <el-table-column prop="slaveId" label="设备ID" />

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using PLCHelperStation.DB;
 using PLCHelperStation.Modbel;
@@ -104,8 +105,16 @@ namespace PLCHelperStation.Controller
             using (var ctx = new TestDbContext())
             {
                 var plc = ctx.ModbusConfigs.Find(id);
+
                 if (plc != null)
                 {
+                    //启用状态不许删除
+                    if(plc.IsOpen)
+                    {
+                        _logger.LogError($"执行删除Modbus配置操作，用户打算删除名称为：{plc.ModbusName}的Modbus配置但是该配置目前是启用的，所以不允许删除！");
+                        var resultNG = new Result { Code = 400, ResultType = false , Message = "要想删除此配置需要先停用"};
+                        return resultNG;
+                    }
                     ctx.ModbusConfigs.Remove(plc);
                     ctx.SaveChanges();
                     var result = new Result { Code = 200, ResultType = true, Message = "删除成功！" };
@@ -133,7 +142,7 @@ namespace PLCHelperStation.Controller
         /// <returns></returns>
         [HttpPut("UpdateModbusConfig")]
         [EnableCors("AllowSpecificOrigins")] // 应用 CORS 策略
-        public Result UpdateModbusConfig(int Id, string PLCName, int SlaveId, string Functioncode, string StartAddr, int Num, string ConfigName)
+        public Result UpdateModbusConfig(int Id, string PLCName, int SlaveId, string Functioncode, string StartAddr, int Num, string ConfigName , bool IsOpen)
         {
             try
             {
@@ -141,23 +150,27 @@ namespace PLCHelperStation.Controller
                 {
                     var modbus = ctx.ModbusConfigs.Find(Id);
                     _logger.LogWarning($"修改Modbus配置操作,修改前数据为PLC名称为：{modbus.PLCName},设备ID为：{modbus.SlaveId},功能码为：{modbus.FunctionCode},开始地址为：{modbus.StartAddress},数量为：{modbus.Num},Modbus名称为：{modbus.ModbusName}");
-                    //不能保存配置名称相同的配置
-                    var existconfigname = ctx.ModbusConfigs.Any(x => x.ModbusName == modbus.ModbusName);
-                    //plcname、slaveid、Functioncode、StartAddress不能同时相同
-                    var exist = ctx.ModbusConfigs.Any(x => x.PLCName == modbus.PLCName && x.SlaveId == modbus.SlaveId && x.FunctionCode == modbus.FunctionCode && x.StartAddress == modbus.StartAddress);
-                    if (existconfigname)
+                    //如果配置名没发生变化，不管;如果改变了就判断需要改变的这个名字存不存在
+                    if(modbus.ModbusName != ConfigName)
                     {
-                        var resultNg = new Result { Code = 400, ResultType = false, Message = "该配置名已存在，配置名称不能重复！" };
-                        _logger.LogError("修改Modbus配置操作，该配置名已存在，配置名称不能重复！");
-                        return resultNg;
+                        var count = ctx.ModbusConfigs.Count(x => x.ModbusName == ConfigName);
+                        if (count == 1)
+                        {
+                            var resultNG = new Result { Code = 400, ResultType = false, Message = "该配置名已存在，配置不能重复！" }; _logger.LogError("修改Modbus配置操作，该配置名已存在，配置不能重复！");
+                            return resultNG;
+                        }
                     }
-                    else if (exist)
+                   
+                    //plcname、slaveid、Functioncode、StartAddress不能同时相同
+                    var exist = ctx.ModbusConfigs.Any(x => x.PLCName == PLCName && x.SlaveId == SlaveId && x.FunctionCode == Functioncode && x.StartAddress == StartAddr && x.ModbusName == ConfigName);
+                     if (exist)
                     {
                         var resultNg = new Result { Code = 400, ResultType = false, Message = "该配置已存在，配置不能重复！" };
                         _logger.LogError("修改Modbus配置操作，该配置已存在，配置不能重复！");
                         return resultNg;
                     }
-                    else if (modbus != null & !existconfigname & !exist)
+                    
+                    else if (modbus != null & !exist)
                     {
                         modbus.PLCName = PLCName;
                         modbus.SlaveId = SlaveId;
@@ -165,6 +178,7 @@ namespace PLCHelperStation.Controller
                         modbus.StartAddress = StartAddr;
                         modbus.Num = Num;
                         modbus.ModbusName = ConfigName;
+                        modbus.IsOpen = IsOpen;
                         ctx.SaveChanges();
                         var result = new Result { Code = 200, ResultType = true, Message = "修改成功！" };
                         _logger.LogWarning($"修改Modbus配置操作，修改成功！修改后的数据为PLC名称为：{PLCName},设备ID为：{SlaveId},功能码为：{Functioncode},开始地址为：{StartAddr},数量为：{Num},Modbus名称为：{ConfigName}");

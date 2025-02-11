@@ -250,7 +250,7 @@ const Delete = async (index: number, row: { id: number }) => {
 //编辑
 //编辑
 const Edit = (index: number, row: { id?:number, S7Name: string,IP: string,Port:number,CPUType:string, Rack:string, Slot: string}) => {
-    console.log("row:"+ row);
+    console.log(row);
     form.value = { ...row };
     editFormVisible.value = true;
 }

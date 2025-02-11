@@ -624,6 +624,13 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "IsOpen",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
           }
         ],
         "responses": {

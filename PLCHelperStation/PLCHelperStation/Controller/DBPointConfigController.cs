@@ -79,7 +79,7 @@ namespace PLCHelperStation.Controller
         {
             using (var ctx = new TestDbContext())
             {
-                var s7List = ctx.S7Configs.Select(x => x.S7Name);
+                var s7List = ctx.S7Configs.Select(x => x.S7Name).ToList();
                 _logger.LogWarning("获取一次S7配置");
                 return Ok(s7List);
             }

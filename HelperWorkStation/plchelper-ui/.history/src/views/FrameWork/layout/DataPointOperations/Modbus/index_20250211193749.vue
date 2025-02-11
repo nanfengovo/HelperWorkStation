@@ -55,13 +55,6 @@
                         <el-form-item label = "配置名称:">
                             <el-input v-model="ModbusName" placeholder="请输入保存的配置名称" />
                         </el-form-item>
-                        <el-form-item label = "是否启用:">
-                            <el-switch
-                            v-model="isOpen"
-                            class="ml-2"
-                            style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949"
-                        />
-                        </el-form-item>
                     </div>
                     
                     <div class="btn-group">
@@ -75,23 +68,13 @@
 
         <el-card style="width: 100%" shadow="always" class="Modbus-card" >
             <el-table :data="ModbusData" stripe style="width: 100%" >
-                <el-table-column prop="id" label="序号" width="80" />
+                <el-table-column prop="id" label="序号" width="180" />
                 <el-table-column prop="modbusName" label="Modbus配置的名称" width="180" />
                 <el-table-column prop="plcName" label="PLC名称" width="120" />
                 <el-table-column prop="slaveId" label="设备ID" />
                 <el-table-column prop="functionCode" label="功能码" width = "180" />
                 <el-table-column prop="startAddress" label="起始地址" />
                 <el-table-column prop="num" label="数量" />
-                <el-table-column prop="isOpen" label="是否启用" width="80">
-                    <template #default="scope">
-                        <el-switch
-                            v-model="scope.row.isOpen"
-                            class="ml-2"
-                            style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949"
-                            disabled
-                        />
-                    </template>
-                </el-table-column>
                 <el-table-column label="操作" width="400">
                     <template #default="scope">
                         <el-button type="success" @click="Enable(scope.$index, scope.row)">启用</el-button>
@@ -110,7 +93,7 @@
         <el-form :model="form">
             <el-form-item label = "选择PLC:">
                             <el-select 
-                            v-model="form.plcName" 
+                            v-model="form.selectedPLC" 
                             placeholder="请选择PLC" 
                             style="width: 240px"
                             :loading="isLoading"
@@ -126,13 +109,13 @@
                                 :value="item.value"
                             />
                             </el-select>
-                    </el-form-item>
+                        </el-form-item>
                         <el-form-item label = "设备ID:">
                             <el-input-number v-model="form.slaveId" :min="1"   />
                         </el-form-item>
                         <el-form-item label="Function code" class="function-code" >
                                 <el-select
-                                    v-model="form.functionCode"
+                                    v-model="form.functioncode"
                                     style="width: 240px;"
                                     placeholder="请选择功能码"
                                     clearable
@@ -148,20 +131,13 @@
                                 </el-select>
                         </el-form-item>
                         <el-form-item label="起始地址:" >
-                            <el-input v-model="form.startAddress" placeholder="请输入地址" />
+                            <el-input v-model="form.address" placeholder="请输入地址" />
                         </el-form-item>
                         <el-form-item label = "数量:">
                             <el-input-number v-model="form.num" :min="1" :max="32"  />
                         </el-form-item>
                         <el-form-item label = "配置名称:">
-                            <el-input v-model="form.modbusName" placeholder="请输入保存的配置名称" />
-                        </el-form-item>
-                        <el-form-item label = "是否启用:">
-                            <el-switch
-                            v-model="form.isOpen"
-                            class="ml-2"
-                            style="--el-switch-on-color: #13ce66; --el-switch-off-color: #ff4949"
-                        />
+                            <el-input v-model="form.modbusname" placeholder="请输入保存的配置名称" />
                         </el-form-item>
         </el-form>
         <template #footer>
@@ -182,7 +158,7 @@ import { ElMessage, ElMessageBox, ElNotification } from 'element-plus';
 import { onMounted, reactive, ref } from 'vue';
 
 const editFormVisible = ref(false);
-const form = ref<{id?:number, plcName: string,slaveId: number,functionCode:string,startAddress:string, num:number, modbusName: string,isOpen:boolean}>({id:0, plcName: '',slaveId: 1,functionCode:'',startAddress:'', num:1, modbusName: '',isOpen: true});
+const form = ref<{id?:number, selectedPLC: string,slaveId: number,functioncode:string,address:string, num:number, modbusname: string}>({id:0, plcName: '',slaveId: 1,functioncode:'',address:'', num:1, modbusname: ''});
 
 //     functionCodes: '',
 //     address: ''
@@ -195,7 +171,6 @@ const functionCodes = ref('');
 const address = ref('');
 const quantity = ref('');
 const ModbusName = ref('');
-const isOpen = ref(true);
 const selectedPLC = ref(''); // 用于存储用户选择的值
 const PLCList = ref([]);       // 存储格式化后的选项
 const isLoading = ref(true);   // 加载状态
@@ -210,7 +185,7 @@ const isLoading = ref(true);   // 加载状态
 //     num: number;
 // }
 
-const ModbusData = ref<Array<{ id: number, modbusName: string, plcName: string,slaveId: number, functionCode: string,StartAddress: string,num: number,isOpen: boolean }>>([]);
+const ModbusData = ref<Array<{ id: number, modbusName: string, plcName: string,slaveId: number, functionCode: string,StartAddress: string,num: number}>>([]);
 
 //下拉框数据
 const GetAllPLCConfig = async () => {
@@ -311,7 +286,6 @@ const AddMobusConfig = async () => {
                     functionCode: functionCodes.value,
                     startAddress: address.value,
                     num: num.value,
-                    isOpen: true
                 };
                 const response = await axios.post("http://127.0.0.1:5264/api/ModbusConfig/AddModbusConfug",modbusConfig,{
                     headers: { 'Content-Type': 'application/json' },
@@ -342,14 +316,14 @@ const AddMobusConfig = async () => {
 //修改配置
 //编辑
 //编辑
-const Edit = (index: number, row: { id: number, plcName: string,slaveId: number,functionCode:string,startAddress:string, num:number, modbusName: string ,isOpen:boolean}) => {
+const Edit = (index: number, row: { id: number, plcName: string,slaveId: number,functioncode:string,address:string, num:number, modbusname: string}) => {
     form.value = { ...row };
     editFormVisible.value = true;
 }
 //更新
 const update = async () => {
     try {
-        const response = await axios.put(`http://127.0.0.1:5264/api/ModbusConfig/UpdateModbusConfig?Id=${form.value.id}&PLCName=${form.value.plcName}&SlaveId=${form.value.slaveId}&FunctionCode=${form.value.functionCode}&StartAddr=${form.value.startAddress}&Num=${form.value.num}&ConfigName=${form.value.modbusName}&IsOpen=${form.value.isOpen}`, {
+        const response = await axios.put(`http://127.0.0.1:5264/api/ModbusConfig/UpdateModbusConfig?Id=${form.value.id}&PLCName=${form.value.plcName}&SlaveId=${form.value.slaveId}&FunctionCode=${form.value.functioncode}&StartAddr=${form.value.address}&Num=${form.value.num}&ConfigName=${form.value.modbusname}`, {
             headers: { 'Content-Type': 'application/json' },
         });
         if (response.data.code == 200) {

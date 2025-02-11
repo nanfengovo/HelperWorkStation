@@ -75,7 +75,7 @@
 
         <el-card style="width: 100%" shadow="always" class="Modbus-card" >
             <el-table :data="ModbusData" stripe style="width: 100%" >
-                <el-table-column prop="id" label="序号" width="80" />
+                <el-table-column prop="id" label="序号" width="180" />
                 <el-table-column prop="modbusName" label="Modbus配置的名称" width="180" />
                 <el-table-column prop="plcName" label="PLC名称" width="120" />
                 <el-table-column prop="slaveId" label="设备ID" />
@@ -195,7 +195,6 @@ const functionCodes = ref('');
 const address = ref('');
 const quantity = ref('');
 const ModbusName = ref('');
-const isOpen = ref(true);
 const selectedPLC = ref(''); // 用于存储用户选择的值
 const PLCList = ref([]);       // 存储格式化后的选项
 const isLoading = ref(true);   // 加载状态
@@ -342,14 +341,14 @@ const AddMobusConfig = async () => {
 //修改配置
 //编辑
 //编辑
-const Edit = (index: number, row: { id: number, plcName: string,slaveId: number,functionCode:string,startAddress:string, num:number, modbusName: string ,isOpen:boolean}) => {
+const Edit = (index: number, row: { id: number, plcName: string,slaveId: number,functionCode:string,startAddress:string, num:number, modbusName: string}) => {
     form.value = { ...row };
     editFormVisible.value = true;
 }
 //更新
 const update = async () => {
     try {
-        const response = await axios.put(`http://127.0.0.1:5264/api/ModbusConfig/UpdateModbusConfig?Id=${form.value.id}&PLCName=${form.value.plcName}&SlaveId=${form.value.slaveId}&FunctionCode=${form.value.functionCode}&StartAddr=${form.value.startAddress}&Num=${form.value.num}&ConfigName=${form.value.modbusName}&IsOpen=${form.value.isOpen}`, {
+        const response = await axios.put(`http://127.0.0.1:5264/api/ModbusConfig/UpdateModbusConfig?Id=${form.value.id}&PLCName=${form.value.plcName}&SlaveId=${form.value.slaveId}&FunctionCode=${form.value.functionCode}&StartAddr=${form.value.startAddress}&Num=${form.value.num}&ConfigName=${form.value.modbusName}`, {
             headers: { 'Content-Type': 'application/json' },
         });
         if (response.data.code == 200) {
