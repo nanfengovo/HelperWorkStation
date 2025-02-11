@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\PLCHelperStation\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F2AFB317-C992-4005-B4BC-D143C03183A4}|PLCHelperStation\\PLCHelperStation.csproj|e:\\code\\\u9879\u76EE--\u5B66\u4E60\\helperworkstation\\plchelperstation\\plchelperstation\\controller\\s7configcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2AFB317-C992-4005-B4BC-D143C03183A4}|PLCHelperStation\\PLCHelperStation.csproj|solutionrelative:plchelperstation\\controller\\s7configcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F2AFB317-C992-4005-B4BC-D143C03183A4}|PLCHelperStation\\PLCHelperStation.csproj|e:\\code\\\u9879\u76EE--\u5B66\u4E60\\helperworkstation\\plchelperstation\\plchelperstation\\controller\\modbusconfigcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2AFB317-C992-4005-B4BC-D143C03183A4}|PLCHelperStation\\PLCHelperStation.csproj|solutionrelative:plchelperstation\\controller\\modbusconfigcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F2AFB317-C992-4005-B4BC-D143C03183A4}|PLCHelperStation\\PLCHelperStation.csproj|e:\\code\\\u9879\u76EE--\u5B66\u4E60\\helperworkstation\\plchelperstation\\plchelperstation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2AFB317-C992-4005-B4BC-D143C03183A4}|PLCHelperStation\\PLCHelperStation.csproj|solutionrelative:plchelperstation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2AFB317-C992-4005-B4BC-D143C03183A4}|PLCHelperStation\\PLCHelperStation.csproj|e:\\code\\\u9879\u76EE--\u5B66\u4E60\\helperworkstation\\plchelperstation\\plchelperstation\\controller\\s7configcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2AFB317-C992-4005-B4BC-D143C03183A4}|PLCHelperStation\\PLCHelperStation.csproj|solutionrelative:plchelperstation\\controller\\s7configcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2AFB317-C992-4005-B4BC-D143C03183A4}|PLCHelperStation\\PLCHelperStation.csproj|e:\\code\\\u9879\u76EE--\u5B66\u4E60\\helperworkstation\\plchelperstation\\plchelperstation\\controller\\operationlogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -174,7 +174,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -189,25 +189,8 @@
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DBPointConfig.cs",
-              "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\PLCHelperStation\\PLCHelperStation\\Modbel\\DBPointConfig.cs",
-              "RelativeDocumentMoniker": "PLCHelperStation\\Modbel\\DBPointConfig.cs",
-              "ToolTip": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\PLCHelperStation\\PLCHelperStation\\Modbel\\DBPointConfig.cs",
-              "RelativeToolTip": "PLCHelperStation\\Modbel\\DBPointConfig.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAwwDQAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T10:28:44.932Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ModbusConfig.cs",
               "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\PLCHelperStation\\PLCHelperStation\\Modbel\\ModbusConfig.cs",
               "RelativeDocumentMoniker": "PLCHelperStation\\Modbel\\ModbusConfig.cs",
@@ -220,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\PLCHelperStation\\PLCHelperStation\\Program.cs",
               "RelativeDocumentMoniker": "PLCHelperStation\\Program.cs",
@@ -233,13 +216,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ModbusConfigController.cs",
               "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\PLCHelperStation\\PLCHelperStation\\Controller\\ModbusConfigController.cs",
               "RelativeDocumentMoniker": "PLCHelperStation\\Controller\\ModbusConfigController.cs",
-              "ToolTip": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\PLCHelperStation\\PLCHelperStation\\Controller\\ModbusConfigController.cs*",
-              "RelativeToolTip": "PLCHelperStation\\Controller\\ModbusConfigController.cs*",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAYwHMAAAAoAAAAAAAAAA==",
+              "ToolTip": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\PLCHelperStation\\PLCHelperStation\\Controller\\ModbusConfigController.cs",
+              "RelativeToolTip": "PLCHelperStation\\Controller\\ModbusConfigController.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAcwHMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-28T09:14:42.7Z",
               "EditorCaption": ""
@@ -259,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Result.cs",
               "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\PLCHelperStation\\PLCHelperStation\\ResultObj\\Result.cs",
               "RelativeDocumentMoniker": "PLCHelperStation\\ResultObj\\Result.cs",
@@ -272,7 +255,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "S7ConfigController.cs",
+              "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\PLCHelperStation\\PLCHelperStation\\Controller\\S7ConfigController.cs",
+              "RelativeDocumentMoniker": "PLCHelperStation\\Controller\\S7ConfigController.cs",
+              "ToolTip": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\PLCHelperStation\\PLCHelperStation\\Controller\\S7ConfigController.cs*",
+              "RelativeToolTip": "PLCHelperStation\\Controller\\S7ConfigController.cs*",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAQwH8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T05:20:54.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DBPointConfig.cs",
+              "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\PLCHelperStation\\PLCHelperStation\\Modbel\\DBPointConfig.cs",
+              "RelativeDocumentMoniker": "PLCHelperStation\\Modbel\\DBPointConfig.cs",
+              "ToolTip": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\PLCHelperStation\\PLCHelperStation\\Modbel\\DBPointConfig.cs",
+              "RelativeToolTip": "PLCHelperStation\\Modbel\\DBPointConfig.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwDQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T10:28:44.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "DBPointConfigController.cs",
               "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\PLCHelperStation\\PLCHelperStation\\Controller\\DBPointConfigController.cs",
               "RelativeDocumentMoniker": "PLCHelperStation\\Controller\\DBPointConfigController.cs",
@@ -294,19 +307,6 @@
               "ViewState": "AgIAACYAAAAAAAAAAAAIwDcAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-26T11:19:54.356Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "S7ConfigController.cs",
-              "DocumentMoniker": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\PLCHelperStation\\PLCHelperStation\\Controller\\S7ConfigController.cs",
-              "RelativeDocumentMoniker": "PLCHelperStation\\Controller\\S7ConfigController.cs",
-              "ToolTip": "E:\\Code\\\u9879\u76EE--\u5B66\u4E60\\HelperWorkStation\\PLCHelperStation\\PLCHelperStation\\Controller\\S7ConfigController.cs",
-              "RelativeToolTip": "PLCHelperStation\\Controller\\S7ConfigController.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAUwKUAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T05:20:54.858Z",
               "EditorCaption": ""
             },
             {

@@ -75,10 +75,13 @@
                             </el-select>
                         </el-form-item>
                         <el-form-item label = "Rack:">
-                            <el-input v-model="form.rack" placeholder="请输入Rack" clearable />
+                            <el-input v-model="form.Rack" placeholder="请输入Rack" clearable />
                         </el-form-item>
                         <el-form-item label = "Slot:">
-                            <el-input v-model="form.slot" placeholder="请输入Slot" clearable />
+                            <el-input v-model="form.Slot" placeholder="请输入Slot" clearable />
+                        </el-form-item>
+                        <el-form-item label = "测试:">
+                            {{form}}
                         </el-form-item>
         </el-form>
         <template #footer>
@@ -104,7 +107,7 @@ const Rack = ref('');
 const Slot = ref('');
 
 const editFormVisible = ref(false);
-const form = ref<{id?:number, s7Name: string,ip: string,port:number,cpuType:string, rack:string, slot: string}>({id:0, s7Name: '',ip: '',port:102,cpuType:'', rack:'', slot: ''});
+const form = ref<{id?:number, s7Name: string,ip: string,port:number,cpuType:string, Rack:string, Slot: string}>({id:0, s7Name: '',ip: '',port:102,cpuType:'', Rack:'', Slot: ''});
 
 //添加
 const AddS7Config = async () => {
@@ -249,14 +252,15 @@ const Delete = async (index: number, row: { id: number }) => {
 //修改配置
 //编辑
 //编辑
-const Edit = (index: number, row: { id?:number, s7Name: string,ip: string,port:number,cpuType:string, rack:string, slot: string}) => {
+const Edit = (index: number, row: { id?:number, s7Name: string,ip: string,port:number,cpuType:string, Rack:string, Slot: string}) => {
+    console.log("row:"+ row);
     form.value = { ...row };
     editFormVisible.value = true;
 }
 //更新
 const update = async () => {
     try {
-        const response = await axios.put(`http://127.0.0.1:5264/api/S7Config/UpdateS7Config?id=${form.value.id}&S7Name=${form.value.s7Name}&IP=${form.value.ip}&Port=${form.value.port}&CPUType=${form.value.cpuType}&Rack=${form.value.rack}&Slot=${form.value.slot}`, {
+        const response = await axios.put(`http://127.0.0.1:5264/api/S7Config/UpdateS7Config?id=${form.value.id}&S7Name=${form.value.S7Name}&IP=${form.value.IP}&Port=${form.value.Port}&CPUType=${form.value.CPUType}&Rack=${form.value.Rack}&Slot=${form.value.Slot}`, {
             headers: { 'Content-Type': 'application/json' },
         });
         if (response.data.code == 200) {

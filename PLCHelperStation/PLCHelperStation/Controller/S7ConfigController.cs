@@ -110,6 +110,23 @@ namespace PLCHelperStation.Controller
                 var s7 = ctx.S7Configs.Find(id);
                 if (s7 != null)
                 {
+                    //和正在使用的DB块相关的S7配置不许删除
+                    var DBList = ctx.DBConfigs
+                   .Where(x => x.S7Name == s7.S7Name && x.IsOpen == true)
+                   .ToList();
+
+                    // 检查 DBList 是否包含任何元素
+                    if (DBList.Any())
+                    {
+                        _logger.LogError("想要删除的这个S7配置正在被DB块使用中，如果要删除，请先停用相关DB块");
+                        return new Result
+                        {
+                            Code = 400,
+                            ResultType = false,
+                            Message = "想要删除的这个S7配置正在被DB块使用中，如果要删除，请先停用相关DB块"
+                        };
+                    }
+
                     ctx.S7Configs.Remove(s7);
                     ctx.SaveChanges();
                     var result = new Result { Code = 200, ResultType = true, Message = "删除成功！" };
@@ -151,19 +168,23 @@ namespace PLCHelperStation.Controller
                         return new Result { Code = 404, ResultType = false, Message =$"在修改配置名为：{S7Name}的配置时，出现错误要修改的配置不存在" };
                     }
 
-                    // 检查配置名称是否冲突
-                    var existingConfigName = ctx.S7Configs.Any(x => x.S7Name == S7Name);
-                    // 检查配置是否存在
-                    var existConfig = ctx.S7Configs.Any(x => x.IP == IP && x.Port == Port && x.CPUType == CPUType && x.Slot == Slot && x.Rack == Rack);
-                    if (existingConfigName)
+                    // 检查配置名称是否发生改变；如果没有改变则不管，发生改变则将要改的这个名称在数据库里是否存在
+                    if(s7Config.S7Name != S7Name)
                     {
-                        _logger.LogError($"在修改的配置名为{S7Name}的配置时，修改的目标配置已存在，请检查是否修改的必要性！");
-                        return new Result { Code = 400, ResultType = false, Message = $"在修改的配置名为{S7Name}的配置时，修改的目标配置已存在，请检查是否修改的必要性！" };
+                        var existingConfigName = ctx.S7Configs.Any(x => x.S7Name == S7Name);
+                        if (existingConfigName)
+                        {
+                            _logger.LogError($"在修改的配置名为{S7Name}的配置时，修改的目标配置已存在，不允许这样修改！");
+                            return new Result { Code = 400, ResultType = false, Message = $"在修改的配置名为{S7Name}的配置时，修改的目标配置已存在，不允许这样修改！" };
+                        }
                     }
-                    else if (existConfig)
+                    // 检查配置是否存在
+                    var existConfig = ctx.S7Configs.Any(x => x.S7Name == S7Name && x.IP == IP && x.Port == Port && x.CPUType == CPUType && x.Slot == Slot && x.Rack == Rack);
+                   
+                     if (existConfig)
                     {
                         var resultNg = new Result { Code = 400, ResultType = false, Message = "该配置已存在，不能重复！" };
-                        _logger.LogError("添加S7配置，该配置已存在，不能重复！");
+                        _logger.LogError("修改S7配置，该配置已存在，不能重复！");
                         return resultNg;
                     }
                     else

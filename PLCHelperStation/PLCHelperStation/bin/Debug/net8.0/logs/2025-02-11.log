@@ -258,3 +258,55 @@
 2025-02-11 22:58:13.4552|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置 
 2025-02-11 22:58:21.4474|ERROR|PLCHelperStation.Controller.ModbusConfigController|执行删除Modbus配置操作，用户打算删除名称为：本地模拟2的Modbus配置但是该配置目前是启用的，所以不允许删除！ 
 2025-02-11 22:58:52.9197|ERROR|PLCHelperStation.Controller.ModbusConfigController|执行删除Modbus配置操作，用户打算删除名称为：本地模拟2的Modbus配置但是该配置目前是启用的，所以不允许删除！ 
+2025-02-11 22:59:22.2077|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 22:59:29.4742|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次S7配置 
+2025-02-11 22:59:29.4742|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次数据点配置 
+2025-02-11 22:59:30.3314|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 23:04:38.6342|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 23:05:20.2872|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 23:06:19.1452|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 23:06:41.0689|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 23:08:28.0407|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 23:08:35.6995|ERROR|PLCHelperStation.Controller.S7ConfigController|在修改的配置名为测试的配置时，修改的目标配置已存在，请检查是否修改的必要性！ 
+2025-02-11 23:08:39.5836|ERROR|PLCHelperStation.Controller.S7ConfigController|在修改的配置名为测试的配置时，修改的目标配置已存在，请检查是否修改的必要性！ 
+2025-02-11 23:08:58.2021|ERROR|PLCHelperStation.Controller.S7ConfigController|在修改的配置名为测试的配置时，修改的目标配置已存在，请检查是否修改的必要性！ 
+2025-02-11 23:15:25.1519|ERROR|PLCHelperStation.Controller.S7ConfigController|在修改的配置名为测试的配置时，修改的目标配置已存在，不允许这样修改！ 
+2025-02-11 23:15:34.1690|ERROR|PLCHelperStation.Controller.S7ConfigController|修改S7配置，该配置已存在，不能重复！ 
+2025-02-11 23:15:44.8520|ERROR|PLCHelperStation.Controller.S7ConfigController|修改S7配置，该配置已存在，不能重复！ 
+2025-02-11 23:16:09.2494|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置 
+2025-02-11 23:16:09.2654|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-11 23:16:19.3055|WARN|PLCHelperStation.Controller.ModbusConfigController|修改Modbus配置操作,修改前数据为PLC名称为：本地,设备ID为：1,功能码为：01 Read Coils（0x）,开始地址为：1000,数量为：1,Modbus名称为：本地模拟2 
+2025-02-11 23:16:19.3743|WARN|PLCHelperStation.Controller.ModbusConfigController|修改Modbus配置操作，修改成功！修改后的数据为PLC名称为：本地,设备ID为：1,功能码为：01 Read Coils（0x）,开始地址为：1000,数量为：1,Modbus名称为：本地模拟1 
+2025-02-11 23:16:19.3885|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置 
+2025-02-11 23:16:24.9937|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 23:17:15.4045|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置 
+2025-02-11 23:17:15.4196|WARN|PLCHelperStation.Controller.ModbusConfigController|获取一次所有PLC的名称！ 
+2025-02-11 23:17:42.5090|WARN|PLCHelperStation.Controller.ModbusConfigController|修改Modbus配置操作,修改前数据为PLC名称为：本地,设备ID为：1,功能码为：01 Read Coils（0x）,开始地址为：1000,数量为：1,Modbus名称为：本地模拟1 
+2025-02-11 23:17:42.5231|ERROR|PLCHelperStation.Controller.ModbusConfigController|修改Modbus配置操作，该配置已存在，配置不能重复！ 
+2025-02-11 23:17:45.1400|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 23:18:31.7981|WARN|PLCHelperStation.Controller.S7ConfigController|修改S7配置信息成功！ 
+2025-02-11 23:18:31.8163|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 23:18:34.5130|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次S7配置 
+2025-02-11 23:18:34.5130|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次数据点配置 
+2025-02-11 23:18:35.4055|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 23:18:41.9900|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次S7配置 
+2025-02-11 23:18:41.9900|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次数据点配置 
+2025-02-11 23:18:56.2512|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 23:18:57.8507|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次数据点配置 
+2025-02-11 23:18:57.8507|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次S7配置 
+2025-02-11 23:19:07.0276|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 23:20:18.1347|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次S7配置 
+2025-02-11 23:20:18.1347|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次数据点配置 
+2025-02-11 23:39:26.3656|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 23:39:30.6916|ERROR|PLCHelperStation.Controller.S7ConfigController|想要删除的这个S7配置正在被DB块使用中，如果要删除，请先停用相关DB块 
+2025-02-11 23:39:34.7630|ERROR|PLCHelperStation.Controller.S7ConfigController|想要删除的这个S7配置正在被DB块使用中，如果要删除，请先停用相关DB块 
+2025-02-11 23:39:39.1684|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次S7配置 
+2025-02-11 23:39:39.1684|WARN|PLCHelperStation.Controller.DBPointConfigController|获取一次数据点配置 
+2025-02-11 23:39:41.1264|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 23:42:28.3451|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5264 
+2025-02-11 23:42:28.8500|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-02-11 23:42:28.8500|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-02-11 23:42:28.8646|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation 
+2025-02-11 23:42:54.7659|WARN|PLCHelperStation.Controller.S7ConfigController|执行删除id为:3S7配置操作，删除成功！ 
+2025-02-11 23:42:54.8447|WARN|PLCHelperStation.Controller.S7ConfigController|获取一次S7配置信息 
+2025-02-11 23:42:57.1608|ERROR|PLCHelperStation.Controller.S7ConfigController|想要删除的这个S7配置正在被DB块使用中，如果要删除，请先停用相关DB块 

@@ -80,6 +80,9 @@
                         <el-form-item label = "Slot:">
                             <el-input v-model="form.slot" placeholder="请输入Slot" clearable />
                         </el-form-item>
+                        <el-form-item label = "测试:">
+                            {{form}}
+                        </el-form-item>
         </el-form>
         <template #footer>
             <div class="dialog-footer">
@@ -256,7 +259,7 @@ const Edit = (index: number, row: { id?:number, s7Name: string,ip: string,port:n
 //更新
 const update = async () => {
     try {
-        const response = await axios.put(`http://127.0.0.1:5264/api/S7Config/UpdateS7Config?id=${form.value.id}&S7Name=${form.value.s7Name}&IP=${form.value.ip}&Port=${form.value.port}&CPUType=${form.value.cpuType}&Rack=${form.value.rack}&Slot=${form.value.slot}`, {
+        const response = await axios.put(`http://127.0.0.1:5264/api/S7Config/UpdateS7Config?id=${form.value.id}&S7Name=${form.value.S7Name}&IP=${form.value.IP}&Port=${form.value.Port}&CPUType=${form.value.CPUType}&Rack=${form.value.Rack}&Slot=${form.value.Slot}`, {
             headers: { 'Content-Type': 'application/json' },
         });
         if (response.data.code == 200) {

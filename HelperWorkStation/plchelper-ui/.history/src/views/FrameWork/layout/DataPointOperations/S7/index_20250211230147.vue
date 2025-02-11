@@ -60,25 +60,28 @@
         <el-dialog v-model="editFormVisible" title="修改S7配置" width="500" draggable >
         <el-form :model="form">
                         <el-form-item label = "配置名称:">
-                            <el-input v-model="form.s7Name" placeholder="请输入配置名称" clearable  />
+                            <el-input v-model="form.S7Name" placeholder="请输入配置名称" clearable  />
                         </el-form-item>
                         <el-form-item label="IP地址:" >
-                            <el-input v-model="form.ip" placeholder="请输入IP地址" clearable />
+                            <el-input v-model="form.IP" placeholder="请输入IP地址" clearable />
                         </el-form-item>
                         <el-form-item label = "端口:">
-                            <el-input v-model="form.port" placeholder="请输入端口号" clearable />
+                            <el-input v-model="form.Port" placeholder="请输入端口号" clearable />
                         </el-form-item>
                         <el-form-item label = "CPU类型:">
-                            <el-select  v-model="form.cpuType" placeholder="请选择CPU型号" style="width: 240px" clearable>
+                            <el-select  v-model="form.CPUType" placeholder="请选择CPU型号" style="width: 240px" clearable>
                                 <el-option label="S7-1200" value="S7-1200" />
                                 <el-option label="S7-1500" value="S7-1500" />
                             </el-select>
                         </el-form-item>
                         <el-form-item label = "Rack:">
-                            <el-input v-model="form.rack" placeholder="请输入Rack" clearable />
+                            <el-input v-model="form.Rack" placeholder="请输入Rack" clearable />
                         </el-form-item>
                         <el-form-item label = "Slot:">
-                            <el-input v-model="form.slot" placeholder="请输入Slot" clearable />
+                            <el-input v-model="form.Slot" placeholder="请输入Slot" clearable />
+                        </el-form-item>
+                        <el-form-item label = "测试:">
+                            {{form}}
                         </el-form-item>
         </el-form>
         <template #footer>
@@ -104,7 +107,7 @@ const Rack = ref('');
 const Slot = ref('');
 
 const editFormVisible = ref(false);
-const form = ref<{id?:number, s7Name: string,ip: string,port:number,cpuType:string, rack:string, slot: string}>({id:0, s7Name: '',ip: '',port:102,cpuType:'', rack:'', slot: ''});
+const form = ref<{id?:number, S7Name: string,IP: string,Port:number,CPUType:string, Rack:string, Slot: string}>({id:0, S7Name: '',IP: '',Port:102,CPUType:'', Rack:'', Slot: ''});
 
 //添加
 const AddS7Config = async () => {
@@ -249,14 +252,15 @@ const Delete = async (index: number, row: { id: number }) => {
 //修改配置
 //编辑
 //编辑
-const Edit = (index: number, row: { id?:number, s7Name: string,ip: string,port:number,cpuType:string, rack:string, slot: string}) => {
+const Edit = (index: number, row: { id?:number, S7Name: string,IP: string,Port:number,CPUType:string, Rack:string, Slot: string}) => {
+    console.log("row:"+ row);
     form.value = { ...row };
     editFormVisible.value = true;
 }
 //更新
 const update = async () => {
     try {
-        const response = await axios.put(`http://127.0.0.1:5264/api/S7Config/UpdateS7Config?id=${form.value.id}&S7Name=${form.value.s7Name}&IP=${form.value.ip}&Port=${form.value.port}&CPUType=${form.value.cpuType}&Rack=${form.value.rack}&Slot=${form.value.slot}`, {
+        const response = await axios.put(`http://127.0.0.1:5264/api/S7Config/UpdateS7Config?id=${form.value.id}&S7Name=${form.value.S7Name}&IP=${form.value.IP}&Port=${form.value.Port}&CPUType=${form.value.CPUType}&Rack=${form.value.Rack}&Slot=${form.value.Slot}`, {
             headers: { 'Content-Type': 'application/json' },
         });
         if (response.data.code == 200) {
