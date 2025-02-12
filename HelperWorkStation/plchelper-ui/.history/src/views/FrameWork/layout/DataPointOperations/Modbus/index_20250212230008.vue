@@ -182,16 +182,13 @@
 
             <!-- 抽屉:显示监控的数据信息 -->
             <el-drawer
-                v-model=drawer
-                :title=drawerdata.modbusName
-                :data=drawerdata
+                v-model=drawerdata
+                :title=drawerdata.name
                 :direction="direction"
                 :before-close="handleClose"
             >
-            <el-table :data="tableData" style="width: 100%" >
-                <el-table-column fixed prop="Address" label="变量地址" width="100" />
-                <el-table-column prop="result" label="当前值" width="200" />
-            </el-table>
+            {{drawerdata}}
+                <span>Hi, there!</span>
             </el-drawer>
         </div>
 
@@ -202,9 +199,7 @@
 import { Watch } from '@element-plus/icons-vue';
 import axios from 'axios';
 import { ElMessage, ElMessageBox, ElNotification, type DrawerProps } from 'element-plus';
-import { onMounted, onUnmounted, reactive, ref } from 'vue';
-
-let intervalId:any= null; // 用于存储定时器的ID
+import { onMounted, reactive, ref } from 'vue';
 
 const editFormVisible = ref(false);
 const form = ref<{id?:number, plcName: string,slaveId: number,functionCode:string,startAddress:string, num:number, modbusName: string,isOpen:boolean}>({id:0, plcName: '',slaveId: 1,functionCode:'',startAddress:'', num:1, modbusName: '',isOpen: true});
@@ -229,20 +224,14 @@ const isLoading = ref(true);   // 加载状态
 const drawer = ref(false)
 const direction = ref<DrawerProps['direction']>('rtl')
     const handleClose = (done: () => void) => {
-ElMessageBox.confirm('确定关闭Modbus变量点监控?')
+ElMessageBox.confirm('Are you sure you want to close this?')
     .then(() => {
-        // 清空表数据
-        tableData.value = [];
-        // 停止定时器
-        stopWatchStatus();
-        // 调用done函数关闭抽屉
-        done();
+        done()
     })
     .catch(() => {
       // catch error
     })
 }
-
 // interface ModbusData {
 //     id: number;
 //     mobusName: string;
@@ -541,57 +530,12 @@ const title = ref()
 
 //监控
 const drawerdata = ref<{ id: number, plcName: string,slaveId: number,functionCode:string,startAddress:string, num:number, modbusName: string ,isOpen:boolean}>({id : 0, plcName: '', slaveId: 0, functionCode: '', startAddress: '', num: 0, modbusName: '', isOpen: false});
-const tableData = ref<{Address:string ,result:string}[]>([]);
-const addr = ref(0);
 const WatchStatus = async (index: number, row: { id: number, plcName: string,slaveId: number,functionCode:string,startAddress:string, num:number, modbusName: string ,isOpen:boolean}) => {
     drawer.value = true;
     drawerdata.value = {...row};
 
-
-  // 清除之前的定时器
-    if (intervalId) {
-    clearInterval(intervalId);
-}
-
-  // 设置新的定时器，每隔1秒调用一次
-    intervalId = setInterval(async () => {
-    try {
-    const response = await axios.get(`http://127.0.0.1:5264/api/ModbusReadAndWrite/Read?id=${row.id}`);
-    if (response.data.code == 200) {
-        const dataFromServer = response.data.data; // 获取后端返回的数据数组
-        tableData.value = dataFromServer.map((result: boolean, index: number) => ({
-          Address: `${parseInt(row.startAddress, 10) + index}`, // 计算地址并转换为字符串
-          result: result.toString(), // 将布尔值转换为字符串
-        }));
-        ElMessage({
-        message: "监控Modbus数据点成功!!",
-        type: 'success',
-        });
-    } else {
-        ElMessage({
-        message: response.data.message,
-        type: 'error',
-        });
-    }
-    } catch (error: any) {
-    ElMessage({
-        message: error.message,
-        type: 'error',
-    });
-    }
-  }, 1000); // 设置间隔为1秒
-};
-
-// 当不再需要实时更新时，可以调用以下函数来清除定时器
-const stopWatchStatus = () => {
-    if (intervalId) {
-    clearInterval(intervalId);
-    intervalId = null;
-    }
-};
     
-    // 组件卸载时停止监控
-    onUnmounted(stopWatchStatus);
+}
 </script>
 
 <style >

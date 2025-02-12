@@ -55,7 +55,7 @@ namespace PLCHelperStation.Controller
                         {
                             //满足读取的条件 ，需要提供：ip、port、slaveid、function、address、query
                             var plcname = modbus.PLCName;
-                            var plc = ctx.PLCs.Find(plcname);
+                            var plc = ctx.PLCs.FirstOrDefault(x => x.Name == plcname);
                             var ip = plc.IP;
                             var port = plc.Port;
                             var slaveid =(byte) modbus.SlaveId;
@@ -115,14 +115,27 @@ namespace PLCHelperStation.Controller
                     }
                 }
             }
-            catch (Exception ex)
+            catch (NModbus.SlaveException ex)
             {
-
-                _logger.LogError("读取Modbus信号,出现异常，异常信息为："+ex.Message);
-                return new Result { Code = 400 , ResultType = false, Message = $"异常信息为：{ex.Message}"};
+                if (ex.FunctionCode == 129)
+                {
+                    
+                    _logger.LogError($"读取Modbus信号，出现系统异常！！异常信息为："+ex.StackTrace);
+                    return new Result { Code = 401 , ResultType = false ,Message = "非法数据地址！！"};
+                }
+                else if (ex.FunctionCode == 130 || ex.FunctionCode == 131 || ex.FunctionCode == 132)
+                {
+                    _logger.LogError($"读取Modbus信号，出现系统异常！！异常信息为：" + ex.StackTrace);
+                    return new Result { Code = 401, ResultType = false, Message = "功能码和从站不匹配！！" };
+                }
+                else
+                {
+                    _logger.LogError($"读取Modbus信号，出现系统异常！！异常信息为：" + ex.StackTrace);
+                    return new Result { Code = 401, ResultType = false, Message = $"{ex.StackTrace}" };
+                }
             }
 
-           
+
         }
     }
 }

@@ -202,9 +202,7 @@
 import { Watch } from '@element-plus/icons-vue';
 import axios from 'axios';
 import { ElMessage, ElMessageBox, ElNotification, type DrawerProps } from 'element-plus';
-import { onMounted, onUnmounted, reactive, ref } from 'vue';
-
-let intervalId:any= null; // 用于存储定时器的ID
+import { onMounted, reactive, ref } from 'vue';
 
 const editFormVisible = ref(false);
 const form = ref<{id?:number, plcName: string,slaveId: number,functionCode:string,startAddress:string, num:number, modbusName: string,isOpen:boolean}>({id:0, plcName: '',slaveId: 1,functionCode:'',startAddress:'', num:1, modbusName: '',isOpen: true});
@@ -231,12 +229,10 @@ const direction = ref<DrawerProps['direction']>('rtl')
     const handleClose = (done: () => void) => {
 ElMessageBox.confirm('确定关闭Modbus变量点监控?')
     .then(() => {
-        // 清空表数据
+        //清空表数据
         tableData.value = [];
-        // 停止定时器
-        stopWatchStatus();
-        // 调用done函数关闭抽屉
-        done();
+        stopWatchStatus;
+        done()
     })
     .catch(() => {
       // catch error
@@ -538,7 +534,7 @@ const title = ref()
 {
     title.value
 };
-
+let intervalId:any= null; // 用于存储定时器的ID
 //监控
 const drawerdata = ref<{ id: number, plcName: string,slaveId: number,functionCode:string,startAddress:string, num:number, modbusName: string ,isOpen:boolean}>({id : 0, plcName: '', slaveId: 0, functionCode: '', startAddress: '', num: 0, modbusName: '', isOpen: false});
 const tableData = ref<{Address:string ,result:string}[]>([]);
@@ -584,14 +580,13 @@ const WatchStatus = async (index: number, row: { id: number, plcName: string,sla
 
 // 当不再需要实时更新时，可以调用以下函数来清除定时器
 const stopWatchStatus = () => {
-    if (intervalId) {
-    clearInterval(intervalId);
-    intervalId = null;
-    }
+    // if (intervalId) {
+    // clearInterval(intervalId);
+    // intervalId = null;
+    // }
+    intervalId = null; // 清除定时器
 };
     
-    // 组件卸载时停止监控
-    onUnmounted(stopWatchStatus);
 </script>
 
 <style >
