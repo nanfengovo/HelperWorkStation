@@ -7,5 +7,6 @@
         public bool ResultType { get; set; }
 
         public string? Message { get; set; }
+        public object Data { get; internal set; }
     }
 }

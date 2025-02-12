@@ -735,6 +735,45 @@
         }
       }
     },
+    "/api/ModbusReadAndWrite/Read": {
+      "get": {
+        "tags": [
+          "ModbusReadAndWrite"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/OperationLogs/GetAllLogs": {
       "get": {
         "tags": [
@@ -1320,6 +1359,10 @@
           "message": {
             "type": "string",
             "nullable": true
+          },
+          "data": {
+            "nullable": true,
+            "readOnly": true
           }
         },
         "additionalProperties": false
