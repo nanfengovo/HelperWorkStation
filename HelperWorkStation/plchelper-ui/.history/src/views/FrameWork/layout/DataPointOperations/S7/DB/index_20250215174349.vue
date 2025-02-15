@@ -159,7 +159,7 @@
                 :before-close="handleClose"
             >
             <el-table :data="tableData" style="width: 100%" >
-                <el-table-column fixed prop="dbname" label="数据点名称" width="200" />
+                <el-table-column fixed prop="Address" label="变量地址" width="100" />
                 <el-table-column prop="result" label="当前值" width="200" />
             </el-table>
             </el-drawer>
@@ -194,7 +194,7 @@ let intervalId:any= null; // 用于存储定时器的ID
 const drawer = ref(false)
 const direction = ref<DrawerProps['direction']>('rtl')
     const handleClose = (done: () => void) => {
-ElMessageBox.confirm('确定关闭S7变量点监控?')
+ElMessageBox.confirm('确定关闭Modbus变量点监控?')
     .then(() => {
         // 清空表数据
         tableData.value = [];
@@ -525,7 +525,7 @@ const Disable = async (index: number, row: { id: number }) => {
 
 //监控
 const drawerdata = ref<{ id: number, s7Name: string, dbName: string, dbType: string, dbAddress: string, dbOffset: string, remark: string, isOpen: boolean }>();
-const tableData = ref<{dbname:string ,result:string}[]>([]);
+const tableData = ref<{remark:string ,result:string}[]>([]);
 const WatchStatus = async (index: number, row: { id: number, s7Name: string, dbName: string, dbType: string, dbAddress: string, dbOffset: string, remark: string, isOpen: boolean }) => {
     drawer.value = true;
     drawerdata.value = {...row};
@@ -539,10 +539,8 @@ intervalId = setInterval(async () => {
     const response = await axios.get(`http://127.0.0.1:5264/api/S7ReadAndWrite/ReadDBPoint?id=${row.id}`);
     if (response.data.code == 200) {
         const dataFromServer = response.data.data; // 获取后端返回的数据数组
-        tableData.value.push({ dbname: row.dbName, result: dataFromServer });
-        if(tableData.value.length > 5)
-        {
-            tableData.value = [];
+        if (drawerdata.value) {
+            tableData.value.push({ remark: drawerdata.value.remark, result: dataFromServer.result });
         }
         ElMessage({
         message: "监控S7数据点成功!!",

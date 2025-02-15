@@ -194,7 +194,7 @@ let intervalId:any= null; // 用于存储定时器的ID
 const drawer = ref(false)
 const direction = ref<DrawerProps['direction']>('rtl')
     const handleClose = (done: () => void) => {
-ElMessageBox.confirm('确定关闭S7变量点监控?')
+ElMessageBox.confirm('确定关闭Modbus变量点监控?')
     .then(() => {
         // 清空表数据
         tableData.value = [];
@@ -540,9 +540,9 @@ intervalId = setInterval(async () => {
     if (response.data.code == 200) {
         const dataFromServer = response.data.data; // 获取后端返回的数据数组
         tableData.value.push({ dbname: row.dbName, result: dataFromServer });
-        if(tableData.value.length > 5)
+        if(tableData.value.length > 10)
         {
-            tableData.value = [];
+            tableData.value.shift();
         }
         ElMessage({
         message: "监控S7数据点成功!!",
