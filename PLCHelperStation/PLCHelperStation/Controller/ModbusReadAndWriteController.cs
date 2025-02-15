@@ -28,9 +28,9 @@ namespace PLCHelperStation.Controller
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpGet("Read")]
+        [HttpGet("ReadModbus")]
         [EnableCors("AllowSpecificOrigins")] // 应用 CORS 策略
-        public ActionResult<Result> Read(int id)
+        public ActionResult<Result> ReadModbus(int id)
         {
             try
             {

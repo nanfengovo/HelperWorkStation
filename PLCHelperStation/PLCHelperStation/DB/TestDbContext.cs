@@ -17,7 +17,9 @@ namespace PLCHelperStation.DB
 
         public DbSet<S7Config> S7Configs { get; set; }
 
-        public DbSet<DBPointConfig> DBConfigs { get; set; } 
+        public DbSet<DBPointConfig> DBConfigs { get; set; }
+        public object dbaddress { get; internal set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string conStr = "Server = . ;Database = PLCHelperDB ;User=sa ;Password=aaaa2624434145 ;Encrypt=True;Trusted_Connection=True;TrustServerCertificate=True";

@@ -98,6 +98,10 @@
               "target": "Package",
               "version": "[3.0.81, )"
             },
+            "S7netplus": {
+              "target": "Package",
+              "version": "[0.20.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"

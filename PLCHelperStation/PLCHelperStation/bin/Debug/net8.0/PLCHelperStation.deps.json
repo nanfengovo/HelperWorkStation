@@ -19,6 +19,7 @@
           "NLog.Extensions.Logging": "5.4.0",
           "NLog.Web.AspNetCore": "5.4.0",
           "NModbus": "3.0.81",
+          "S7netplus": "0.20.0",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "runtime": {
@@ -961,6 +962,14 @@
           }
         }
       },
+      "S7netplus/0.20.0": {
+        "runtime": {
+          "lib/net7.0/S7.Net.dll": {
+            "assemblyVersion": "0.20.0.0",
+            "fileVersion": "0.20.0.0"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.6.2": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
@@ -1812,6 +1821,13 @@
       "sha512": "sha512-EzKEp7CHD8ErBL36iMts+6IrZZ9FEqllaD7Y5XzhoRjlxt5yXRughQ1bxPs99QFYFkW5xfkANB0Qs1gAmYGP8Q==",
       "path": "nmodbus/3.0.81",
       "hashPath": "nmodbus.3.0.81.nupkg.sha512"
+    },
+    "S7netplus/0.20.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XAubZ076bhWHQZlnBkzwQO4WxqF5ofwhrkDxfBhGbeD1JC1jBDn3EbWIqMLW6+G0RsxzxirSjLERCQZPfjwGdw==",
+      "path": "s7netplus/0.20.0",
+      "hashPath": "s7netplus.0.20.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.6.2": {
       "type": "package",

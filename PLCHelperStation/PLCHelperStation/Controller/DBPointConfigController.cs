@@ -170,17 +170,17 @@ namespace PLCHelperStation.Controller
                     // 检查配置名称是否冲突
                     var existingConfigName = ctx.DBConfigs.Any(x => x.DBName == DBName);
                     // 检查配置是否存在
-                    var existConfig = ctx.DBConfigs.Any(x => x.S7Name == S7Name && x.DBType == DBType && x.DBAddress == DBAddress && x.DBOffset == DBOffset && x.Remark == Remark);
+                    //var existConfig = ctx.DBConfigs.Any(x => x.S7Name == S7Name && x.DBType == DBType && x.DBAddress == DBAddress && x.DBOffset == DBOffset && x.Remark == Remark);
                     if (existingConfigName)
                     {
                         return new Result { Code = 400, ResultType = false, Message = $"修改DB数据点配置:在修改名为{DBName}的配置时配置名已存在，不允许使用该名称" };
                     }
-                    else if (existConfig)
-                    {
-                        var resultNg = new Result { Code = 400, ResultType = false, Message = $"修改DB数据点配置:在修改名为{DBName}的配置时该配置已存在，不能重复！" };
-                        _logger.LogError("修改DB数据点配置，该配置已存在，不能重复！");
-                        return resultNg;
-                    }
+                    //else if (existConfig)
+                    //{
+                    //    var resultNg = new Result { Code = 400, ResultType = false, Message = $"修改DB数据点配置:在修改名为{DBName}的配置时该配置已存在，不能重复！" };
+                    //    _logger.LogError("修改DB数据点配置，该配置已存在，不能重复！");
+                    //    return resultNg;
+                    //}
                     else
                     {
 
