@@ -38,6 +38,11 @@ namespace PLCHelperStation.Controller
             using (var ctx = new TestDbContext())
             {
                 var dbconfig = ctx.DBConfigs.Find(id);
+                if(dbconfig == null)
+                {
+                    _logger.LogError("读取的DB块不存在");
+                    return new Result { Code = 404, Message = "读取的DB块不存在" };
+                }
                 var s7Name = dbconfig.S7Name;
                 var s7 = ctx.S7Configs.FirstOrDefault(x => x.S7Name == s7Name);
                 string cpu = s7.CPUType;
@@ -53,6 +58,7 @@ namespace PLCHelperStation.Controller
                 }
                 else
                 {
+                    _logger.LogError("S7数据点读取，读取的CPU类型未知");
                     return new Result { Code = 400, Message = "未知的CPU类型" };
                 }
                 var ip = s7.IP;
@@ -71,6 +77,15 @@ namespace PLCHelperStation.Controller
                         var addrlast = "D";
                         var addragain = dbconfig.DBAddress.ToString();
                         var addr = $"{addragain}"+".DBD"+$"{dbpoint}";
+                        var res = plc.Read(addr);
+                        _logger.LogWarning($"用户对{dbconfig.DBName}执行了数据读取,采集的结果为{res}");
+                        return new Result { Code = 200, Message = "查询成功", Data = res };
+                    }
+                    else if(dbType == "bool")
+                    {
+                        var addrlast = "D";
+                        var addragain = dbconfig.DBAddress.ToString();
+                        var addr = $"{addragain}" + ".DBX" + $"{dbpoint}";
                         var res = plc.Read(addr);
                         _logger.LogWarning($"用户对{dbconfig.DBName}执行了数据读取,采集的结果为{res}");
                         return new Result { Code = 200, Message = "查询成功", Data = res };
