@@ -39,5 +39,7 @@ PLC Helper Station（PLC助手工作站）是一个基于.NET8 使用Webapi+Vue3
   > 2025-02-05 21:32:32.3366|INFO|PLCHelperStation.Controller.ModbusConfigController|获取一次所有Modbus配置
 
   上面的是打印在控制台上的日志，为了防止控制台滚动太快不好查看还有一份一样的文件版在bin目录下的logs文件夹下
+  这里简单的描述一下我对日志级别的定义：凡是用户操作或系统自动发生的操作记为Warn,ASP.NET Core自发的记录为info;逻辑错误和系统异常为error；日志前面最好以xx流程开头比如：
+  ![image](https://github.com/user-attachments/assets/9936eb30-c657-4d0e-bde7-bc20aa74e70e)
 
   但是需要在前端将日志处理下展示出来；提取大概的关键字段：序号，时间，日志级别，日志来源，日志内容，操作人（需要支持用户角色权限管理）
