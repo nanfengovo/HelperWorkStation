@@ -257,6 +257,26 @@
     ]
   },
   {
+    "ContainingType": "PLCHelperStation.Controller.DBPointRWRecordController",
+    "Method": "GetDBPointRWRecord",
+    "RelativePath": "api/DBPointRWRecord/DBPointRWRecord",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PLCHelperStation.Modbel.S7DBRWRecord, PLCHelperStation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "PLCHelperStation.Controller.ModbusConfigController",
     "Method": "AddModbusConfug",
     "RelativePath": "api/ModbusConfig/AddModbusConfug",

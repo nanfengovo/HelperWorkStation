@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PLCHelperStation.DB;
+using PLCHelperStation.Modbel;
 using PLCHelperStation.ResultObj;
 using S7.Net;
 
@@ -38,7 +39,7 @@ namespace PLCHelperStation.Controller
             using (var ctx = new TestDbContext())
             {
                 var dbconfig = ctx.DBConfigs.Find(id);
-                if(dbconfig == null)
+                if (dbconfig == null)
                 {
                     _logger.LogError("读取的DB块不存在");
                     return new Result { Code = 404, Message = "读取的DB块不存在" };
@@ -76,17 +77,47 @@ namespace PLCHelperStation.Controller
                     {
                         var addrlast = "D";
                         var addragain = dbconfig.DBAddress.ToString();
-                        var addr = $"{addragain}"+".DBD"+$"{dbpoint}";
+                        var addr = $"{addragain}" + ".DBD" + $"{dbpoint}";
                         var res = plc.Read(addr);
+                        
+                        if(dbconfig.DBName != null && res !=null)
+                        {
+                            var result = res.ToString();
+                            if(result != null)
+                            {
+                                var dBRWRecord = new S7DBRWRecord(dbconfig.DBName, dbconfig.Remark, result, null, DateTime.Now);
+
+                                ctx.S7DBRWRecords.Add(dBRWRecord);
+                                ctx.SaveChanges();
+                                _logger.LogWarning($"保存DB点名称为{dbconfig.DBName},备注为：{dbconfig.Remark}的一条读记录");
+                            }
+                           
+                           
+                        }
+                        
                         _logger.LogWarning($"用户对{dbconfig.DBName}执行了数据读取,采集的结果为{res}");
                         return new Result { Code = 200, Message = "查询成功", Data = res };
                     }
-                    else if(dbType == "bool")
+                    else if (dbType == "bool")
                     {
                         var addrlast = "D";
                         var addragain = dbconfig.DBAddress.ToString();
                         var addr = $"{addragain}" + ".DBX" + $"{dbpoint}";
                         var res = plc.Read(addr);
+                        if (dbconfig.DBName != null && res != null)
+                        {
+                            var result = res.ToString();
+                            if (result != null)
+                            {
+                                var dBRWRecord = new S7DBRWRecord(dbconfig.DBName, dbconfig.Remark, result, null, DateTime.Now);
+
+                                ctx.S7DBRWRecords.Add(dBRWRecord);
+                                ctx.SaveChanges();
+                                _logger.LogWarning($"保存DB点名称为{dbconfig.DBName},备注为：{dbconfig.Remark}的一条读记录");
+                            }
+
+
+                        }
                         _logger.LogWarning($"用户对{dbconfig.DBName}执行了数据读取,采集的结果为{res}");
                         return new Result { Code = 200, Message = "查询成功", Data = res };
                     }

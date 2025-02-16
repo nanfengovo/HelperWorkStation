@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using PLCHelperStation.DataBaseConfig;
 using PLCHelperStation.Modbel;
 
 namespace PLCHelperStation.DB
@@ -18,7 +19,8 @@ namespace PLCHelperStation.DB
         public DbSet<S7Config> S7Configs { get; set; }
 
         public DbSet<DBPointConfig> DBConfigs { get; set; }
-        public object dbaddress { get; internal set; }
+
+        public DbSet<S7DBRWRecord> S7DBRWRecords { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

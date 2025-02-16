@@ -188,6 +188,37 @@ namespace PLCHelperStation.Migrations.TestDb
                     b.ToTable("T_S7Config", (string)null);
                 });
 
+            modelBuilder.Entity("PLCHelperStation.Modbel.S7DBRWRecord", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("DBName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ExceptionInfo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Remark")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("result")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("T_S7DBRWRecords", (string)null);
+                });
+
             modelBuilder.Entity("PLCHelperStation.Modbel.User", b =>
                 {
                     b.Property<int>("Id")
