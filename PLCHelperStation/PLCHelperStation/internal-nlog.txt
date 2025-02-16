@@ -2469,3 +2469,17 @@ Error Number:137,State:2,Class:15
 2025-02-16 10:24:24.8412 Info Validating config: TargetNames=console, logfile, database, ConfigItems=49, FilePath=E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\nlog.config
 2025-02-16 10:24:24.9152 Info Configuration initialized.
 2025-02-16 10:24:24.9339 Warn Logger: Microsoft.Hosting.Lifetime configured with duplicate output to target: ConsoleTarget(Name=console). LoggingRule with NamePattern='*' and Level=Info has been skipped.
+2025-02-16 10:45:01.5388 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-02-16 10:45:01.5493 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-02-16 10:45:01.5695 Info Registered target NLog.Targets.DatabaseTarget(Name=database)
+2025-02-16 10:45:01.5745 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-02-16 10:45:01.5745 Info Validating config: TargetNames=console, logfile, database, ConfigItems=49, FilePath=E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\nlog.config
+2025-02-16 10:45:01.6261 Info Configuration initialized.
+2025-02-16 10:45:01.6412 Warn Logger: Microsoft.Hosting.Lifetime configured with duplicate output to target: ConsoleTarget(Name=console). LoggingRule with NamePattern='*' and Level=Info has been skipped.
+2025-02-16 10:46:54.6097 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-02-16 10:46:54.6201 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-02-16 10:46:54.6406 Info Registered target NLog.Targets.DatabaseTarget(Name=database)
+2025-02-16 10:46:54.6406 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-02-16 10:46:54.6544 Info Validating config: TargetNames=console, logfile, database, ConfigItems=49, FilePath=E:\Code\项目--学习\HelperWorkStation\PLCHelperStation\PLCHelperStation\nlog.config
+2025-02-16 10:46:54.6964 Info Configuration initialized.
+2025-02-16 10:46:54.6964 Warn Logger: Microsoft.Hosting.Lifetime configured with duplicate output to target: ConsoleTarget(Name=console). LoggingRule with NamePattern='*' and Level=Info has been skipped.

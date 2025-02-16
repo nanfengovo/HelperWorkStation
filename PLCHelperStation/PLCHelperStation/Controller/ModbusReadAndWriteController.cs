@@ -115,6 +115,7 @@ namespace PLCHelperStation.Controller
                     }
                 }
             }
+
             catch (NModbus.SlaveException ex)
             {
                 if (ex.FunctionCode == 129)
@@ -133,6 +134,12 @@ namespace PLCHelperStation.Controller
                     _logger.LogError($"读取Modbus信号，出现系统异常！！异常信息为：" + ex.StackTrace);
                     return new Result { Code = 401, ResultType = false, Message = $"{ex.StackTrace}" };
                 }
+            }
+            catch (Exception ex)
+            {
+                // 处理其他所有异常，包括 TcpClient 创建时可能抛出的异常
+                _logger.LogError($"读取Modbus信号时发生异常: {ex.Message}");
+                return new Result { Code = 500, ResultType = false, Message =$"读取Modbus信号时发生系统异常,异常信息为：{ex.Message}" };
             }
 
 
