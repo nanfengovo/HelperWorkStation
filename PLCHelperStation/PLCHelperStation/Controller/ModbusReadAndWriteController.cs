@@ -106,6 +106,11 @@ namespace PLCHelperStation.Controller
                                             return new Result { Code = 200, ResultType = true, Message = "读取成功", Data = result4 };
                                         }
                                         break;
+                                    default:
+                                        // 当Function不是1, 2, 3, 或4时执行的代码
+                                        _logger.LogError("读取Modbus信号：选择的功能码错误！！");
+                                        return new Result { Code = 401, Message = "选择的功能码错误！！" };
+                                        break;
                                 }
                                 return new Result { Code = 200, ResultType = true, Message = "读取成功" };
                             }

@@ -29,7 +29,7 @@ namespace PLCHelperStation.Controller
         {
             using (var ctx = new TestDbContext())
             {
-                var RecordList = ctx.S7DBRWRecords.ToList();
+                var RecordList = ctx.S7DBRWRecords.OrderByDescending(x => x.DateTime).ToList();
                 _logger.LogWarning("用户获取一次DB块的读写记录！");
                 return RecordList;
             }
