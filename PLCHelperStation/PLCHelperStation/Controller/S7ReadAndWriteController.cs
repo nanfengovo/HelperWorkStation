@@ -33,7 +33,7 @@ namespace PLCHelperStation.Controller
         /// <returns></returns>
         [HttpGet("ReadDBPoint")]
         [EnableCors("AllowSpecificOrigins")] // 应用 CORS 策略
-        public ActionResult<Result> ReadDBPoint(int id)
+        public async Task<ActionResult<Result>> ReadDBPointAsync(int id)
         {
 
             try
@@ -72,7 +72,15 @@ namespace PLCHelperStation.Controller
                     //2、使用
                     using (Plc plc = new Plc((CpuType)cpuType, ip, rack, slot))
                     {
-                        plc.Open();
+                        
+                        await plc.OpenAsync();
+
+                        if (!plc.IsConnected)
+                        {
+                            return new Result { Code = 402, Message = "连接PLC失败！"};
+                        }
+                       
+
                         //DBX读取位，比如bool类型；DBW读取字；DBD读取数值
                         var dbType = dbconfig.DBType;
                         var dbpoint = dbconfig.DBOffset;
@@ -94,8 +102,6 @@ namespace PLCHelperStation.Controller
                                     ctx.SaveChanges();
                                     _logger.LogWarning($"保存DB点名称为{dbconfig.DBName},备注为：{dbconfig.Remark}的一条读记录");
                                 }
-
-
                             }
 
                             _logger.LogWarning($"用户对{dbconfig.DBName}执行了数据读取,采集的结果为{res}");
@@ -118,8 +124,6 @@ namespace PLCHelperStation.Controller
                                     ctx.SaveChanges();
                                     _logger.LogWarning($"保存DB点名称为{dbconfig.DBName},备注为：{dbconfig.Remark}的一条读记录");
                                 }
-
-
                             }
                             _logger.LogWarning($"用户对{dbconfig.DBName}执行了数据读取,采集的结果为{res}");
                             return new Result { Code = 200, Message = "查询成功", Data = res };

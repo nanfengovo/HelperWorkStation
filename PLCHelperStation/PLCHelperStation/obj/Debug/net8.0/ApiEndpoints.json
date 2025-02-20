@@ -782,7 +782,7 @@
   },
   {
     "ContainingType": "PLCHelperStation.Controller.S7ReadAndWriteController",
-    "Method": "ReadDBPoint",
+    "Method": "ReadDBPointAsync",
     "RelativePath": "api/S7ReadAndWrite/ReadDBPoint",
     "HttpMethod": "GET",
     "IsController": true,
